@@ -67,7 +67,7 @@ Tab:AddToggle({
 Tab:AddButton({
 	Name = "飞行脚本",
 	Callback = function()
-      	loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/fly.txt"))()"))()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/how%20are"))()
   	end
 })
 
