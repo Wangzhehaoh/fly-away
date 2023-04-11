@@ -8,7 +8,6 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-
 local Tab = Window:MakeTab({
 	Name = "修改真无聊",
 	Icon = "rbxassetid://7734068321",
@@ -19,7 +18,7 @@ Tab:AddParagraph("这些脚本EF","王者号没出")
 
 Tab:AddParagraph("提示","如果你在这，无法 可以用其他")
 
-local Tab = Window:MakeTab({
+Tab = Window:MakeTab({
 	Name = "evade",
 	Icon = "rbxassetid://7734068321",
 	PremiumOnly = false
@@ -40,6 +39,64 @@ Tab:AddButton({
 	Name = "evade2",
 	Callback = function()
 	loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()"))()		
+  	end
+})
+
+Tab = Window:MakeTab({
+	Name = "模式",
+	Icon = "rbxassetid://7734068321",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "移动输入",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end
+})
+
+Tab:AddTextbox({
+	Name = "跳跃输入",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end
+})
+
+Tab:AddToggle({
+	Name = "普通穿墙，可坐",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    Noclip = true
+		    Stepped = game.RunService.Stepped:Connect(function()
+			    if Noclip == true then
+				    for a, b in pairs(game.Workspace:GetChildren()) do
+                        if b.Name == game.Players.LocalPlayer.Name then
+                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+                                if v:IsA("BasePart") then
+                                    v.CanCollide = false
+                                end
+                            end
+                        end
+                    end
+			    else
+				    Stepped:Disconnect()
+			    end
+		    end)
+	    else
+		    Noclip = false
+	    end
+	end
+})
+
+Tab:AddButton({
+	Name = "飞行脚本",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/how%20are"))()
   	end
 })
 
