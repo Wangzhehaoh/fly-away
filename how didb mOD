@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local Window = OrionLib:MakeWindow({Name = "脚本中心 EF", HidePremium = false, SaveConfig = false, IntroText = "脚本EF", ConfigFolder = "龙脚本"})
+local Window = OrionLib:MakeWindow({Name = "脚本中心 EF", HidePremium = false, SaveConfig = false, IntroText = "脚本EF", ConfigFolder = "脚本EF"})
 
 OrionLib:MakeNotification({
 	Name = "EF是一种无法",
