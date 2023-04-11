@@ -248,7 +248,7 @@ other:AddButton({
 })
 
 local other = Window:MakeTab({
-    Name = "透视",
+    Name = "自己是否不动",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
