@@ -206,4 +206,45 @@ other:AddButton({
   	end
 })
 
+other:AddButton({
+	Name = "DOORS十架字 这是假的",
+	Callback = function()
+      	loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
+  	end
+})
+
+other:AddButton({
+	Name = "DOORS2",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+  	end
+})
+
+other:AddButton({
+	Name = "DOORS3",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "起床战争",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "用电脑",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  	end
+})
+
+other:AddButton({
+	Name = "sh 用起床脚本",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end
+})
+
 OrionLib:Init()
