@@ -48,55 +48,10 @@ Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddTextbox({
-	Name = "移动输入",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end
-})
-
-Tab:AddTextbox({
-	Name = "跳跃输入",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-	end
-})
-
-Tab:AddToggle({
-	Name = "普通穿墙，可坐",
-	Default = false,
-	Callback = function(Value)
-		if Value then
-		    Noclip = true
-		    Stepped = game.RunService.Stepped:Connect(function()
-			    if Noclip == true then
-				    for a, b in pairs(game.Workspace:GetChildren()) do
-                        if b.Name == game.Players.LocalPlayer.Name then
-                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
-                                if v:IsA("BasePart") then
-                                    v.CanCollide = false
-                                end
-                            end
-                        end
-                    end
-			    else
-				    Stepped:Disconnect()
-			    end
-		    end)
-	    else
-		    Noclip = false
-	    end
-	end
-})
-
 Tab:AddButton({
-	Name = "飞行脚本",
+	Name = "无法用？",
 	Callback = function()
-      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/how%20are"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/fly.txt"))()		
   	end
 })
 
