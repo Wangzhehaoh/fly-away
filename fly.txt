@@ -127,7 +127,7 @@ other:AddButton({
 })
 
 local other = Window:MakeTab({
-    Name = "脚本是EF",
+    Name = "evade EF",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -147,7 +147,7 @@ other:AddButton({
 })
 
 local other = Window:MakeTab({
-    Name = "这是",
+    Name = "监狱人生模式",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -159,6 +159,38 @@ other:AddButton({
   	end
 })
 
+other:AddButton({
+	Name = "监狱人生2 1.3V",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
+  	end
+})
 
+local other = Window:MakeTab({
+    Name = "蜂群",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "蜂群",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/BSS%20FREE"))()
+  	end
+})
+
+other:AddButton({
+	Name = "蜂群2",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/bsstrainer.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "蜂群",
+	Callback = function()
+      	
+  	end
+})
 
 OrionLib:Init()
