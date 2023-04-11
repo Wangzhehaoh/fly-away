@@ -1,6 +1,6 @@
 local WorkspacePlayers = game:GetService("Workspace").Game.Players
 local Players = game:GetService('Players')
-local localplayer = Players.LocalPlaye
+local localplayer = Players.LocalPlayer
 local GuiService = game:GetService("GuiService")
 local Light = game:GetService("Lighting")
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
@@ -13,10 +13,10 @@ OrionLib:MakeNotification({
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
 wait(4)
 OrionLib:MakeNotification({
-    Name = "提示",
-    Content = "欢迎来到evade",
+    Name = "提示1",
+    Content = "这些英语不方便 用些中文",
     Image = "rbxassetid://4483345998",
-    Time = 1
+    Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
 wait(1)
@@ -721,7 +721,7 @@ FunTab:AddButton({
 })
 
 TeleportTab:AddButton({
-    Name = "普通模式",
+    Name = "重新进一下",
     Callback = function()
         local TeleportService = game:GetService('TeleportService')
         GameId = 9872472334
@@ -731,7 +731,7 @@ TeleportTab:AddButton({
 
 
 TeleportTab:AddButton({
-    Name = "去死亡(有些倒会死亡)",
+    Name = "去单人(有些BUG)",
     Callback = function()
         local TeleportService = game:GetService('TeleportService')
         GameId = 10662542523
@@ -758,7 +758,7 @@ TeleportTab:AddButton({
 })
 
 TeleportTab:AddButton({
-    Name = "要语音！",
+    Name = "传送失败",
     Callback = function()
         local TeleportService = game:GetService('TeleportService')
         GameId = 110539706691
@@ -776,7 +776,7 @@ TeleportTab:AddButton({
 })
 
 local MiscTab2 = MiscTab:AddSection({
-	Name = "模式"
+	Name = "模式？"
 })
 
 MiscTab:AddButton({
