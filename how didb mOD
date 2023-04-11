@@ -1,0 +1,36 @@
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+local Window = OrionLib:MakeWindow({Name = "龙脚本", HidePremium = false, SaveConfig = false, IntroText = "龙脚本", ConfigFolder = "龙脚本"})
+
+OrionLib:MakeNotification({
+	Name = "欢迎使用龙脚本",
+	Content =  "当前游戏ID为:" .. game.GameId .. ".",
+	Image = "rbxassetid://7734068321",
+	Time = 5
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "龙叔有话说",
+	Icon = "rbxassetid://7734068321",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("圈钱狗挂出","b站名字灾难蛋圈钱狗一个脚本全是二改可以去他评论区骂他")
+
+Tab:AddParagraph("温馨提示","如果你在其他地方购买脚本就是被圈了，免费脚本（作者qq3071844940）")
+
+local Tab = Window:MakeTab({
+	Name = "极速传奇",
+	Icon = "rbxassetid://7734068321",
+	PremiumOnly = false
+})
+
+
+
+local Section = Tab:AddSection({
+	Name = "功能"
+})
+
+
+
+OrionLib:Init()
