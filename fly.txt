@@ -273,4 +273,17 @@ other:AddButton({
   	end
 })
 
+local other = Window:MakeTab({
+    Name = "MOD菜单",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "1",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/MOD%20%E8%8F%9C%E5%8D%95"))()
+  	end
+})
+
 OrionLib:Init()
