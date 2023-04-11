@@ -67,12 +67,6 @@ player:AddButton({
   	end
 })
 
-local other = Window:MakeTab({
-    Name = "用模式",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
 other:AddButton({
 	Name = "跟踪玩家",
 	Callback = function()
