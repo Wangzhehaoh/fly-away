@@ -3,7 +3,7 @@ local Window = OrionLib:MakeWindow({Name = "脚本中心EF", HidePremium = false
 
 OrionLib:MakeNotification({
 	Name = "欢迎模式 脚本EF",
-	Content =  "当前游戏ID为:" .. game.GameId .. ".",
+	Content =  "这游戏为了ID:" .. game.GameId .. ".",
 	Image = "rbxassetid://7734068321",
 	Time = 5
 })
