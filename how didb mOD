@@ -19,6 +19,18 @@ Tab:AddParagraph("这些脚本EF","王者号没出")
 
 Tab:AddParagraph("提示","如果你在这，无法 可以用其他")
 
+local Tab = Window:MakeTab({
+	Name = "evade",
+	Icon = "rbxassetid://7734068321",
+	PremiumOnly = false
+})
+
+
+
+local Section = Tab:AddSection({
+	Name = "点开始"
+})
+
 Tab:AddTextbox({
 	Name = "移动输入",
 	Default = "",
@@ -69,18 +81,6 @@ Tab:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/how%20are"))()
   	end
-})
-
-local Tab = Window:MakeTab({
-	Name = "evade",
-	Icon = "rbxassetid://7734068321",
-	PremiumOnly = false
-})
-
-
-
-local Section = Tab:AddSection({
-	Name = "点开始"
 })
 
 Tab:AddButton({
