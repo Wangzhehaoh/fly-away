@@ -1,6 +1,15 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 local Window = OrionLib:MakeWindow({Name = "脚本中心 EF", HidePremium = false, SaveConfig = false, IntroText = "脚本EF", ConfigFolder = "脚本EF"})
 
+game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
+wait(4)
+OrionLib:MakeNotification({
+    Name = "提示",
+    Content = "用这个(脚本EF？)",
+    Image = "rbxassetid://4483345998",
+    Time = 2
+})
+
 OrionLib:MakeNotification({
 	Name = "EF是一种无法",
 	Content =  "当前游戏ID为:" .. game.GameId .. ".",
