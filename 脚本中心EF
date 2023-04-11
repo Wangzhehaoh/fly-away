@@ -1,1 +1,130 @@
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+local Window = OrionLib:MakeWindow({Name = "脚本中心EF", HidePremium = false, SaveConfig = false, IntroText = "脚本EF", ConfigFolder = "脚本EF"})
 
+OrionLib:MakeNotification({
+	Name = "欢迎模式 脚本EF",
+	Content =  "当前游戏ID为:" .. game.GameId .. ".",
+	Image = "rbxassetid://7734068321",
+	Time = 5
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "公告",
+	Icon = "rbxassetid://7734068321",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("公告","就知道，许多，没有，只有二个")
+
+Tab:AddParagraph("提示","你在用免费脚本")
+
+local Tab = Window:MakeTab({
+	Name = "evade",
+	Icon = "rbxassetid://7734068321",
+	PremiumOnly = false
+})
+
+
+
+local Section = Tab:AddSection({
+	Name = "开始"
+})
+
+
+
+Tab:AddButton({
+	Name = "evade(1)中文",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/evade"))()
+  	end
+})
+
+
+Tab:AddButton({
+	Name = "evade",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "去我的脚本是普通",
+	Icon = "rbxassetid://7734068321",
+	PremiumOnly = false
+})
+
+
+
+local Section = Tab:AddSection({
+	Name = "开始"
+})
+
+
+
+
+Tab:AddButton({
+	Name = "1",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/fly.txt"))()
+  	end
+})
+
+local Tab = Window:MakeTab({
+	Name = "玩家",
+	Icon = "rbxassetid://7734068321",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "模式"
+})
+
+Tab:AddTextbox({
+	Name = "移动输入",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end
+})
+
+Tab:AddTextbox({
+	Name = "跳跃输入",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end
+})
+
+:AddToggle({
+Tab	Name = "普通穿墙，可坐",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    Noclip = true
+		    Stepped = game.RunService.Stepped:Connect(function()
+			    if Noclip == true then
+				    for a, b in pairs(game.Workspace:GetChildren()) do
+                        if b.Name == game.Players.LocalPlayer.Name then
+                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+                                if v:IsA("BasePart") then
+                                    v.CanCollide = false
+                                end
+                            end
+                        end
+                    end
+			    else
+				    Stepped:Disconnect()
+			    end
+		    end)
+	    else
+		    Noclip = false
+	    end
+	end
+})
+
+
+
+OrionLib:Init()
