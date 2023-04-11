@@ -67,6 +67,13 @@ player:AddButton({
   	end
 })
 
+other:AddButton({
+	Name = "透视玩家",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E8%A7%82%E7%9C%8B%E7%8E%A9%E5%AE%B6"))()
+  	end
+})
+
 local other = Window:MakeTab({
     Name = "用模式",
     Icon = "rbxassetid://4483345998",
