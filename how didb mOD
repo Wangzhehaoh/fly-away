@@ -24,6 +24,8 @@ Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+
+
 local Section = Tab:AddSection({
 	Name = "点开始"
 })
@@ -54,5 +56,7 @@ Tab:AddButton({
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/fly.txt"))()		
   	end
 })
+
+
 
 OrionLib:Init()
