@@ -13,13 +13,13 @@ OrionLib:MakeNotification({
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
 wait(4)
 OrionLib:MakeNotification({
-    Name = "提示1",
-    Content = "这些英语不方便 用些中文",
+    Name = "警告",
+    Content = "无法用evade 等担心修一下",
     Image = "rbxassetid://4483345998",
-    Time = 2
+    Time = 100
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
+wait(100)
 OrionLib:MakeNotification({
     Name = "提示2",
     Content = "要翻译，全是中文",
