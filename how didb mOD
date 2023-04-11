@@ -1,24 +1,25 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local Window = OrionLib:MakeWindow({Name = "脚本中心 EF", HidePremium = false, SaveConfig = false, IntroText = "脚本EF", ConfigFolder = "脚本EF"})
+local Window = OrionLib:MakeWindow({Name = "脚本中心EF", HidePremium = false, SaveConfig = false, IntroText = "脚本EF", ConfigFolder = "脚本EF"})
 
 OrionLib:MakeNotification({
-	Name = "EF是一种无法",
+	Name = "欢迎模式 脚本EF",
 	Content =  "当前游戏ID为:" .. game.GameId .. ".",
 	Image = "rbxassetid://7734068321",
 	Time = 5
 })
 
+
 local Tab = Window:MakeTab({
-	Name = "修改真无聊",
+	Name = "公告",
 	Icon = "rbxassetid://7734068321",
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("这些脚本EF","王者号没出")
+Tab:AddParagraph("公告","就知道，许多，没有，只有二个")
 
-Tab:AddParagraph("提示","如果你在这，无法 可以用其他")
+Tab:AddParagraph("提示","你在用免费脚本")
 
-Tab = Window:MakeTab({
+local Tab = Window:MakeTab({
 	Name = "evade",
 	Icon = "rbxassetid://7734068321",
 	PremiumOnly = false
@@ -27,33 +28,45 @@ Tab = Window:MakeTab({
 
 
 local Section = Tab:AddSection({
-	Name = "点开始"
+	Name = "开始"
 })
+
+
+
+Tab:AddButton({
+	Name = "evade(1)中文",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/evade"))()
+  	end
+})
+
 
 Tab:AddButton({
 	Name = "evade",
 	Callback = function()
-	loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/evade"))()"))()		
-  	end
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
+  	end    
 })
 
-Tab:AddButton({
-	Name = "evade2",
-	Callback = function()
-	loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()"))()		
-  	end
-})
-
-Tab = Window:MakeTab({
-	Name = "模式",
+local Tab = Window:MakeTab({
+	Name = "去我的脚本是普通",
 	Icon = "rbxassetid://7734068321",
 	PremiumOnly = false
 })
 
+
+
+local Section = Tab:AddSection({
+	Name = "开始"
+})
+
+
+
+
 Tab:AddButton({
-	Name = "无法用？",
+	Name = "1",
 	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/fly.txt"))()		
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/fly.txt"))()
   	end
 })
 
