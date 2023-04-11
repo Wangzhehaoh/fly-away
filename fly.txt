@@ -260,4 +260,17 @@ other:AddButton({
   	end
 })
 
+local other = Window:MakeTab({
+    Name = "造船寻宝",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "这自动刷金币",
+	Callback = function()
+      	loadstring(game:HttpGet(('https://raw.githubusercontent.com/urmomjklol69/GoldFarmBabft/main/GoldFarm.lua'),true))()
+  	end
+})
+
 OrionLib:Init()
