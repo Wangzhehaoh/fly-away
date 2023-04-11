@@ -146,4 +146,19 @@ other:AddButton({
   	end
 })
 
+local other = Window:MakeTab({
+    Name = "这是",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "监狱人生",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/Gae7YC84"))();
+  	end
+})
+
+
+
 OrionLib:Init()
