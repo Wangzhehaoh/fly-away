@@ -256,7 +256,7 @@ local other = Window:MakeTab({
 other:AddButton({
 	Name = "1",
 	Callback = function()
-      	loadstring(game:HttpGet(""))()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E8%A7%82%E7%9C%8B%E7%8E%A9%E5%AE%B6"))()
   	end
 })
 
