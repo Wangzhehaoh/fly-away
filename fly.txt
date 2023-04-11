@@ -187,9 +187,22 @@ other:AddButton({
 })
 
 other:AddButton({
-	Name = "蜂群",
+	Name = "蜂群3",
 	Callback = function()
-      	
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Stebulous/scripts/main/open-source/beeswarm%20v1.2.lua", true))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "DOORS",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "DOORSMS",
+	Callback = function()
+      	loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
   	end
 })
 
