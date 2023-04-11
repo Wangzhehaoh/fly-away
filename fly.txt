@@ -286,4 +286,11 @@ other:AddButton({
   	end
 })
 
+other:AddButton({
+	Name = "回去脚本EF",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/how%20didb%20mOD"))()
+  	end
+})
+
 OrionLib:Init()
