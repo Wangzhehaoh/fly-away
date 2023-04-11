@@ -9,6 +9,16 @@ OrionLib:MakeNotification({
 	Time = 6
 })
 
+local Tab = Window:MakeTab({
+	Name = "公告",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("王者号出这些","欢迎用脚本中心EF")
+
+Tab:AddParagraph("提示","现在你用免费脚本")
+
 local player = Window:MakeTab({
 	Name = "玩家",
 	Icon = "rbxassetid://4483345998",
@@ -284,6 +294,12 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/MOD%20%E8%8F%9C%E5%8D%95"))()
   	end
+})
+
+local other = Window:MakeTab({
+    Name = "回去脚本EF",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 other:AddButton({
