@@ -19,6 +19,18 @@ Tab:AddParagraph("王者号出这些","欢迎用脚本中心EF")
 
 Tab:AddParagraph("提示","现在你用免费脚本")
 
+Tab:AddParagraph("提示","真的崩溃")
+
+local Section = Tab:AddSection({
+	Name = "等一下 修一下 我在修复了"
+})
+
+Tab:AddParagraph("提示","崩溃了，这些加载失败")
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
 local player = Window:MakeTab({
 	Name = "玩家",
 	Icon = "rbxassetid://4483345998",
