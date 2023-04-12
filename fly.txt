@@ -426,6 +426,17 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "忍者传奇",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/2UjrXwTV")()
+  	end
+})
+
 local other = Window:MakeTab({
     Name = "？？？",
     Icon = "rbxassetid://4483345998",
