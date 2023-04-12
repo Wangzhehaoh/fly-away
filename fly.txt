@@ -193,6 +193,13 @@ other:AddButton({
   	end
 })
 
+other:AddButton({
+	Name = "evade F F图标",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Evade/main.lua"))()
+  	end
+})
+
 local other = Window:MakeTab({
     Name = "监狱人生模式",
     Icon = "rbxassetid://4483345998",
