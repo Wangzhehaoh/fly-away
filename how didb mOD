@@ -19,6 +19,8 @@ Tab:AddParagraph("公告","就知道，许多，没有，只有二个")
 
 Tab:AddParagraph("提示","你在用免费脚本")
 
+Tab:AddParagraph("公告","更新了 已经添加失重输入")
+
 local Tab = Window:MakeTab({
 	Name = "evade",
 	Icon = "rbxassetid://7734068321",
