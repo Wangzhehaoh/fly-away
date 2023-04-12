@@ -515,6 +515,17 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
+	Name = "↓用电脑↓"
+})
+
+other:AddButton({
+	Name = "电脑",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  	end
+})
+
+local Section = other:AddSection({
 	Name = "↓开始↓"
 })
 
