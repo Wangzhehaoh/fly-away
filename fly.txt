@@ -456,7 +456,7 @@ other:AddButton({
 })
 
 local other = Window:MakeTab({
-    Name = "？？？",
+    Name = "飞行可带东西",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -468,23 +468,44 @@ local Section = other:AddSection({
 })
 
 other:AddButton({
-	Name = "飞行50",
+	Name = "飞行=50",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E9%A3%9E%E8%A1%8C%E6%A8%A1%E5%BC%8F"))()
   	end
 })
 
 other:AddButton({
-	Name = "飞行100",
+	Name = "飞行=100",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E9%A3%9E%E8%A1%8C%E6%A8%A1%E5%BC%8F2"))()
   	end
 })
 
 local other = Window:MakeTab({
-    Name = "？？？",
+    Name = "兵工厂",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "兵工厂3",
+	Callback = function()
+      	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
+  	end
+})
+
+other:AddButton({
+	Name = "兵工厂2",
+	Callback = function()
+      	loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+  	end
+})
+
+other:AddButton({
+	Name = "兵工厂",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+  	end
 })
 
 local other = Window:MakeTab({
@@ -536,8 +557,8 @@ local other = Window:MakeTab({
 
 other:AddParagraph("免费脚本","脚本EF 测试版")
 
-other:AddParagraph("加入群","814644380")
+other:AddParagraph("提示","这些可以正常")
 
-other:AddParagraph("这个群里面","人太少了")
+other:AddParagraph("测试版","有些，不厉害脚本")
 
 OrionLib:Init()
