@@ -25,6 +25,10 @@ Tab:AddParagraph("公告","更新了 已经添加字体")
 
 Tab:AddParagraph("公告","更新了 已经崩溃")
 
+Tab:AddParagraph("公告","更新了 已经添加光影和evade3")
+
+Tab:AddParagraph("公告","更新了 崩溃被恢复了")
+
 local Tab = Window:MakeTab({
 	Name = "evade",
 	Icon = "rbxassetid://7734068321",
