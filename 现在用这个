@@ -1,0 +1,737 @@
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Window = OrionLib:MakeWindow({Name = "脚本中心EF", HidePremium = false, SaveConfig = false, IntroText = "脚EF："..identifyexecutor(), ConfigFolder = "脚本中心EF"})
+
+OrionLib:MakeNotification({
+	Name = "脚本中心EF",
+	Content = "可以这里是EF",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+
+local Tab = Window:MakeTab({
+	Name = "公告",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("王者号出这些","欢迎用脚本中心EF")
+
+Tab:AddParagraph("提示","现在你用免费脚本")
+
+Tab:AddParagraph("提示","已经完成修复了")
+
+local Section = Tab:AddSection({
+	Name = "我已经知道了"
+})
+
+Tab:AddParagraph("提示","加载，完整")
+
+local Section = Tab:AddSection({
+	Name = "这些话，可以些许多添加"
+})
+
+local player = Window:MakeTab({
+	Name = "玩家",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = player:AddSection({
+	Name = "自己"
+})
+
+player:AddTextbox({
+	Name = "移动输入",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end
+})
+
+player:AddTextbox({
+	Name = "跳跃输入",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end
+})
+
+player:AddTextbox({
+	Name = "重力设置",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Workspace.Gravity = Value
+	end
+})
+
+player:AddToggle({
+	Name = "普通穿墙，可坐",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    Noclip = true
+		    Stepped = game.RunService.Stepped:Connect(function()
+			    if Noclip == true then
+				    for a, b in pairs(game.Workspace:GetChildren()) do
+                        if b.Name == game.Players.LocalPlayer.Name then
+                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+                                if v:IsA("BasePart") then
+                                    v.CanCollide = false
+                                end
+                            end
+                        end
+                    end
+			    else
+				    Stepped:Disconnect()
+			    end
+		    end)
+	    else
+		    Noclip = false
+	    end
+	end
+})
+
+player:AddButton({
+	Name = "飞行脚本可隐藏",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/how%20are"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "其他",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "其他，有点厉害"
+})
+
+other:AddButton({
+	Name = "跟踪玩家",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
+  	end
+})
+
+other:AddToggle({
+	Name = "普通夜视",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+		else
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+		end
+	end
+})
+
+local other = Window:MakeTab({
+    Name = "其他模式",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "现在是些能用"
+})
+
+other:AddButton({
+	Name = "阿尔宙斯",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+  	end
+})
+
+other:AddButton({
+	Name = "飞行1V英文",
+	Callback = function()
+      	loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
+  	end
+})
+
+other:AddButton({
+	Name = "转起来",
+	Callback = function()
+      	loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+  	end
+})
+
+other:AddButton({
+	Name = "关于电脑提示",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "evade EF",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "evade2",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
+  	end
+})
+
+other:AddButton({
+	Name = "evade",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/evade"))()
+  	end
+})
+
+other:AddButton({
+	Name = "evade F F图标",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Evade/main.lua"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "监狱人生模式",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "监狱人生",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/Gae7YC84"))();
+  	end
+})
+
+other:AddButton({
+	Name = "监狱人生2 1.3V",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "蜂群",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "蜂群",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/BSS%20FREE"))()
+  	end
+})
+
+other:AddButton({
+	Name = "蜂群2",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/bsstrainer.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "蜂群3",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Stebulous/scripts/main/open-source/beeswarm%20v1.2.lua", true))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "DOORS",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "DOORSMS",
+	Callback = function()
+      	loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
+  	end
+})
+
+other:AddButton({
+	Name = "DOORS十架字 这是假的",
+	Callback = function()
+      	loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
+  	end
+})
+
+other:AddButton({
+	Name = "DOORS2",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+  	end
+})
+
+other:AddButton({
+	Name = "DOORS3",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "起床战争",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "如果用这个"
+})
+
+other:AddButton({
+	Name = "用电脑",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  	end
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "sh 用起床脚本",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "自己是否不动",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "1",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E8%A7%82%E7%9C%8B%E7%8E%A9%E5%AE%B6"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "造船寻宝",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "这自动刷金币",
+	Callback = function()
+      	loadstring(game:HttpGet(('https://raw.githubusercontent.com/urmomjklol69/GoldFarmBabft/main/GoldFarm.lua'),true))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "MOD菜单",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "1",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/MOD%20%E8%8F%9C%E5%8D%95"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "自然灾害",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "自然灾害",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/xiao122231/xiao122231/main/Stands%20Awakening"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "光影",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓选择↓"
+})
+
+other:AddButton({
+	Name = "光影高",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%85%89%E5%BD%B1"))()
+  	end
+})
+
+other:AddButton({
+	Name = "光影低",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%85%89%E5%BD%B12"))()
+  	end
+})
+
+other:AddButton({
+	Name = "光影4V",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+--functions and shit
+getgenv().money = true
+getgenv().revivedie = true
+getgenv().autowistle = true
+getgenv().autochat = true
+getgenv().AutoDrink = true
+getgenv().NoCameraShake = true
+getgenv().Settings = {
+    moneyfarm = false,
+    afkfarm = false,
+    NoCameraShake = false,
+    Speed = 1450,
+    Jump = 3,
+    reviveTime = 3,
+}
+
+local FindAI = function()
+    for _,v in pairs(WorkspacePlayers:GetChildren()) do
+        if not Players:FindFirstChild(v.Name) then
+            return v
+        end
+    end
+end
+
+local GetDownedPlr = function()
+    for i,v in pairs(WorkspacePlayers:GetChildren()) do
+        if v:GetAttribute("Downed") then
+            return v
+        end
+    end
+end
+
+local revive = function()
+    local downedplr = GetDownedPlr()
+    if downedplr ~= nil and downedplr:FindFirstChild('HumanoidRootPart') then
+        task.spawn(function()
+            while task.wait() do
+                if localplayer.Character then
+                    workspace.Game.Settings:SetAttribute("ReviveTime", 2.2)
+                    localplayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(downedplr:FindFirstChild('HumanoidRootPart').Position.X, downedplr:FindFirstChild('HumanoidRootPart').Position.Y + 3, downedplr:FindFirstChild('HumanoidRootPart').Position.Z)
+                    task.wait()
+                    game:GetService("ReplicatedStorage").Events.Revive.RevivePlayer:FireServer(tostring(downedplr), false)
+                    task.wait(4.5)
+                    game:GetService("ReplicatedStorage").Events.Revive.RevivePlayer:FireServer(tostring(downedplr), true)
+                    game:GetService("ReplicatedStorage").Events.Revive.RevivePlayer:FireServer(tostring(downedplr), true)
+                    game:GetService("ReplicatedStorage").Events.Revive.RevivePlayer:FireServer(tostring(downedplr), true)
+                    break
+                end
+            end
+        end)
+    end
+end
+
+task.spawn(function()
+    while task.wait() do
+        if Settings.AutoRespawn then
+             if localplayer.Character and localplayer.Character:GetAttribute("Downed") then
+                game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
+             end
+        end
+
+        if Settings.NoCameraShake then
+            localplayer.PlayerScripts.CameraShake.Value = CFrame.new(0,0,0) * CFrame.new(0,0,0)
+        end
+        if Settings.moneyfarm then
+            if localplayer.Character and localplayer.Character:GetAttribute("Downed") then
+                game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
+                task.wait(3)
+            else
+                revive()
+                task.wait(1)
+            end
+        end
+        if Settings.moneyfarm == false and Settings.afkfarm and localplayer.Character:FindFirstChild('HumanoidRootPart') ~= nil then
+            localplayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(6007, 7005, 8005)
+        end
+    end
+end)
+
+function camerashake()
+    while NoCameraShake == true do task.wait()
+        localplayer.PlayerScripts.CameraShake.Value = CFrame.new(0,0,0) * CFrame.new(0,0,0)
+    end
+end
+
+function autodrink()
+	while AutoDrink == true do
+		local ohString1 = "Cola"
+		game:GetService("ReplicatedStorage").Events.UseUsable:FireServer(ohString1)
+		wait(6)
+	end
+end
+
+function SpamChat()
+    while autochat == true do
+        local ohString1 = "自来脚本发消息"
+        local ohString2 = "All"
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString1, ohString2)
+        wait(1)
+    end
+end
+
+function autowistlefunction()
+    while autowistle == true do
+        local ohString1 = "Whistle"
+        local ohBoolean2 = true
+        game:GetService("Players").LocalPlayer.PlayerScripts.Events.KeybindUsed:Fire(ohString1, ohBoolean2)
+        game:GetService("ReplicatedStorage").Events.Whistle:FireServer()
+        wait(5)
+    end
+end
+
+function god()
+    while revivedie == true do
+        game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
+        wait()
+    end
+end
+            
+function dofullbright()
+    Light.Ambient = Color3.new(1, 1, 1)
+    Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+    Light.ColorShift_Top = Color3.new(1, 1, 1)
+    game.Lighting.FogEnd = 100000
+    game.Lighting.FogStart = 0
+    game.Lighting.ClockTime = 14
+    game.Lighting.Brightness = 2
+    game.Lighting.GlobalShadows = false
+end
+
+function freemoney()
+    while money == true do
+        local ohString1 = "这用花了？ <font color=\"rgb(100,255,100)\">(不是免费)</font>"
+        game:GetService("Players").LocalPlayer.PlayerGui.HUD.Messages.Use:Fire(ohString1)
+        wait(5)
+    end
+end
+
+OrionLib:MakeNotification({
+    Name = "脚本evade",
+    Content = "用脚本是这个意思",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+    
+
+function RandomEmote()
+    OrionLib:MakeNotification({
+        Name = "开始表情",
+        Content = "按下Z？别按下",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+--tabs
+
+local MainTab= Window:MakeTab({
+	Name = "主要",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local MiscTab= Window:MakeTab({
+	Name = "玩家",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local ESPTab = Window:MakeTab({
+    Name =  "透视",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local TeleportTab= Window:MakeTab({
+    Name = "传送",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local FunTab= Window:MakeTab({
+    Name = "乐趣",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local CreditsTab = Window:MakeTab({
+	Name = "信用",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = true
+})
+
+local MiscTab3 = MainTab:AddSection({
+	Name = "自己玩家"
+})
+
+MainTab:AddToggle({
+	Name = "有人被倒了，可传送救",
+	Default = false,
+	Callback = function(Value)
+		Settings.moneyfarm = Value
+	end    
+})
+
+MainTab:AddToggle({
+	Name = "你传送安全地方",
+	Default = false,
+	Callback = function(Value)
+        Settings.afkfarm = Value
+	end    
+})
+
+--sliders
+local MainTab3 = MainTab:AddSection({
+	Name = "修改玩家"
+})
+
+local Misctab5 = MiscTab:AddSection({
+	Name = "用无法"
+})
+
+local TargetWalkspeed
+MainTab:AddSlider({
+	Name = "速度",
+	Min = 0,
+	Max = 250,
+	Default = 0,
+	Color = Color3.fromRGB(128, 128, 128),
+	Increment = 1,
+	ValueName = "无法修改速度",
+	Callback = function(Value)
+		TargetWalkspeed = Value
+	end   
+})
+
+MainTab:AddSlider({
+    Name = "腰角高",
+    Min = -1.40,
+    Max = 100,
+    Default = -1.40,
+    Color = Color3.fromRGB(128, 128, 128),
+    Increment = 1,
+	ValueName = "无法修改腰角高",
+    Callback = function(HipValue)
+        game.Players.LocalPlayer.Character.Humanoid.HipHeight = HipValue
+    end    
+})
+
+MainTab:AddSlider({
+	Name = "视角大小",
+	Min = 1,
+	Max = 120,
+	Default = 70,
+	Color = Color3.fromRGB(128, 128, 128),
+	Increment = 1,
+	ValueName = "无法修改视角",
+	Callback = function(Fov)
+        local ohString1 = "FieldOfView"
+        local ohNumber2 = Fov
+        game:GetService("ReplicatedStorage").Events.UpdateSetting:FireServer(ohString1, ohNumber2)
+    end
+})
+
+local other = Window:MakeTab({
+    Name = "回去脚本EF",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "这应该是用回去"
+})
+
+other:AddButton({
+	Name = "回去脚本EF",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/how%20didb%20mOD"))()
+  	end
+})
+
+local Section = other:AddSection({
+	Name = "欢迎"
+})
+
+OrionLib:Init()
