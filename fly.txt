@@ -306,6 +306,19 @@ other:AddButton({
 })
 
 local other = Window:MakeTab({
+    Name = "自然灾害",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "自然灾害",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/xiao122231/xiao122231/main/Stands%20Awakening"))()
+  	end
+})
+
+local other = Window:MakeTab({
     Name = "回去脚本EF",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
