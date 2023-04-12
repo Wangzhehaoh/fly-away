@@ -9,12 +9,12 @@ function KeyCorrect() --useless line i think you can remove it
 end
 
 function KeyFalse()
-  game:GetService("Players").LocalPlayer:Kick("Incorrect Key | .gg/A9Qbj9a37M") --useless line i think you can remove it
+  game:GetService("Players").LocalPlayer:Kick("Incorrect Key | .gg/daa88988549c64e5") --useless line i think you can remove it
 end
 
 local Key = Window:MakeTab({
   Name = "密钥",
-  Icon = "rbxassetid://8610328800",
+  Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
 
