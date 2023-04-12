@@ -98,10 +98,14 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
 other:AddButton({
 	Name = "忍者传奇1",
 	Callback = function()
-      	loadstring(game:HttpGet("https://pastebin.com/raw/2UjrXwTV")()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/2UjrXwTV"))()
   	end
 })
 
