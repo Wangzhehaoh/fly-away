@@ -1,7 +1,7 @@
-local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/DrM0eLkh')))()
-local Window = OrionLib:MakeWindow({Name = "脚本中心EF", HidePremium = false, SaveConfig = true,IntroText = "验证卡密", ConfigFolder = "验证卡密"})
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+local Window = OrionLib:MakeWindow({Name = "这查一下卡密", HidePremium = false, SaveConfig = false, IntroText = "卡密", ConfigFolder = "卡密"})
 
-getgenv().Key = "daa88988549c64e5" --无用的线我认为你可以删除它
+getgenv().Key = "GETFGE" --无用的线我认为你可以删除它
 getgenv().KeyInput = "string"
 
 function KeyCorrect() --useless line i think you can remove it
@@ -19,7 +19,7 @@ local Key = Window:MakeTab({
 })
 
 local Section = Key:AddSection({
-  Name = "要卡密"
+  Name = "你终于用脚本中心2，已经启动了第二个验证卡密"
 })
 
 Key:AddTextbox({
@@ -43,28 +43,28 @@ Key:AddButton({
     if table.find(keys, tostring(getgenv().KeyInput)) then
       OrionLib:Destroy()
       game.StarterGui:SetCore("SendNotification", {
-        Title = "查卡密完成";
+        Title = "查一下";
         Text = "卡密验证成功";
         Icon = nil;
         Duration = 5
       })
 game.StarterGui:SetCore("SendNotification", {
-        Title = "加载";
-        Text = "正在已经出现";
+        Title = "用脚本中心";
+        Text = "正在动态解析白名单";
         Icon = nil;
         Duration = 5
       })
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/how%20didb%20mOD"))()
       game.StarterGui:SetCore("SendNotification", {
-        Title = "加载好了";
-        Text = "这些脚本EF";
+        Title = "加载成功";
+        Text = "免费脚本";
         Icon = nil;
         Duration = 7
       })
       else
       game.StarterGui:SetCore("SendNotification", {
-        Title = "查卡密完成";
-        Text = "抱歉，卡密错误";
+        Title = "查一下";
+        Text = "抱歉，卡密错误 lol这卡密是崩溃";
         Icon = nil;
         Duration = 5
         })
