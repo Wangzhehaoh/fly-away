@@ -25,6 +25,10 @@ local player = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Section = player:AddSection({
+	Name = "自己"
+})
+
 player:AddTextbox({
 	Name = "移动输入",
 	Default = "",
@@ -92,6 +96,10 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Section = other:AddSection({
+	Name = "其他，有点厉害"
+})
+
 other:AddButton({
 	Name = "跟踪玩家",
 	Callback = function()
@@ -115,6 +123,10 @@ local other = Window:MakeTab({
     Name = "其他模式",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "现在是些能用"
 })
 
 other:AddButton({
@@ -151,6 +163,10 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
 other:AddButton({
 	Name = "evade2",
 	Callback = function()
@@ -171,6 +187,10 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
 other:AddButton({
 	Name = "监狱人生",
 	Callback = function()
@@ -189,6 +209,10 @@ local other = Window:MakeTab({
     Name = "蜂群",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
 })
 
 other:AddButton({
@@ -216,6 +240,10 @@ local other = Window:MakeTab({
     Name = "DOORS",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
 })
 
 other:AddButton({
@@ -252,11 +280,19 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Section = other:AddSection({
+	Name = "如果用这个"
+})
+
 other:AddButton({
 	Name = "用电脑",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
   	end
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
 })
 
 other:AddButton({
@@ -272,6 +308,10 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
 other:AddButton({
 	Name = "1",
 	Callback = function()
@@ -283,6 +323,10 @@ local other = Window:MakeTab({
     Name = "造船寻宝",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
 })
 
 other:AddButton({
@@ -298,6 +342,10 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
 other:AddButton({
 	Name = "1",
 	Callback = function()
@@ -311,6 +359,10 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
 other:AddButton({
 	Name = "自然灾害",
 	Callback = function()
@@ -322,6 +374,10 @@ local other = Window:MakeTab({
     Name = "回去脚本EF",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "这应该是用回去"
 })
 
 other:AddButton({
