@@ -544,9 +544,16 @@ other:AddButton({
 })
 
 local other = Window:MakeTab({
-    Name = "？？？",
+    Name = "变异微笑",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "变异微笑",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/InfectiousSmile.lua", true))()
+  	end
 })
 
 local other = Window:MakeTab({
@@ -579,7 +586,7 @@ local Section = other:AddSection({
 })
 
 local other = Window:MakeTab({
-    Name = "模式",
+    Name = "公告提示",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
