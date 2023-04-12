@@ -390,6 +390,37 @@ other:AddButton({
 })
 
 local other = Window:MakeTab({
+    Name = "光影",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓选择↓"
+})
+
+other:AddButton({
+	Name = "光影高",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%85%89%E5%BD%B1"))()
+  	end
+})
+
+other:AddButton({
+	Name = "光影低",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%85%89%E5%BD%B12"))()
+  	end
+})
+
+other:AddButton({
+	Name = "光影4V",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+  	end
+})
+
+local other = Window:MakeTab({
     Name = "回去脚本EF",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
@@ -404,6 +435,10 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/how%20didb%20mOD"))()
   	end
+})
+
+local Section = other:AddSection({
+	Name = "欢迎"
 })
 
 OrionLib:Init()
