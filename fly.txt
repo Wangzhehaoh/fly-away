@@ -43,6 +43,15 @@ player:AddTextbox({
 	end
 })
 
+player:AddTextbox({
+	Name = "重力设置",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Workspace.Gravity = Value
+	end
+})
+
 player:AddToggle({
 	Name = "普通穿墙，可坐",
 	Default = false,
