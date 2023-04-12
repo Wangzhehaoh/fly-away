@@ -19,16 +19,16 @@ Tab:AddParagraph("王者号出这些","欢迎用脚本中心EF")
 
 Tab:AddParagraph("提示","现在你用免费脚本")
 
-Tab:AddParagraph("提示","真的崩溃")
+Tab:AddParagraph("提示","已经完成修复了")
 
 local Section = Tab:AddSection({
-	Name = "等一下 修一下 我在修复了"
+	Name = "我已经知道了"
 })
 
-Tab:AddParagraph("提示","崩溃了，这些加载失败")
+Tab:AddParagraph("提示","加载，完整")
 
-local Section = other:AddSection({
-	Name = "↓开始↓"
+local Section = Tab:AddSection({
+	Name = "这些话，可以些许多添加"
 })
 
 local player = Window:MakeTab({
@@ -418,6 +418,36 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
   	end
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 local other = Window:MakeTab({
