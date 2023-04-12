@@ -1,0 +1,29 @@
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Window = OrionLib:MakeWindow({Name = "脚本中心2", HidePremium = false, SaveConfig = false, IntroText = "脚本EF2："..identifyexecutor(), ConfigFolder = "进去"})
+
+OrionLib:MakeNotification({
+	Name = "脚本中心2",
+	Content = "开始用",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "？？？",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/2UjrXwTV")()
+  	end
+})
+
+OrionLib:Init()
