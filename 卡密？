@@ -50,7 +50,7 @@ Key:AddButton({
       })
 game.StarterGui:SetCore("SendNotification", {
         Title = "用脚本中心";
-        Text = "正在动态解析白名单";
+        Text = "正在加载，我在工作室有点忙";
         Icon = nil;
         Duration = 5
       })
