@@ -1,10 +1,10 @@
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 
-local Window = OrionLib:MakeWindow({Name = "欢迎来到模式", HidePremium = false, SaveConfig = false, IntroText = "可能会的："..identifyexecutor(), ConfigFolder = "欢迎来到模式"})
+local Window = OrionLib:MakeWindow({Name = "脚本EF", HidePremium = false, SaveConfig = false, IntroText = "你的注入器是："..identifyexecutor(), ConfigFolder = "脚本EF2"})
 
 OrionLib:MakeNotification({
-	Name = "安全期了",
-	Content = "可以出现，在脚本服务器",
+	Name = "脚本EF",
+	Content = "加载出来",
 	Image = "rbxassetid://4483345998",
 	Time = 6
 })
@@ -93,17 +93,13 @@ other:AddToggle({
 })
 
 local other = Window:MakeTab({
-    Name = "？？？",
+    Name = "忍者传奇",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
-local Section = other:AddSection({
-	Name = "↓开始↓"
-})
-
 other:AddButton({
-	Name = "？？？",
+	Name = "忍者传奇1",
 	Callback = function()
       	loadstring(game:HttpGet("https://pastebin.com/raw/2UjrXwTV")()
   	end
