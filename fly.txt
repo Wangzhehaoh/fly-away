@@ -509,9 +509,27 @@ other:AddButton({
 })
 
 local other = Window:MakeTab({
-    Name = "？？？",
+    Name = "力量传奇",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "力量传奇修改",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/jynzl/main/main/Musclas%20Legenos.lua'))()
+  	end
+})
+
+other:AddButton({
+	Name = "力量传奇",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/littlegui/main/MuscleLegends"))()
+  	end
 })
 
 local other = Window:MakeTab({
