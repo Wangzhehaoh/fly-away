@@ -54,7 +54,7 @@ game.StarterGui:SetCore("SendNotification", {
         Icon = nil;
         Duration = 5
       })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sdrtfhtyfgbfhfjht/81dndkcjdswdsd/main/%E5%8A%A0%E8%BD%BD%E6%B8%B8%E6%88%8F.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E8%84%9A%E6%9C%AC%E4%B8%AD%E5%BF%83d7d5daa88e6f3b6a510988549c64e5de"))()
       game.StarterGui:SetCore("SendNotification", {
         Title = "进去";
         Text = "解析成功";
