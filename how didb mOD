@@ -31,6 +31,10 @@ Tab:AddParagraph("公告","更新了 崩溃被恢复了")
 
 Tab:AddParagraph("公告","更新了 已经添加脚本中心2")
 
+Tab:AddParagraph("公告","更新了 已经添加二个种")
+
+Tab:AddParagraph("公告","王者号用力量传奇，我在测试一下")
+
 local Tab = Window:MakeTab({
 	Name = "evade",
 	Icon = "rbxassetid://7734068321",
