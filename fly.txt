@@ -141,11 +141,21 @@ local Section = other:AddSection({
 	Name = "现在是些能用"
 })
 
+other:AddParagraph("提示","有一个阿尔宙斯")
+
+local Section = other:AddSection({
+	Name = "↓开始↓测试"
+})
+
 other:AddButton({
 	Name = "阿尔宙斯",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
   	end
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
 })
 
 other:AddButton({
@@ -193,6 +203,12 @@ other:AddButton({
   	end
 })
 
+other:AddParagraph("这是","F evade")
+
+local Section = other:AddSection({
+	Name = "↓开始↓测试"
+})
+
 other:AddButton({
 	Name = "evade F F图标",
 	Callback = function()
@@ -215,6 +231,10 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("https://pastebin.com/raw/Gae7YC84"))();
   	end
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓用旧版"
 })
 
 other:AddButton({
@@ -264,6 +284,8 @@ local other = Window:MakeTab({
 local Section = other:AddSection({
 	Name = "↓开始↓"
 })
+
+other:AddParagraph("DOORS","四种有什么好用？")
 
 other:AddButton({
 	Name = "DOORSMS",
@@ -326,6 +348,10 @@ local other = Window:MakeTab({
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
+
+other:AddParagraph("提示","是否无敌")
+
+other:AddParagraph("无敌","时候你不动后，是不是会死了")
 
 local Section = other:AddSection({
 	Name = "↓开始↓"
@@ -399,6 +425,8 @@ local Section = other:AddSection({
 	Name = "↓选择↓"
 })
 
+other:AddParagraph("提示","光影，有不同")
+
 other:AddButton({
 	Name = "光影高",
 	Callback = function()
@@ -420,10 +448,37 @@ other:AddButton({
   	end
 })
 
+other:AddButton({
+	Name = "光影666",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%85%89%E5%BD%B156665"))()
+  	end
+})
+
 local other = Window:MakeTab({
     Name = "？？？",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+other:AddParagraph("提示","这不是飞行哦")
+
+local Section = other:AddSection({
+	Name = "↓选择↓"
+})
+
+other:AddButton({
+	Name = "飞行50",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E9%A3%9E%E8%A1%8C%E6%A8%A1%E5%BC%8F"))()
+  	end
+})
+
+other:AddButton({
+	Name = "飞行100",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E9%A3%9E%E8%A1%8C%E6%A8%A1%E5%BC%8F2"))()
+  	end
 })
 
 local other = Window:MakeTab({
@@ -467,8 +522,22 @@ other:AddButton({
   	end
 })
 
+other:AddParagraph("提示","这种可以回去")
+
 local Section = other:AddSection({
 	Name = "欢迎"
 })
+
+local other = Window:MakeTab({
+    Name = "模式",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddParagraph("免费脚本","脚本EF 测试版")
+
+other:AddParagraph("加入群","814644380")
+
+other:AddParagraph("这个群里面","人太少了")
 
 OrionLib:Init()
