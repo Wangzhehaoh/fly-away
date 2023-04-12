@@ -21,6 +21,10 @@ Tab:AddParagraph("提示","你在用免费脚本")
 
 Tab:AddParagraph("公告","更新了 已经添加失重输入")
 
+Tab:AddParagraph("公告","更新了 已经添加字体")
+
+Tab:AddParagraph("公告","更新了 已经崩溃")
+
 local Tab = Window:MakeTab({
 	Name = "evade",
 	Icon = "rbxassetid://7734068321",
