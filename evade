@@ -19,7 +19,7 @@ OrionLib:MakeNotification({
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
+wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示2",
     Content = "要翻译，全是中文",
@@ -27,7 +27,7 @@ OrionLib:MakeNotification({
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
+wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示3",
     Content = "用evade？等一会儿",
@@ -35,7 +35,7 @@ OrionLib:MakeNotification({
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
+wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示4",
     Content = "正常，用中文",
@@ -43,7 +43,7 @@ OrionLib:MakeNotification({
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
+wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示5",
     Content = "中文有些，没有完整翻译",
@@ -51,7 +51,7 @@ OrionLib:MakeNotification({
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
+wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示6",
     Content = "不好用，这是真的是翻译",
@@ -59,7 +59,7 @@ OrionLib:MakeNotification({
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
+wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示7",
     Content = "不用英语 直接来",
@@ -67,7 +67,7 @@ OrionLib:MakeNotification({
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
+wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示8",
     Content = "开始，这个下载",
@@ -75,7 +75,7 @@ OrionLib:MakeNotification({
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
+wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示9",
     Content = "加载好了 开始了",
@@ -83,7 +83,7 @@ OrionLib:MakeNotification({
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
+wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示10",
     Content = "好了 别忘了哦",
@@ -91,7 +91,7 @@ OrionLib:MakeNotification({
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
+wait(0.1)
 OrionLib:MakeNotification({
     Name = "准备开挂",
     Content = "你一个，就开始",
@@ -99,7 +99,7 @@ OrionLib:MakeNotification({
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
+wait(5)
 OrionLib:MakeNotification({
     Name = "欢迎evade",
     Content = " 可以用这个脚本 有点不厉害 是这个脚本 有些中文没完整",
