@@ -631,7 +631,7 @@ local Section = other:AddSection({
 })
 
 local other = Window:MakeTab({
-    Name = "？？？",
+    Name = "俄亥俄州",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -640,7 +640,14 @@ local Section = other:AddSection({
 	Name = "↓开始↓"
 })
 
-other:AddParagraph("提示","添加什么")
+other:AddParagraph("提示","出现放在公告")
+
+other:AddButton({
+	Name = "俄亥俄州",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
+  	end
+})
 
 local other = Window:MakeTab({
     Name = "？？？",
