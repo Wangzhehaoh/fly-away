@@ -41,6 +41,12 @@ Tab:AddParagraph("提示","脚本中心2 卡密是d9d4daa08e7f6b7a875695789c78e9
 
 Tab:AddParagraph("公告","更新了 已经添加极速传奇脚本")
 
+Tab:AddParagraph("公告","更新了，这个三种想什么就添加")
+
+Tab:AddParagraph("公告","更新了，已经添加脚本EF2")
+
+Tab:AddParagraph("公告","加载完整")
+
 local Tab = Window:MakeTab({
 	Name = "evade",
 	Icon = "rbxassetid://7734068321",
