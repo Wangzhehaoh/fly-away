@@ -1,13 +1,21 @@
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 
-local Window = OrionLib:MakeWindow({Name = "脚本EF", HidePremium = false, SaveConfig = false, IntroText = "你的注入器是："..identifyexecutor(), ConfigFolder = "脚本EF2"})
+local Window = OrionLib:MakeWindow({Name = "脚本EF2", HidePremium = false, SaveConfig = false, IntroText = "你的注入器是："..identifyexecutor(), ConfigFolder = "脚本EF2"})
 
 OrionLib:MakeNotification({
-	Name = "脚本EF",
+	Name = "脚本EF2",
 	Content = "加载出来",
 	Image = "rbxassetid://4483345998",
 	Time = 6
 })
+
+local other = Window:MakeTab({
+    Name = "公告",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddParagraph("提示","有点少了，但是我工作还是正常")
 
 local player = Window:MakeTab({
 	Name = "注入器玩家",
