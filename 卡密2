@@ -1,0 +1,73 @@
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+local Window = OrionLib:MakeWindow({Name = "这查一下卡密", HidePremium = false, SaveConfig = false, IntroText = "卡密", ConfigFolder = "卡密"})
+
+getgenv().Key = "GETFGE" --无用的线我认为你可以删除它
+getgenv().KeyInput = "string"
+
+function KeyCorrect() --useless line i think you can remove it
+  --script
+end
+
+function KeyFalse()
+  game:GetService("Players").LocalPlayer:Kick("Incorrect Key | .gg/A9Qbj9a37M") --useless line i think you can remove it
+end
+
+local Key = Window:MakeTab({
+  Name = "密钥",
+  Icon = "rbxassetid://8610328800",
+  PremiumOnly = false
+})
+
+local Section = Key:AddSection({
+  Name = "已经完成第一个卡密，已经启动了验证卡密"
+})
+
+Key:AddTextbox({
+  Name = "密钥",
+  Default = "",
+  TextDisappear = true,
+  Callback = function(Value)
+    getgenv().KeyInput = Value
+  end
+})
+
+local keys = {
+  "imduck",
+  "1988",
+
+}
+
+Key:AddButton({
+  Name = "检查密钥",
+  Callback = function()
+    if table.find(keys, tostring(getgenv().KeyInput)) then
+      OrionLib:Destroy()
+      game.StarterGui:SetCore("SendNotification", {
+        Title = "查一下";
+        Text = "卡密验证成功";
+        Icon = nil;
+        Duration = 5
+      })
+game.StarterGui:SetCore("SendNotification", {
+        Title = "用脚本中心";
+        Text = "正在加载，我在工作室有点忙";
+        Icon = nil;
+        Duration = 5
+      })
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/now%20that%20the"))()
+      game.StarterGui:SetCore("SendNotification", {
+        Title = "加载成功";
+        Text = "免费脚本";
+        Icon = nil;
+        Duration = 7
+      })
+      else
+      game.StarterGui:SetCore("SendNotification", {
+        Title = "查一下";
+        Text = "抱歉，卡密错误";
+        Icon = nil;
+        Duration = 5
+        })
+    end
+  end
+})
