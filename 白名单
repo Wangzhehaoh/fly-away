@@ -1,0 +1,104 @@
+local currentver = "0.0.5"
+local gui_data = nil
+local gui_data_s, gui_data_e = nil
+task.spawn(function()
+  gui_data_s, gui_data_e = pcall(function()
+    gui_data = game:HttpGet(("https://pastebin.com/raw/xq3bLLyG"), true)
+    gui_data = game:GetService("HttpService"):JSONDecode(gui_data)
+  end)
+  if gui_data_e then
+    game.StarterGui:SetCore("SendNotification", {
+      Title = "脚本EF 公告";
+      Text = "抱歉，你无法用“脚本EF”";
+      Icon = nil;
+      Duration = 5
+    })
+  end
+  if gui_data ~= nil and gui_data_s then
+
+    if currentver ~= gui_data.ver or gui_data.ver ~= currentver then
+      print("Outdated version loaded")
+      game.StarterGui:SetCore("SendNotification", {
+        Title = "脚本EF";
+        Text = "你未加入白名单";
+        Icon = nil;
+        Duration = 5
+      })
+
+     else
+
+      _G.WS001 = true
+    end
+  end
+end)
+
+if _G.WS001 == true then
+  game.StarterGui:SetCore("SendNotification", {
+    Title = "完成";
+    Text = "加入“脚本”";
+    Icon = nil;
+    Duration = 5
+  })
+  wait(3)
+  game.StarterGui:SetCore("SendNotification", {
+    Title = "欢迎";
+    Text = "如果有第二个卡密";
+    Icon = nil;
+    Duration = 5
+  })
+  local a=tostring(game.Players.LocalPlayer.Character);
+  _G.Weishan001=false
+  if a=="xiaobeng_GH"then
+   _G.Weishan001=true
+   elseif a=="AAAAAA"then
+  end
+end
+if _G.Weishan001 == true then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/sdrtfhtyfgbfhfjht/81dndkcjdswdsd/main/%E5%8A%A0%E8%BD%BD%E6%B8%B8%E6%88%8F.txt"))()
+  game.StarterGui:SetCore("SendNotification", {
+    Title = "白名单";
+    Text = "玩家是真的";
+    Icon = nil;
+    Duration = 5
+  })
+ else
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = "白名单";
+    Text = "错误，你未知客户！\n"..a;
+    Icon = nil;
+    Duration = 5
+  })
+loadstring(game:HttpGet('https://pastebin.com/raw/qhn3bdkT'))()
+end
+wait(3)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "但是要不要",
+    Text = "脚本EF",
+    Icon = "rbxassetid://1234567890",
+    Duration = 5,
+    Button1 = "打开",
+    Button2 = "拒绝",
+    Callback = function(action)
+        if action == "Button1" then
+            print("使用按钮被点击了")
+            if game.PlaceId == 286090429 then
+    loadstring(game:HttpGet('https://pastebin.com/raw/EqN90wXZ'))()
+elseif game.PlaceId == 6839171747 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/lyyaini/lon/main/kwosijw'))()
+elseif game.PlaceId == 6516141723 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/lyyaini/lon/main/kwosijw'))()
+else
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/lyyaini/lon/main/imli'))()
+end
+        elseif action == "Button2" then
+            print("取消按钮被点击了")
+            game.StarterGui:SetCore("SendNotification", {
+		Title = "这是";
+		Text = "欢迎";
+		Icon = nil;
+		Duration = 5
+	})
+        end
+    end
+})
