@@ -31,6 +31,8 @@ local Section = Tab:AddSection({
 	Name = "这些话，可以些许多添加"
 })
 
+Tab:AddParagraph("公告","有三个，想什么就添加")
+
 local player = Window:MakeTab({
 	Name = "玩家",
 	Icon = "rbxassetid://4483345998",
@@ -603,6 +605,42 @@ local Section = other:AddSection({
 })
 
 local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddParagraph("提示","添加什么")
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddParagraph("提示","添加什么")
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddParagraph("提示","添加什么")
+
+local other = Window:MakeTab({
     Name = "公告提示",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
@@ -614,6 +652,6 @@ other:AddParagraph("提示","这些可以正常")
 
 other:AddParagraph("测试版","有些，不厉害脚本")
 
-other:AddParagraph("你的注入器是：","")
+other:AddParagraph("脚本EF是：垃圾","本来是测试版")
 
 OrionLib:Init()
