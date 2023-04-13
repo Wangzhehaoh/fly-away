@@ -557,9 +557,26 @@ other:AddButton({
 })
 
 local other = Window:MakeTab({
-    Name = "？？？",
+    Name = "极速传奇",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+other:AddParagraph("提示","脚本EF会丢失")
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+local Section = other:AddSection({
+	Name = "脚本EF自动离开"
+})
+
+other:AddButton({
+	Name = "极速传奇",
+	Callback = function()
+      	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\111\121\115\99\112\47\98\101\116\97\47\109\97\105\110\47\37\69\57\37\56\48\37\57\70\37\69\53\37\66\65\37\65\54\37\69\55\37\56\50\37\66\56\37\69\56\37\66\53\37\66\55\46\108\117\97"))()
+  	end
 })
 
 local other = Window:MakeTab({
