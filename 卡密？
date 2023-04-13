@@ -54,7 +54,7 @@ game.StarterGui:SetCore("SendNotification", {
         Icon = nil;
         Duration = 5
       })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/how%20didb%20mOD"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/now%20that%20the"))()
       game.StarterGui:SetCore("SendNotification", {
         Title = "加载成功";
         Text = "免费脚本";
