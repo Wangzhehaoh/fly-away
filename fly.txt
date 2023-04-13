@@ -613,7 +613,14 @@ local Section = other:AddSection({
 other:AddButton({
 	Name = "回去脚本EF",
 	Callback = function()
-      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/how%20didb%20mOD"))()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/now%20that%20the"))()
+  	end
+})
+
+other:AddButton({
+	Name = "脚本EF跳过卡密",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E8%84%9A%E6%9C%AC%E4%B8%AD%E5%BF%83d7d5daa88e6f3b6a510988549c64e5de" ))()
   	end
 })
 
