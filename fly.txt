@@ -345,6 +345,17 @@ other:AddButton({
   	end
 })
 
+local Section = other:AddSection({
+	Name = "↓开始↓+电脑"
+})
+
+other:AddButton({
+	Name = "起床战争不同(2)",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end
+})
+
 local other = Window:MakeTab({
     Name = "自己是否不动",
     Icon = "rbxassetid://4483345998",
@@ -489,6 +500,10 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
 other:AddButton({
 	Name = "兵工厂3",
 	Callback = function()
@@ -549,6 +564,10 @@ local other = Window:MakeTab({
     Name = "变异微笑",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
 })
 
 other:AddButton({
