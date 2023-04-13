@@ -614,4 +614,6 @@ other:AddParagraph("提示","这些可以正常")
 
 other:AddParagraph("测试版","有些，不厉害脚本")
 
+other:AddParagraph("你的注入器是：","")
+
 OrionLib:Init()
