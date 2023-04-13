@@ -15,90 +15,25 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Section = other:AddSection({
+	Name = "↓看↓"
+})
+
 other:AddParagraph("提示","有点少了，但是我工作还是正常")
 
-local player = Window:MakeTab({
-	Name = "注入器玩家",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
 
-player:AddTextbox({
-	Name = "移动输入",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end
-})
-
-player:AddTextbox({
-	Name = "跳跃输入",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-	end
-})
-
-player:AddToggle({
-	Name = "普通穿墙，可坐",
-	Default = false,
-	Callback = function(Value)
-		if Value then
-		    Noclip = true
-		    Stepped = game.RunService.Stepped:Connect(function()
-			    if Noclip == true then
-				    for a, b in pairs(game.Workspace:GetChildren()) do
-                        if b.Name == game.Players.LocalPlayer.Name then
-                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
-                                if v:IsA("BasePart") then
-                                    v.CanCollide = false
-                                end
-                            end
-                        end
-                    end
-			    else
-				    Stepped:Disconnect()
-			    end
-		    end)
-	    else
-		    Noclip = false
-	    end
-	end
-})
-
-player:AddButton({
-	Name = "飞行脚本可隐藏",
-	Callback = function()
-      	loadstring(game:HttpGet("https://pastebin.com/raw/U27yQRxS"))()
-  	end
-})
 
 local other = Window:MakeTab({
-    Name = "好玩其他",
+    Name = "脚本EF2",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
-other:AddButton({
-	Name = "跟踪玩家",
-	Callback = function()
-      	loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
-  	end
+local Section = other:AddSection({
+	Name = "↓看↓"
 })
 
-other:AddToggle({
-	Name = "普通夜视",
-	Default = false,
-	Callback = function(Value)
-		if Value then
-		    game.Lighting.Ambient = Color3.new(1, 1, 1)
-		else
-		    game.Lighting.Ambient = Color3.new(0, 0, 0)
-		end
-	end
-})
+other:AddParagraph("提示","也是一种测试")
 
 local other = Window:MakeTab({
     Name = "忍者传奇",
@@ -116,5 +51,30 @@ other:AddButton({
       	loadstring(game:HttpGet("https://pastebin.com/raw/2UjrXwTV"))()
   	end
 })
+
+local other = Window:MakeTab({
+    Name = "脚本EF2离开",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "1",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/fly.txt"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "公告",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddParagraph("🎉🎉🎉提示","欢迎来到这里“脚本中心2”🎈🎈🎈🎈🎈")
 
 OrionLib:Init()
