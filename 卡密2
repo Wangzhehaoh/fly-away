@@ -19,7 +19,7 @@ local Key = Window:MakeTab({
 })
 
 local Section = Key:AddSection({
-  Name = "已经完成第一个卡密，已经启动了验证卡密"
+  Name = "你完成第一个卡密，直接第二个验证卡密"
 })
 
 Key:AddTextbox({
@@ -33,7 +33,7 @@ Key:AddTextbox({
 
 local keys = {
   "imduck",
-  "1988",
+  "8967",
 
 }
 
