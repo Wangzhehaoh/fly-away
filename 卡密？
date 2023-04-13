@@ -19,7 +19,7 @@ local Key = Window:MakeTab({
 })
 
 local Section = Key:AddSection({
-  Name = "你终于用脚本中心2，已经启动了第二个验证卡密"
+  Name = "你终于用脚本EF，已经启动了验证卡密"
 })
 
 Key:AddTextbox({
