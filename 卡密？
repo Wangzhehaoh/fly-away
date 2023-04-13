@@ -1,6 +1,18 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 local Window = OrionLib:MakeWindow({Name = "这查一下卡密", HidePremium = false, SaveConfig = false, IntroText = "卡密", ConfigFolder = "卡密"})
 
+local other = Window:MakeTab({
+    Name = "加入群，才获取卡密",
+    Icon = "rbxassetid://8610328800",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddParagraph("提示","群是814644380")
+
 getgenv().Key = "GETFGE" --无用的线我认为你可以删除它
 getgenv().KeyInput = "string"
 
