@@ -15,6 +15,14 @@ other:AddParagraph("提示","第三个验证卡密")
 
 other:AddParagraph("提示","群是814644380")
 
+other:AddParagraph("提示","🎉🎉🎉卡密变成一整")
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddParagraph("开始","卡密崩溃时候")
+
 getgenv().Key = "GETFGE" --无用的线我认为你可以删除它
 getgenv().KeyInput = "string"
 
@@ -68,7 +76,7 @@ game.StarterGui:SetCore("SendNotification", {
         Icon = nil;
         Duration = 30
       })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%8D%A1%E5%AF%862"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/now%20that%20the"))()
       game.StarterGui:SetCore("SendNotification", {
         Title = "去第二个卡密";
         Text = "验证一下";
