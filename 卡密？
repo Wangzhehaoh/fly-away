@@ -15,10 +15,6 @@ other:AddParagraph("提示","第三个验证卡密")
 
 other:AddParagraph("提示","群是814644380")
 
-local Section = SB:AddSection({
-	Name = "↓开始↓"
-})
-
 getgenv().Key = "GETFGE" --无用的线我认为你可以删除它
 getgenv().KeyInput = "string"
 
