@@ -47,6 +47,12 @@ Tab:AddParagraph("公告","更新了，已经添加脚本EF2")
 
 Tab:AddParagraph("公告","加载完整")
 
+Tab:AddParagraph("提示","出现卡密 真崩溃")
+
+Tab:AddParagraph("公告","更新了 已经添加一个种")
+
+Tab:AddParagraph("公告","加载完整")
+
 local Tab = Window:MakeTab({
 	Name = "evade",
 	Icon = "rbxassetid://7734068321",
