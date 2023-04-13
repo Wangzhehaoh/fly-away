@@ -50,7 +50,7 @@ if _G.WS001 == true then
   _G.Weishan001=false
   if a=="xiaobeng_GH"then
    _G.Weishan001=true
-   elseif a=="AAAAAA"then
+   elseif a=="HOWDFsghf"then
   end
 end
 if _G.Weishan001 == true then
