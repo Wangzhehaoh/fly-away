@@ -64,7 +64,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/
       else
       game.StarterGui:SetCore("SendNotification", {
         Title = "查一下";
-        Text = "抱歉，卡密错误 lol这卡密是崩溃";
+        Text = "抱歉，卡密错误";
         Icon = nil;
         Duration = 5
         })
