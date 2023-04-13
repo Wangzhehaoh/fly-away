@@ -54,10 +54,10 @@ game.StarterGui:SetCore("SendNotification", {
         Icon = nil;
         Duration = 5
       })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/now%20that%20the"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E7%99%BD%E5%90%8D%E5%8D%95"))()
       game.StarterGui:SetCore("SendNotification", {
-        Title = "加载成功";
-        Text = "免费脚本";
+        Title = "成功，去第二个卡密";
+        Text = "验证一下";
         Icon = nil;
         Duration = 7
       })
