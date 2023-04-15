@@ -63,7 +63,7 @@ Key:AddTextbox({
 
 local keys = {
   "imduck",
-  "1988",
+  "789645",
 
 }
 
@@ -80,11 +80,11 @@ Key:AddButton({
       })
 game.StarterGui:SetCore("SendNotification", {
         Title = "卡密";
-        Text = "正在加载，获取8967卡密";
+        Text = "正在加载，获取756489卡密";
         Icon = nil;
         Duration = 30
       })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/now%20that%20the"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%8D%A1%E5%AF%862"))()
       game.StarterGui:SetCore("SendNotification", {
         Title = "去第二个卡密";
         Text = "验证一下";
