@@ -8,26 +8,26 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓看↓"
 })
 
-other:AddParagraph("提示","第三个验证卡密")
+other:AddParagraph("提示","不用，我还在一直更新")
 
 other:AddParagraph("提示","群是814644380")
 
-other:AddParagraph("提示","🎉🎉🎉卡密变成一整")
+other:AddParagraph("提示","[脚本EF 比较好]我的脚本还在一直更新")
 
-other:AddParagraph("提示","脚本EF停下了")
+other:AddParagraph("提示","脚本EF已经在那能用")
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓看↓"
 })
 
-other:AddParagraph("开始","卡密崩溃时候")
+other:AddParagraph("开始","坏了是卡密")
 
-other:AddParagraph("提示","会出现脚本EF")
+other:AddParagraph("卡密说明","卡密是崩溃")
 
-other:AddParagraph("告诉你","你可以输入群主名字 (王者号)")
+other:AddParagraph("崩溃时候","能用许多卡密")
 
 getgenv().Key = "GETFGE" --无用的线我认为你可以删除它
 getgenv().KeyInput = "string"
