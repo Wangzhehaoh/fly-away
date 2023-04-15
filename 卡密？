@@ -79,7 +79,7 @@ Key:AddButton({
       })
 game.StarterGui:SetCore("SendNotification", {
         Title = "卡密";
-        Text = "正在加载，获取756489卡密";
+        Text = "正在加载，获取卡密 已经崩溃";
         Icon = nil;
         Duration = 30
       })
