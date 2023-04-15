@@ -55,6 +55,8 @@ Tab:AddParagraph("公告旧版本","加载完整")
 
 Tab:AddParagraph("公告最新版","脚本快要更新版本")
 
+Tab:AddParagraph("提示最新版","脚本EF2，卡密有")
+
 local Tab = Window:MakeTab({
 	Name = "evade",
 	Icon = "rbxassetid://7734068321",
@@ -84,7 +86,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "2 lol有卡密",
+	Name = "2 卡密1988",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E8%84%9A%E6%9C%AC%E4%B8%AD%E5%BF%832%E5%8D%A1%E5%AF%86"))()
   	end
