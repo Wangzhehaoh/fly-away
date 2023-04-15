@@ -10,28 +10,28 @@ OrionLib:MakeNotification({
 })
 
 local Tab = Window:MakeTab({
-	Name = "公告",
+	Name = "开始用脚本公告",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("王者号出这些","欢迎用脚本中心EF")
+Tab:AddParagraph("提示","脚本中心EF？")
 
 Tab:AddParagraph("提示","现在你用免费脚本")
 
 Tab:AddParagraph("提示","已经完成修复了")
 
 local Section = Tab:AddSection({
-	Name = "我已经知道了"
+	Name = "交给我吧 一直更新"
 })
 
-Tab:AddParagraph("提示","加载，完整")
+Tab:AddParagraph("提示","许多，不是一个服务器")
 
 local Section = Tab:AddSection({
-	Name = "这些话，可以些许多添加"
+	Name = "欢迎用脚本EF"
 })
 
-Tab:AddParagraph("公告","有三个，想什么就添加")
+Tab:AddParagraph("公告","有些事情")
 
 local player = Window:MakeTab({
 	Name = "玩家",
@@ -314,6 +314,13 @@ other:AddButton({
 	Name = "DOORS3",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "DOORS测试版",
+	Callback = function()
+      	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
   	end
 })
 
@@ -681,11 +688,11 @@ local other = Window:MakeTab({
 
 other:AddParagraph("免费脚本","脚本EF 测试版")
 
-other:AddParagraph("提示","这些可以正常")
+other:AddParagraph("提示","用正常情况")
 
-other:AddParagraph("测试版","有些，不厉害脚本")
+other:AddParagraph("试玩","用一下")
 
-other:AddParagraph("脚本EF是：垃圾","本来是测试版")
+other:AddParagraph("测试版","这个是试一下")
 
 local other = Window:MakeTab({
     Name = "公告牌",
@@ -693,8 +700,8 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
-other:AddParagraph("🎉🎈提示🎈🎉","作者是游八月提供")
+other:AddParagraph("作者🎉🎉🎉🎉🎉","作者是游八月提供")
 
-other:AddParagraph("开始这是测试版","🎉🎊🎉🎊🎈咱们开始用 自己玩 我看了三个(？？？) 只有是测试版🎉🎊欢迎来到脚本EF 我在工作？ 我很忙 等更新🎈🎈🎈")
+other:AddParagraph("脚本EF","我用一直更新 不会停，查一下，有些卡密。欢迎来到脚本EF")
 
 OrionLib:Init()
