@@ -33,7 +33,7 @@ Key:AddTextbox({
 
 local keys = {
   "imduck",
-  "8967",
+  "756489",
 
 }
 
@@ -50,7 +50,7 @@ Key:AddButton({
       })
 game.StarterGui:SetCore("SendNotification", {
         Title = "验证卡密中";
-        Text = "正在加载，卡密获取2887";
+        Text = "正在加载，卡密获取114514";
         Icon = nil;
         Duration = 30
       })
