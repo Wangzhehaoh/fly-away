@@ -27,10 +27,6 @@ other:AddParagraph("开始","卡密崩溃时候")
 
 other:AddParagraph("提示","会出现脚本EF")
 
-local Section = SB:AddSection({
-	Name = "↓开始↓"
-})
-
 getgenv().Key = "GETFGE" --无用的线我认为你可以删除它
 getgenv().KeyInput = "string"
 
@@ -64,6 +60,9 @@ Key:AddTextbox({
 local keys = {
   "imduck",
   "789645",
+  "114514",
+  "d7d5daa88e6f3b6a510988549c64e5de",
+  "key666",
 
 }
 
