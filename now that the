@@ -15,71 +15,50 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("公告","就知道，许多，没有，只有二个")
+Tab:AddParagraph("公告旧版本","就知道，许多，没有，只有二个")
 
-Tab:AddParagraph("提示","你在用免费脚本")
+Tab:AddParagraph("提示旧版本","你在用免费脚本")
 
-Tab:AddParagraph("公告","更新了 已经添加失重输入")
+Tab:AddParagraph("公告旧版本","更新了 已经添加失重输入")
 
-Tab:AddParagraph("公告","更新了 已经添加字体")
+Tab:AddParagraph("公告旧版本","更新了 已经添加字体")
 
-Tab:AddParagraph("公告","更新了 已经崩溃")
+Tab:AddParagraph("公告旧版本","更新了 已经崩溃")
 
-Tab:AddParagraph("公告","更新了 已经添加光影和evade3")
+Tab:AddParagraph("公告旧版本","更新了 已经添加光影和evade3")
 
-Tab:AddParagraph("公告","更新了 崩溃被恢复了")
+Tab:AddParagraph("公告旧版本","更新了 崩溃被恢复了")
 
-Tab:AddParagraph("公告","更新了 已经添加脚本中心2")
+Tab:AddParagraph("公告旧版本","更新了 已经添加脚本中心2")
 
-Tab:AddParagraph("公告","更新了 已经添加二个种")
+Tab:AddParagraph("公告旧版本","更新了 已经添加二个种")
 
-Tab:AddParagraph("公告","王者号用力量传奇，我在测试一下")
+Tab:AddParagraph("公告旧版本","王者号用力量传奇，我在测试一下")
 
-Tab:AddParagraph("公告","更新了 已经添加力量传奇")
+Tab:AddParagraph("公告旧版本","更新了 已经添加力量传奇")
 
-Tab:AddParagraph("提示","脚本中心2 卡密是d9d4daa08e7f6b7a875695789c78e9de")
+Tab:AddParagraph("提示旧版本","脚本中心2 卡密是XXX 脚本中心2看下面")
 
-Tab:AddParagraph("公告","更新了 已经添加极速传奇脚本")
+Tab:AddParagraph("公告旧版本","更新了 已经添加极速传奇脚本")
 
-Tab:AddParagraph("公告","更新了，这个三种想什么就添加")
+Tab:AddParagraph("公告旧版本","更新了，这个三种想什么就添加")
 
-Tab:AddParagraph("公告","更新了，已经添加脚本EF2")
+Tab:AddParagraph("公告旧版本","更新了，已经添加脚本EF2")
 
-Tab:AddParagraph("公告","加载完整")
+Tab:AddParagraph("公告旧版本","加载完整")
 
-Tab:AddParagraph("提示","出现卡密 真崩溃")
+Tab:AddParagraph("提示旧版本","出现卡密 真崩溃")
 
-Tab:AddParagraph("公告","更新了 已经添加一个种")
+Tab:AddParagraph("公告旧版本","更新了 已经添加一个种")
 
-Tab:AddParagraph("公告","加载完整")
+Tab:AddParagraph("公告旧版本","加载完整")
+
+Tab:AddParagraph("公告最新版","脚本快要更新版本")
 
 local Tab = Window:MakeTab({
 	Name = "evade",
 	Icon = "rbxassetid://7734068321",
 	PremiumOnly = false
-})
-
-
-
-local Section = Tab:AddSection({
-	Name = "开始"
-})
-
-
-
-Tab:AddButton({
-	Name = "evade(1)中文",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/evade"))()
-  	end
-})
-
-
-Tab:AddButton({
-	Name = "evade",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
-  	end    
 })
 
 local Tab = Window:MakeTab({
