@@ -57,11 +57,13 @@ Tab:AddParagraph("公告旧版本","脚本快要更新版本")
 
 Tab:AddParagraph("提示旧版本","脚本EF2，卡密有")
 
-Tab:AddParagraph("提示最新版","明天 星期一，卡密崩溃")
+Tab:AddParagraph("提示旧新版","明天 星期一，卡密崩溃")
 
-Tab:AddParagraph("公告最新版","已经添加？？？里面有二个")
+Tab:AddParagraph("公告旧新版","已经添加？？？里面有二个")
 
-Tab:AddParagraph("提示最新版","能用F注入器或者三角洲注入器")
+Tab:AddParagraph("提示旧新版","能用F注入器或者三角洲注入器")
+
+Tab:AddParagraph("提示最新版","那是脚本EF已经除掉")
 
 local Tab = Window:MakeTab({
 	Name = "无？？？",
@@ -96,8 +98,14 @@ Tab:AddButton({
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E8%84%9A%E6%9C%AC%E4%B8%AD%E5%BF%832%E5%8D%A1%E5%AF%86"))()
   	end
-})
+}
 
+Tab:AddButton({
+	Name = "3最新版脚本EF",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/---EF---"))()
+  	end
+})
 
 
 OrionLib:Init()
