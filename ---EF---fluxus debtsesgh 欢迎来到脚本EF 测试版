@@ -608,24 +608,24 @@ other:AddButton({
 })
 
 local other = Window:MakeTab({
-    Name = "回去脚本EF",
+    Name = "无法回去，在这里 脚本中心EF",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
 local Section = other:AddSection({
-	Name = "这应该是用回去"
+	Name = "不会用"
 })
 
 other:AddButton({
-	Name = "回去脚本EF",
+	Name = "无法",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/now%20that%20the"))()
   	end
 })
 
 other:AddButton({
-	Name = "脚本EF跳过卡密",
+	Name = "脚本EF2",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E8%84%9A%E6%9C%AC%E4%B8%AD%E5%BF%83d7d5daa88e6f3b6a510988549c64e5de" ))()
   	end
@@ -714,8 +714,18 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+other:AddParagraph("公告","不再用卡密")
+
+other:AddParagraph("脚本EF","在下面是公告")
+
+local other = Window:MakeTab({
+    Name = "公告最新版/旧版",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
 other:AddParagraph("作者🎉🎉🎉🎉🎉","作者是游八月提供")
 
-other:AddParagraph("脚本EF","我用一直更新 不会停，查一下，有些卡密。欢迎来到脚本EF")
+other:AddParagraph("公告最新版","能用上，因为是脚本EF")
 
 OrionLib:Init()
