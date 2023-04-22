@@ -683,7 +683,7 @@ other:AddButton({
 other:AddParagraph("提示","添加什么")
 
 local other = Window:MakeTab({
-    Name = "？？？",
+    Name = "逃生洪水2",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -692,7 +692,30 @@ local Section = other:AddSection({
 	Name = "↓开始↓"
 })
 
-other:AddParagraph("提示","添加什么")
+other:AddParagraph("提示","开挂，千万别开挂 先第一个你不要给别人 不然别人会用举报 小心点")
+
+other:AddParagraph("提示","先进私房 在服务器时候 要私房 但是别人不会举报你")
+
+other:AddButton({
+	Name = "1",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/kosuke14/REBOYHub/main/games/FE2GodMode.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "2",
+	Callback = function()
+      	loadstring(game:HttpGet("https://reboyapp.cf/rbxscripts/fe2adminguissrc.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "3",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Insanxty/roblox/main/fe2"))()
+  	end
+})
 
 local other = Window:MakeTab({
     Name = "公告提示",
@@ -727,5 +750,7 @@ local other = Window:MakeTab({
 other:AddParagraph("作者🎉🎉🎉🎉🎉","作者是游八月提供")
 
 other:AddParagraph("公告最新版","能用上，因为是脚本EF")
+
+other:AddParagraph("公告最新版","已经添加逃生洪水2")
 
 OrionLib:Init()
