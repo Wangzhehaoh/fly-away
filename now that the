@@ -89,7 +89,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "1",
 	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/fly.txt"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/---EF---"))()
   	end
 })
 
@@ -100,12 +100,7 @@ Tab:AddButton({
   	end
 }
 
-Tab:AddButton({
-	Name = "3最新版脚本EF",
-	Callback = function()
-      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/---EF---"))()
-  	end
-})
+
 
 
 OrionLib:Init()
