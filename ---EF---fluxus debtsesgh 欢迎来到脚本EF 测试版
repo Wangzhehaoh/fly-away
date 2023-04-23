@@ -1,10 +1,10 @@
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 
-local Window = OrionLib:MakeWindow({Name = "脚本中心EF", HidePremium = false, SaveConfig = false, IntroText = "脚EF："..identifyexecutor(), ConfigFolder = "脚本中心EF"})
+local Window = OrionLib:MakeWindow({Name = "X-MEA脚本", HidePremium = false, SaveConfig = false, IntroText = "X-"..identifyexecutor(), ConfigFolder = "X-MEA脚本"})
 
 OrionLib:MakeNotification({
-	Name = "脚本中心EF",
-	Content = "可以这里是EF",
+	Name = "里面许多",
+	Content = "这些是一个许多",
 	Image = "rbxassetid://4483345998",
 	Time = 6
 })
@@ -597,7 +597,7 @@ local Section = other:AddSection({
 })
 
 local Section = other:AddSection({
-	Name = "脚本EF自动离开"
+	Name = "X-自动离开"
 })
 
 other:AddButton({
@@ -723,13 +723,13 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
-other:AddParagraph("免费脚本","脚本EF 测试版")
+other:AddParagraph("免费脚本","X-MEA脚本")
 
 other:AddParagraph("提示","用正常情况")
 
 other:AddParagraph("试玩","用一下")
 
-other:AddParagraph("测试版","这个是试一下")
+other:AddParagraph("用来了","这个是试一下")
 
 local other = Window:MakeTab({
     Name = "公告牌",
@@ -739,7 +739,7 @@ local other = Window:MakeTab({
 
 other:AddParagraph("公告","不再用卡密")
 
-other:AddParagraph("脚本EF","在下面是公告")
+other:AddParagraph("X-MEA脚本","在下面是公告")
 
 local other = Window:MakeTab({
     Name = "公告最新版/旧版",
@@ -752,5 +752,33 @@ other:AddParagraph("作者🎉🎉🎉🎉🎉","作者是游八月提供")
 other:AddParagraph("公告最新版","能用上，因为是脚本EF")
 
 other:AddParagraph("公告最新版","已经添加逃生洪水2")
+
+other:AddParagraph("提示最新版","欢迎用X-MEA脚本")
+
+other:AddParagraph("提示最新版","现在变成这个旧版脚本EF")
+
+local Section = other:AddSection({
+	Name = "脚本EF→X-MEA"
+})
+
+other:AddParagraph("公告最新版","谢谢大家 我是X-MEA")
+
+other:AddParagraph("公告最新版","欢迎用X-MEA脚本")
+
+local other = Window:MakeTab({
+    Name = "旧版作者",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddParagraph("作者是","王者号 因为旧版的想办法换一个")
+
+other:AddParagraph("谢谢关系","请大家 我没无法用 感谢你们")
+
+other:AddParagraph("提示","可以分享哦！")
 
 OrionLib:Init()
