@@ -5,108 +5,108 @@ local GuiService = game:GetService("GuiService")
 local Light = game:GetService("Lighting")
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 OrionLib:MakeNotification({
-    Name = "用EVADE？",
-    Content = "等一会儿，提示",
+    Name = "X-MAE脚本？",
+    Content = "神 MAE",
     Image = "rbxassetid://4483345998",
     Time = 4
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
 wait(4)
 OrionLib:MakeNotification({
-    Name = "提示1",
-    Content = "这些英语不方便 用些中文",
+    Name = "X-",
+    Content = "没问题",
     Image = "rbxassetid://4483345998",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
 wait(1)
 OrionLib:MakeNotification({
-    Name = "提示2",
-    Content = "要翻译，全是中文",
+    Name = "X-evade",
+    Content = "已经翻译，全是中文",
     Image = "rbxassetid://4483345998",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
 wait(1)
 OrionLib:MakeNotification({
-    Name = "提示3",
-    Content = "用evade？等一会儿",
+    Name = "X-等一会儿",
+    Content = "马上加载",
     Image = "rbxassetid://4483345998",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
 wait(1)
 OrionLib:MakeNotification({
-    Name = "提示4",
-    Content = "正常，用中文",
+    Name = "X-加载好了",
+    Content = "开始用evade",
     Image = "rbxassetid://4483345998",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
 wait(1)
 OrionLib:MakeNotification({
-    Name = "提示5",
-    Content = "中文有些，没有完整翻译",
+    Name = "X-",
+    Content = "神 MAE",
     Image = "rbxassetid://4483345998",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
+wait(0.001)
 OrionLib:MakeNotification({
-    Name = "提示6",
-    Content = "不好用，这是真的是翻译",
+    Name = " ",
+    Content = "开始",
     Image = "rbxassetid://4483345998",
-    Time = 2
+    Time = 0.5
+})
+game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
+wait(0.001)
+OrionLib:MakeNotification({
+    Name = " ",
+    Content = "开始",
+    Image = "rbxassetid://4483345998",
+    Time = 0.5
+})
+game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
+wait(0.001)
+OrionLib:MakeNotification({
+    Name = " ",
+    Content = "开始",
+    Image = "rbxassetid://4483345998",
+    Time = 0.5
+})
+game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
+wait(0.001)
+OrionLib:MakeNotification({
+    Name = " ",
+    Content = "开始",
+    Image = "rbxassetid://4483345998",
+    Time = 0.5
+})
+game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
+wait(0.001)
+OrionLib:MakeNotification({
+    Name = " ",
+    Content = "开始",
+    Image = "rbxassetid://4483345998",
+    Time = 0.5
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
 wait(1)
 OrionLib:MakeNotification({
-    Name = "提示7",
-    Content = "不用英语 直接来",
+    Name = "X-欢迎用evade！！！！",
+    Content = "你自已用",
     Image = "rbxassetid://4483345998",
-    Time = 2
+    Time = 10
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
 wait(1)
 OrionLib:MakeNotification({
-    Name = "提示8",
-    Content = "开始，这个下载",
-    Image = "rbxassetid://4483345998",
-    Time = 2
-})
-game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
-OrionLib:MakeNotification({
-    Name = "提示9",
-    Content = "加载好了 开始了",
-    Image = "rbxassetid://4483345998",
-    Time = 2
-})
-game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
-OrionLib:MakeNotification({
-    Name = "提示10",
-    Content = "好了 别忘了哦",
-    Image = "rbxassetid://4483345998",
-    Time = 2
-})
-game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
-OrionLib:MakeNotification({
-    Name = "准备开挂",
-    Content = "你一个，就开始",
-    Image = "rbxassetid://4483345998",
-    Time = 2
-})
-game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1)
-OrionLib:MakeNotification({
-    Name = "欢迎evade",
-    Content = " 可以用这个脚本 有点不厉害 是这个脚本 有些中文没完整",
+    Name = "evade",
+    Content = " X-MAE",
     Image = "rbxassetid://4483345998",
     Time = 30
 })
-local Window = OrionLib:MakeWindow({Name = "用脚本:Evade", HidePremium = false,IntroText = "脚本evade2.6V", SaveConfig = false, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "X-MAE:Evade", HidePremium = false,IntroText = "evade2.6V", SaveConfig = false, ConfigFolder = "X-MAE"})
 
 --functions and shit
 getgenv().money = true
@@ -203,7 +203,7 @@ end
 
 function SpamChat()
     while autochat == true do
-        local ohString1 = "自来脚本发消息"
+        local ohString1 = "X-MAE how help you"
         local ohString2 = "All"
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString1, ohString2)
         wait(1)
@@ -247,8 +247,8 @@ function freemoney()
 end
 
 OrionLib:MakeNotification({
-    Name = "脚本evade",
-    Content = "用脚本是这个意思",
+    Name = "X-MAE",
+    Content = "X-开始用",
     Image = "rbxassetid://4483345998",
     Time = 5
 })
@@ -256,56 +256,56 @@ OrionLib:MakeNotification({
 
 function RandomEmote()
     OrionLib:MakeNotification({
-        Name = "开始表情",
-        Content = "按下Z？别按下",
+        Name = "X-表情",
+        Content = "开始表情",
         Image = "rbxassetid://4483345998",
-        Time = 5
+        Time = 0.5
     })
 end
 --tabs
 
 local MainTab= Window:MakeTab({
-	Name = "主要",
+	Name = "X主要",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 local MiscTab= Window:MakeTab({
-	Name = "玩家",
+	Name = "X玩家",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 local ESPTab = Window:MakeTab({
-    Name =  "透视",
+    Name =  "X透视",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
 local TeleportTab= Window:MakeTab({
-    Name = "传送",
+    Name = "X传送",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 local FunTab= Window:MakeTab({
-    Name = "乐趣",
+    Name = "X乐趣",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 local CreditsTab = Window:MakeTab({
-	Name = "信用",
+	Name = "X MAE",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = true
 })
 
 local MiscTab3 = MainTab:AddSection({
-	Name = "自己玩家"
+	Name = "X-自己"
 })
 
 MainTab:AddToggle({
-	Name = "有人被倒了，可传送救",
+	Name = "传送玩家倒",
 	Default = false,
 	Callback = function(Value)
 		Settings.moneyfarm = Value
@@ -313,7 +313,7 @@ MainTab:AddToggle({
 })
 
 MainTab:AddToggle({
-	Name = "你传送安全地方",
+	Name = "边上安全",
 	Default = false,
 	Callback = function(Value)
         Settings.afkfarm = Value
@@ -322,48 +322,48 @@ MainTab:AddToggle({
 
 --sliders
 local MainTab3 = MainTab:AddSection({
-	Name = "修改玩家"
+	Name = "修改自己玩家"
 })
 
 local Misctab5 = MiscTab:AddSection({
-	Name = "用无法"
+	Name = "X-用无法"
 })
 
 local TargetWalkspeed
 MainTab:AddSlider({
-	Name = "速度",
+	Name = "X速度",
 	Min = 0,
 	Max = 250,
 	Default = 0,
 	Color = Color3.fromRGB(128, 128, 128),
 	Increment = 1,
-	ValueName = "无法修改速度",
+	ValueName = "X无法修改速度",
 	Callback = function(Value)
 		TargetWalkspeed = Value
 	end   
 })
 
 MainTab:AddSlider({
-    Name = "腰角高",
-    Min = -1.40,
+    Name = "X腰角高",
+    Min = -3.40,
     Max = 100,
-    Default = -1.40,
+    Default = -3.40,
     Color = Color3.fromRGB(128, 128, 128),
     Increment = 1,
-	ValueName = "无法修改腰角高",
+	ValueName = "X无法修改腰角高",
     Callback = function(HipValue)
         game.Players.LocalPlayer.Character.Humanoid.HipHeight = HipValue
     end    
 })
 
 MainTab:AddSlider({
-	Name = "视角大小",
+	Name = "X视角大小",
 	Min = 1,
 	Max = 120,
 	Default = 70,
 	Color = Color3.fromRGB(128, 128, 128),
 	Increment = 1,
-	ValueName = "无法修改视角",
+	ValueName = "X无法修改视角",
 	Callback = function(Fov)
         local ohString1 = "FieldOfView"
         local ohNumber2 = Fov
@@ -372,26 +372,26 @@ MainTab:AddSlider({
 })
 
 MainTab:AddSlider({
-	Name = "跳度数",
+	Name = "X跳度数",
 	Min = 0,
 	Max = 120,
 	Default = 3,
 	Color = Color3.fromRGB(128, 128, 128),
 	Increment = 1,
-	ValueName = "无法修改跳高",
+	ValueName = "X无法修改跳高",
 	Callback = function(Value)
 		Settings.Jump = Value
     end
 })
 
 MiscTab:AddSlider({
-	Name = "时间",
+	Name = "X时间",
 	Min = 0,
 	Max = 24,
 	Default = 14,
 	Color = Color3.fromRGB(128, 128, 128),
 	Increment = 0.1,
-	ValueName = "时间不变",
+	ValueName = "X时间不变",
 	Callback = function(Time)
         game.Lighting.ClockTime = Time
     end
@@ -400,15 +400,15 @@ MiscTab:AddSlider({
 --toggles
 
 local FunTab2 = FunTab:AddSection({
-	Name = "开乐趣"
+	Name = "X-开乐趣"
 })
 
 local MiscTab3 = MainTab:AddSection({
-	Name = "自己玩家情况"
+	Name = "X-自己玩家情况"
 })
 
 MainTab:AddToggle({
-	Name = "倒了，近点出生点",
+	Name = "倒了 出生点",
 	Default = false,
 	Callback = function(Value)
         NoCameraShake = Value
@@ -417,7 +417,7 @@ MainTab:AddToggle({
 })
 
 MainTab:AddToggle({
-	Name = "自动喝可乐 (可乐会减少)",
+	Name = "X-自动喝可乐 (可乐会减少)",
 	Default = false,
 	Callback = function(Value)
 		AutoDrink = Value
@@ -426,7 +426,7 @@ MainTab:AddToggle({
 })
 
 FunTab:AddToggle({
-	Name = "自动发(聊天)",
+	Name = "自动发放(聊天)",
 	Default = false,
 	Callback = function(Value)
         autochat = Value
@@ -435,7 +435,7 @@ FunTab:AddToggle({
 })
 
 FunTab:AddToggle({
-	Name = "提示这个",
+	Name = "提示",
 	Default = false,
 	Callback = function(Value)
         money = Value
@@ -444,7 +444,7 @@ FunTab:AddToggle({
 })
 
 MainTab:AddToggle({
-	Name = "秒重生 (死亡不会秒重生)",
+	Name = "X-秒重生 (死亡不会秒重生)",
 	Default = false,
 	Callback = function(Value)
         Settings.AutoRespawn = Value
@@ -452,7 +452,7 @@ MainTab:AddToggle({
 })
 
 FunTab:AddToggle({
-	Name = "按下后，没有出现",
+	Name = "X-按下后，没有出现",
 	Default = false,
 	Callback = function(Value)
 		autowistle = Value
@@ -462,15 +462,15 @@ FunTab:AddToggle({
 
 --buttons
 local FunTab3 = FunTab:AddSection({
-	Name = "电脑"
+	Name = "X电脑"
 })
 
 local MiscTab2 = MiscTab:AddSection({
-	Name = "你是玩家"
+	Name = "X-你是玩家"
 })
 
 MiscTab:AddButton({
-    Name = "聊天出现字",
+    Name = "X-聊天出现字",
     Callback = function()
         enabled = true
 spyOnMyself = false
@@ -530,8 +530,8 @@ local chatFrame = player.PlayerGui.Chat.Frame
 chatFrame.ChatChannelParentFrame.Visible = true
 chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
 OrionLib:MakeNotification({
-	Name = "Hydra Network",
-	Content = "Pressed on the Chat Spy Button",
+	Name = "X-聊天",
+	Content = "X打开聊天/看聊天",
 	Image = "rbxassetid://4483345998",
 	Time = 2
 })    
@@ -539,7 +539,7 @@ OrionLib:MakeNotification({
 })
 
 ESPTab:AddButton({
-	Name = "开透视",
+	Name = "X-开透视",
 	Callback = function()
 		local c = workspace.CurrentCamera
 		local ps = game:GetService("Players")
@@ -633,7 +633,7 @@ ESPTab:AddButton({
 })
 
 MiscTab:AddButton({
-	Name = "无限跳",
+	Name = "X-无限跳",
 	Callback = function()
         local InfiniteJumpEnabled = true
         game:GetService("UserInputService").JumpRequest:connect(function()
@@ -651,7 +651,7 @@ MiscTab:AddButton({
 })
 
 MiscTab:AddButton({
-	Name = "按下p",
+	Name = "X-按下p",
 	Callback = function()
         plr = game.Players.LocalPlayer 
         hum = plr.Character.HumanoidRootPart 
@@ -673,7 +673,7 @@ MiscTab:AddButton({
 })
 
 MiscTab:AddButton({
-	Name = "开光影，光",
+	Name = "X-开光影，光",
 	Callback = function()
         dofullbright()
         OrionLib:MakeNotification({
@@ -686,14 +686,14 @@ MiscTab:AddButton({
 })
 
 MiscTab:AddButton({
-	Name = "回去菜单",
+	Name = "X-回去菜单",
 	Callback = function()
         game:GetService("ReplicatedStorage").Events.ReturnToMenu:FireServer()
   	end    
 })
 
 MiscTab:AddButton({
-	Name = "按下如果",
+	Name = "X-按下如果",
 	Callback = function()
         local ohString1 = "LowQuality"
         local ohBoolean2 = true
@@ -708,7 +708,7 @@ MiscTab:AddButton({
 })
 
 FunTab:AddButton({
-    Name = "用电脑 (shift+p)",
+    Name = "X-用电脑 (shift+p)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Robobo2022/script/main/Freecam.lua"))()
         OrionLib:MakeNotification({
@@ -721,7 +721,7 @@ FunTab:AddButton({
 })
 
 TeleportTab:AddButton({
-    Name = "重新进一下",
+    Name = "X-重新进一下",
     Callback = function()
         local TeleportService = game:GetService('TeleportService')
         GameId = 9872472334
@@ -731,7 +731,7 @@ TeleportTab:AddButton({
 
 
 TeleportTab:AddButton({
-    Name = "去单人(有些BUG)",
+    Name = "X-多人重生(有些BUG)",
     Callback = function()
         local TeleportService = game:GetService('TeleportService')
         GameId = 10662542523
@@ -740,7 +740,7 @@ TeleportTab:AddButton({
 })
 
 TeleportTab:AddButton({
-    Name = "进去大队？(太多人)",
+    Name = "X-进去大队？(太多人)",
     Callback = function()
         local TeleportService = game:GetService('TeleportService')
         GameId = 10324347967
@@ -749,7 +749,7 @@ TeleportTab:AddButton({
 })
 
 TeleportTab:AddButton({
-    Name = "大队(太卡了)",
+    Name = "X-大队(太卡了)",
     Callback = function()
         local TeleportService = game:GetService('TeleportService')
         GameId = 10324346056
@@ -758,7 +758,7 @@ TeleportTab:AddButton({
 })
 
 TeleportTab:AddButton({
-    Name = "传送失败",
+    Name = "X-语音聊天",
     Callback = function()
         local TeleportService = game:GetService('TeleportService')
         GameId = 110539706691
@@ -767,7 +767,7 @@ TeleportTab:AddButton({
 })
 
 TeleportTab:AddButton({
-    Name = "进去50级",
+    Name = "X-进去50级",
     Callback = function()
         local TeleportService = game:GetService('TeleportService')
         GameId = 10808838353
@@ -776,11 +776,11 @@ TeleportTab:AddButton({
 })
 
 local MiscTab2 = MiscTab:AddSection({
-	Name = "模式？"
+	Name = "X-模式"
 })
 
 MiscTab:AddButton({
-	Name = "没有发生什么",
+	Name = "X-没有发生什么",
 	Callback = function()
         game:GetService("ReplicatedStorage").Events.UI.Purchase:InvokeServer("Emotes", "Test")
   	end    
@@ -789,15 +789,15 @@ MiscTab:AddButton({
 --keybinds
 
 local MiscTab1 = MiscTab:AddSection({
-	Name = "用电脑 才能按下"
+	Name = "X-用电脑 才能按下"
 })
 
 local FunTab1 = FunTab:AddSection({
-	Name = "表情"
+	Name = "X-表情"
 })
 
 MiscTab:AddBind({
-	Name = "喝可乐(会减少)",
+	Name = "X-喝可乐(会减少)",
 	Default = Enum.KeyCode.H,
 	Hold = false,
 	Callback = function()
@@ -807,7 +807,7 @@ MiscTab:AddBind({
 })
 
 MiscTab:AddBind({
-	Name = "重新进去一下",
+	Name = "X-重新进去一下",
 	Default = Enum.KeyCode.B,
 	Hold = false,
 	Callback = function()
@@ -859,7 +859,7 @@ MiscTab:AddBind({
 })
 
 MiscTab:AddBind({
-	Name = "按下X",
+	Name = "X-按下X",
 	Default = Enum.KeyCode.X,
 	Hold = false,
 	Callback = function()
@@ -876,7 +876,7 @@ MiscTab:AddBind({
 })
 
 MiscTab:AddBind({
-	Name = "回头",
+	Name = "X-回头",
 	Default = Enum.KeyCode.R,
 	Hold = false,
 	Callback = function()
@@ -891,7 +891,7 @@ MiscTab:AddBind({
 })
 
 FunTab:AddBind({
-	Name = "开表情",
+	Name = "X-开表情",
 	Default = Enum.KeyCode.Z,
 	Hold = false,
 	Callback = function()
@@ -904,7 +904,7 @@ FunTab:AddBind({
 --test
 
 ESPTab:AddToggle({
-    Name = "颜色",
+    Name = "X-颜色",
     Default = true,
     Callback = function(Value)
         getgenv().toggleespmpt = Value
@@ -912,7 +912,7 @@ ESPTab:AddToggle({
 })
 
 ESPTab:AddColorpicker({
-    Name = "选择",
+    Name = "X-选择",
     Default = Color3.fromRGB(255, 255, 255),
     Callback = function(Value)
         getgenv().mptespcolour = Value
@@ -978,13 +978,13 @@ old = hookmetamethod(game,"__namecall",newcclosure(function(self,...)
     return old(self,...)
 end))
 
-setclipboard("脚本中心 并不好 全是英语 我修改 ")
+setclipboard("X-MAE 神，送免费脚本")
 
 OrionLib:MakeNotification({
-Name = "是王者号 翻译",
-Content = "英语 都不翻译？",
+Name = "定是X.MAE 翻译",
+Content = "英语→中文 都翻译完了",
 Image = "rbxassetid://4483345998",
-Time = 5
+Time = 30
 })
 
 game:GetService("RunService").RenderStepped:Connect(function()
