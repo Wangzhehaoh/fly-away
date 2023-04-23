@@ -14,12 +14,12 @@ game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
 wait(4)
 OrionLib:MakeNotification({
     Name = "提示1",
-    Content = "笑死我了，我发现BUG 等恢复中！！！！",
+    Content = "这些英语不方便 用些中文",
     Image = "rbxassetid://4483345998",
-    Time = 10
+    Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
-wait(1000000)
+wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示2",
     Content = "要翻译，全是中文",
@@ -332,9 +332,9 @@ local Misctab5 = MiscTab:AddSection({
 local TargetWalkspeed
 MainTab:AddSlider({
 	Name = "速度",
-	Min = 0,
+	Min = 150,
 	Max = 250,
-	Default = 0,
+	Default = 150,
 	Color = Color3.fromRGB(128, 128, 128),
 	Increment = 1,
 	ValueName = "无法修改速度",
@@ -345,9 +345,9 @@ MainTab:AddSlider({
 
 MainTab:AddSlider({
     Name = "腰角高",
-    Min = -1.40,
+    Min = -3.40,
     Max = 100,
-    Default = -1.40,
+    Default = -3.40,
     Color = Color3.fromRGB(128, 128, 128),
     Increment = 1,
 	ValueName = "无法修改腰角高",
@@ -373,9 +373,9 @@ MainTab:AddSlider({
 
 MainTab:AddSlider({
 	Name = "跳度数",
-	Min = 0,
+	Min = 120,
 	Max = 120,
-	Default = 3,
+	Default = 120,
 	Color = Color3.fromRGB(128, 128, 128),
 	Increment = 1,
 	ValueName = "无法修改跳高",
