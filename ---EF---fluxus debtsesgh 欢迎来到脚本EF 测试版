@@ -218,6 +218,23 @@ other:AddButton({
   	end
 })
 
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+local Section = other:AddSection({
+	Name = "X-MAE"
+})
+
+other:AddParagraph("用evade","1全是 X 但是不用谢")
+
+other:AddButton({
+	Name = "召唤呼 Xevade",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E6%B3%A8%E6%84%8F%E7%94%A8evade5546488466454546798654---------------------%E5%BC%80%E6%8C%82%E6%A8%A1%E5%BC%8F%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81"))()
+  	end
+})
+
 local other = Window:MakeTab({
     Name = "监狱人生模式",
     Icon = "rbxassetid://4483345998",
