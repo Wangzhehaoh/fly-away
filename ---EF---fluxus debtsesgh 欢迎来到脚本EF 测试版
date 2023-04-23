@@ -15,36 +15,36 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("提示","脚本中心EF？")
+Tab:AddParagraph("提示 神","脚本中心EF？")
 
-Tab:AddParagraph("提示","现在你用免费脚本")
+Tab:AddParagraph("提示 神","现在你用免费脚本")
 
-Tab:AddParagraph("提示","已经完成修复了")
-
-local Section = Tab:AddSection({
-	Name = "交给我吧 一直更新"
-})
-
-Tab:AddParagraph("提示","许多，不是一个服务器")
+Tab:AddParagraph("提示 神","已经完成修复了")
 
 local Section = Tab:AddSection({
-	Name = "欢迎用脚本EF 喵~"
+	Name = "交给我吧 一直更新 神"
 })
 
-Tab:AddParagraph("公告","有些事情")
+Tab:AddParagraph("提示","许多，不是一个服务器 神")
+
+local Section = Tab:AddSection({
+	Name = "欢迎用脚本EF 神~"
+})
+
+Tab:AddParagraph("公告 神","有些事情")
 
 local player = Window:MakeTab({
-	Name = "玩家",
+	Name = "玩家 喵~",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 local Section = player:AddSection({
-	Name = "自己"
+	Name = "自己 喵~"
 })
 
 player:AddTextbox({
-	Name = "移动输入",
+	Name = "移动输入 喵喵喵",
 	Default = "",
 	TextDisappear = true,
 	Callback = function(Value)
@@ -53,7 +53,7 @@ player:AddTextbox({
 })
 
 player:AddTextbox({
-	Name = "跳跃输入",
+	Name = "跳跃输入 喵喵喵喵喵~",
 	Default = "",
 	TextDisappear = true,
 	Callback = function(Value)
@@ -62,7 +62,7 @@ player:AddTextbox({
 })
 
 player:AddTextbox({
-	Name = "重力设置",
+	Name = "重力设置 喵喵",
 	Default = "",
 	TextDisappear = true,
 	Callback = function(Value)
@@ -71,7 +71,7 @@ player:AddTextbox({
 })
 
 player:AddToggle({
-	Name = "普通穿墙，可坐",
+	Name = "普通穿墙，可坐 喵~",
 	Default = false,
 	Callback = function(Value)
 		if Value then
@@ -98,7 +98,7 @@ player:AddToggle({
 })
 
 player:AddButton({
-	Name = "飞行脚本可隐藏",
+	Name = "飞行脚本可隐藏 喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/how%20are"))()
   	end
@@ -111,18 +111,18 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "其他，有点厉害"
+	Name = "其他，有点厉害 喵~"
 })
 
 other:AddButton({
-	Name = "跟踪玩家",
+	Name = "跟踪玩家 喵喵喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
   	end
 })
 
 other:AddToggle({
-	Name = "普通夜视",
+	Name = "普通夜视 喵喵~",
 	Default = false,
 	Callback = function(Value)
 		if Value then
@@ -140,42 +140,42 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "现在是些能用"
+	Name = "现在是些能用 喵喵喵"
 })
 
-other:AddParagraph("提示","有一个阿尔宙斯")
+other:AddParagraph("提示","有一个阿尔宙斯 喵~")
 
 local Section = other:AddSection({
-	Name = "↓开始↓测试"
+	Name = "↓开始↓测试 喵喵 喵"
 })
 
 other:AddButton({
-	Name = "阿尔宙斯",
+	Name = "阿尔宙斯 喵~喵~喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
   	end
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 喵~"
 })
 
 other:AddButton({
-	Name = "飞行1V英文",
+	Name = "飞行1V英文 喵~",
 	Callback = function()
       	loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
   	end
 })
 
 other:AddButton({
-	Name = "转起来",
+	Name = "转起来 喵~",
 	Callback = function()
       	loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
   	end
 })
 
 other:AddButton({
-	Name = "关于电脑提示",
+	Name = "关于电脑提示 喵喵喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
   	end
@@ -188,48 +188,48 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 神"
 })
 
 other:AddButton({
-	Name = "evade2",
+	Name = "evade2 神",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
   	end
 })
 
 other:AddButton({
-	Name = "evade",
+	Name = "evade 神",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/evade"))()
   	end
 })
 
-other:AddParagraph("这是","F evade")
+other:AddParagraph("这是","F evade 神")
 
 local Section = other:AddSection({
-	Name = "↓开始↓测试"
+	Name = "↓开始↓测试 神"
 })
 
 other:AddButton({
-	Name = "evade F F图标",
+	Name = "evade F F图标 神",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Evade/main.lua"))()
   	end
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 神"
 })
 
 local Section = other:AddSection({
-	Name = "X-MAE"
+	Name = "X-MAE 神"
 })
 
-other:AddParagraph("用evade","1全是 X 但是不用谢")
+other:AddParagraph("用evade","1全是 X 但是不用谢 神")
 
 other:AddButton({
-	Name = "召唤呼 Xevade",
+	Name = "召唤呼 Xevade 神",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E6%B3%A8%E6%84%8F%E7%94%A8evade5546488466454546798654---------------------%E5%BC%80%E6%8C%82%E6%A8%A1%E5%BC%8F%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81"))()
   	end
@@ -242,22 +242,22 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 喵~"
 })
 
 other:AddButton({
-	Name = "监狱人生",
+	Name = "监狱人生 喵喵喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://pastebin.com/raw/Gae7YC84"))();
   	end
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓用旧版"
+	Name = "↓开始↓用旧版 喵喵~"
 })
 
 other:AddButton({
-	Name = "监狱人生2 1.3V",
+	Name = "监狱人生2 1.3V 喵喵喵喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
   	end
@@ -270,25 +270,25 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 喵喵~"
 })
 
 other:AddButton({
-	Name = "蜂群",
+	Name = "蜂群 喵喵喵喵 喵？ 喵喵喵喵",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/BSS%20FREE"))()
   	end
 })
 
 other:AddButton({
-	Name = "蜂群2",
+	Name = "蜂群2 喵喵喵喵喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/bsstrainer.lua"))()
   	end
 })
 
 other:AddButton({
-	Name = "蜂群3",
+	Name = "蜂群3 喵喵喵",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Stebulous/scripts/main/open-source/beeswarm%20v1.2.lua", true))()
   	end
@@ -301,41 +301,41 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 喵喵喵"
 })
 
-other:AddParagraph("DOORS","四种有什么好用？")
+other:AddParagraph("DOORS","四种有什么好用？喵喵喵喵")
 
 other:AddButton({
-	Name = "DOORSMS",
+	Name = "DOORSMS 神！不解 这是厉害脚本！",
 	Callback = function()
       	loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
   	end
 })
 
 other:AddButton({
-	Name = "DOORS十架字 这是假的",
+	Name = "DOORS十架字 这是假的 神 好点儿，不厉害！",
 	Callback = function()
       	loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
   	end
 })
 
 other:AddButton({
-	Name = "DOORS2",
+	Name = "DOORS2 喵喵？",
 	Callback = function()
       	loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
   	end
 })
 
 other:AddButton({
-	Name = "DOORS3",
+	Name = "DOORS3 喵喵喵喵？",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
   	end
 })
 
 other:AddButton({
-	Name = "DOORS测试版",
+	Name = "DOORS测试版 白名单 喵喵",
 	Callback = function()
       	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
   	end
@@ -348,33 +348,33 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "如果用这个"
+	Name = "如果用这个 喵喵"
 })
 
 other:AddButton({
-	Name = "用电脑",
+	Name = "用电脑 喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
   	end
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 喵喵~"
 })
 
 other:AddButton({
-	Name = "sh 用起床脚本",
+	Name = "sh 用起床脚本 喵喵喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
   	end
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓+电脑"
+	Name = "↓开始↓+电脑 喵喵~"
 })
 
 other:AddButton({
-	Name = "起床战争不同(2)",
+	Name = "起床战争不同(2) 喵喵喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
   	end
@@ -386,16 +386,16 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
-other:AddParagraph("提示","是否无敌")
+other:AddParagraph("提示","是否无敌 喵喵~")
 
-other:AddParagraph("无敌","时候你不动后，是不是会死了")
+other:AddParagraph("无敌","时候你不动后，是不是会死了 喵喵~")
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 喵喵~"
 })
 
 other:AddButton({
-	Name = "1",
+	Name = "1 喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E8%A7%82%E7%9C%8B%E7%8E%A9%E5%AE%B6"))()
   	end
@@ -408,11 +408,11 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 喵~"
 })
 
 other:AddButton({
-	Name = "这自动刷金币",
+	Name = "这自动刷金币 神！",
 	Callback = function()
       	loadstring(game:HttpGet(('https://raw.githubusercontent.com/urmomjklol69/GoldFarmBabft/main/GoldFarm.lua'),true))()
   	end
@@ -425,11 +425,11 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓喵"
 })
 
 other:AddButton({
-	Name = "1",
+	Name = "1 喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/MOD%20%E8%8F%9C%E5%8D%95"))()
   	end
@@ -442,11 +442,11 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓喵~"
 })
 
 other:AddButton({
-	Name = "自然灾害",
+	Name = "自然灾害 喵喵~喵喵喵",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/xiao122231/xiao122231/main/Stands%20Awakening"))()
   	end
@@ -459,34 +459,34 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓选择↓"
+	Name = "↓选择↓ 喵喵喵"
 })
 
-other:AddParagraph("提示","光影，有不同")
+other:AddParagraph("提示","光影，有不同 喵喵喵")
 
 other:AddButton({
-	Name = "光影高",
+	Name = "光影高 神",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%85%89%E5%BD%B1"))()
   	end
 })
 
 other:AddButton({
-	Name = "光影低",
+	Name = "光影低 喵",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%85%89%E5%BD%B12"))()
   	end
 })
 
 other:AddButton({
-	Name = "光影4V",
+	Name = "光影4V 神",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
   	end
 })
 
 other:AddButton({
-	Name = "光影666",
+	Name = "光影666 喵",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%85%89%E5%BD%B156665"))()
   	end
@@ -501,18 +501,18 @@ local other = Window:MakeTab({
 other:AddParagraph("提示","这不是飞行哦")
 
 local Section = other:AddSection({
-	Name = "↓选择↓"
+	Name = "↓选择↓ 喵"
 })
 
 other:AddButton({
-	Name = "飞行=50",
+	Name = "飞行=50 喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E9%A3%9E%E8%A1%8C%E6%A8%A1%E5%BC%8F"))()
   	end
 })
 
 other:AddButton({
-	Name = "飞行=100",
+	Name = "飞行=100 喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E9%A3%9E%E8%A1%8C%E6%A8%A1%E5%BC%8F2"))()
   	end
@@ -525,25 +525,25 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 喵喵~"
 })
 
 other:AddButton({
-	Name = "兵工厂3",
+	Name = "兵工厂3 喵喵喵~",
 	Callback = function()
       	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
   	end
 })
 
 other:AddButton({
-	Name = "兵工厂2",
+	Name = "兵工厂2 喵喵~",
 	Callback = function()
       	loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
   	end
 })
 
 other:AddButton({
-	Name = "兵工厂",
+	Name = "兵工厂 喵？",
 	Callback = function()
       	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
   	end
@@ -556,29 +556,29 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓用电脑↓"
+	Name = "↓用电脑↓ 神"
 })
 
 other:AddButton({
-	Name = "电脑",
+	Name = "电脑 神",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
   	end
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 神"
 })
 
 other:AddButton({
-	Name = "力量传奇修改",
+	Name = "力量传奇修改 神",
 	Callback = function()
       	loadstring(game:HttpGet('https://raw.githubusercontent.com/jynzl/main/main/Musclas%20Legenos.lua'))()
   	end
 })
 
 other:AddButton({
-	Name = "力量传奇",
+	Name = "力量传奇 神",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/littlegui/main/MuscleLegends"))()
   	end
@@ -591,11 +591,11 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 神"
 })
 
 other:AddButton({
-	Name = "变异微笑",
+	Name = "变异微笑 神",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/InfectiousSmile.lua", true))()
   	end
@@ -607,18 +607,18 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
-other:AddParagraph("提示","脚本EF会丢失")
+other:AddParagraph("提示","脚本EF会丢失 神")
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 神"
 })
 
 local Section = other:AddSection({
-	Name = "X-自动离开"
+	Name = "X-自动离开 X-反击 神！"
 })
 
 other:AddButton({
-	Name = "极速传奇",
+	Name = "极速传奇 喵~ovo",
 	Callback = function()
       	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\111\121\115\99\112\47\98\101\116\97\47\109\97\105\110\47\37\69\57\37\56\48\37\57\70\37\69\53\37\66\65\37\65\54\37\69\55\37\56\50\37\66\56\37\69\56\37\66\53\37\66\55\46\108\117\97"))()
   	end
@@ -631,27 +631,27 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "不会用"
+	Name = "不会用 喵喵~"
 })
 
 other:AddButton({
-	Name = "无法",
+	Name = "无法 喵喵喵喵喵喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/now%20that%20the"))()
   	end
 })
 
 other:AddButton({
-	Name = "脚本EF2",
+	Name = "脚本EF2 神",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E8%84%9A%E6%9C%AC%E4%B8%AD%E5%BF%83d7d5daa88e6f3b6a510988549c64e5de" ))()
   	end
 })
 
-other:AddParagraph("提示","这种可以回去")
+other:AddParagraph("提示","这种可以回去 喵喵~")
 
 local Section = other:AddSection({
-	Name = "欢迎"
+	Name = "欢迎 喵喵~"
 })
 
 local other = Window:MakeTab({
@@ -661,13 +661,13 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 喵喵喵~"
 })
 
-other:AddParagraph("提示","出现放在公告")
+other:AddParagraph("提示","出现放在公告 喵喵~")
 
 other:AddButton({
-	Name = "俄亥俄州",
+	Name = "俄亥俄州 喵喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
   	end
@@ -680,11 +680,11 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 喵喵喵~"
 })
 
 other:AddButton({
-	Name = "？？？",
+	Name = "？？？ 喵喵喵~",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/XiaoyunscriptV1.0.2.lua"))()
   	end
@@ -697,7 +697,7 @@ other:AddButton({
   	end
 })
 
-other:AddParagraph("提示","添加什么")
+other:AddParagraph("提示","添加什么 喵喵~")
 
 local other = Window:MakeTab({
     Name = "逃生洪水2 喵~",
@@ -706,29 +706,29 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 喵喵~"
 })
 
-other:AddParagraph("提示","开挂，千万别开挂 先第一个你不要给别人 不然别人会用举报 小心点")
+other:AddParagraph("提示","开挂，千万别开挂 先第一个你不要给别人 不然别人会用举报 小心点 神")
 
-other:AddParagraph("提示","先进私房 在服务器时候 要私房 但是别人不会举报你")
+other:AddParagraph("提示","先进私房 在服务器时候 要私房 但是别人不会举报你 神")
 
 other:AddButton({
-	Name = "1",
+	Name = "1 神 可能封",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/kosuke14/REBOYHub/main/games/FE2GodMode.lua"))()
   	end
 })
 
 other:AddButton({
-	Name = "2",
+	Name = "2 神 可能封",
 	Callback = function()
       	loadstring(game:HttpGet("https://reboyapp.cf/rbxscripts/fe2adminguissrc.lua"))()
   	end
 })
 
 other:AddButton({
-	Name = "3",
+	Name = "3 神 可能封",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Insanxty/roblox/main/fe2"))()
   	end
@@ -740,13 +740,13 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
-other:AddParagraph("免费脚本","X-MEA脚本")
+other:AddParagraph("免费脚本","X-MEA脚本 神")
 
-other:AddParagraph("提示","用正常情况")
+other:AddParagraph("提示","用正常情况 神")
 
-other:AddParagraph("试玩","用一下")
+other:AddParagraph("试玩","用一下 神")
 
-other:AddParagraph("用来了","这个是试一下")
+other:AddParagraph("用来了","这个是试一下 神")
 
 local other = Window:MakeTab({
     Name = "公告牌 神",
@@ -754,12 +754,12 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
-other:AddParagraph("公告","不再用卡密")
+other:AddParagraph("公告","不再用卡密 神")
 
-other:AddParagraph("X-MEA脚本","在下面是公告")
+other:AddParagraph("X-MEA脚本","在下面是公告 神")
 
 local other = Window:MakeTab({
-    Name = "公告最新版/旧版",
+    Name = "公告最新版/旧版 神隐！",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -791,7 +791,7 @@ local other = Window:MakeTab({
 })
 
 local Section = other:AddSection({
-	Name = "↓开始↓"
+	Name = "↓开始↓ 神"
 })
 
 other:AddParagraph("作者是","王者号 因为旧版的想办法换一个")
