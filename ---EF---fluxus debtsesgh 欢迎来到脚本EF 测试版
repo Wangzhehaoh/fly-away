@@ -15,7 +15,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("提示","脚本中心EF？")
+SB:AddParagraph("提示","脚本中心EF？")
 
 Tab:AddParagraph("提示","现在你用免费脚本")
 
