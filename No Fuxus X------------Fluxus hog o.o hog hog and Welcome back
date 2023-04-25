@@ -1243,4 +1243,92 @@ other:AddButton({
   	end
 })
 
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddParagraph("私一下","有可能USA 知道了攻击我的资源 我发现有人偷USA")
+
+other:AddParagraph("问王者号","用隐藏脚本X！")
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
 OrionLib:Init()
