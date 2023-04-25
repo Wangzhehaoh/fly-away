@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local Window = OrionLib:MakeWindow({Name = "这查一下卡密", HidePremium = false, SaveConfig = false, IntroText = "卡密", ConfigFolder = "卡密"})
+local Window = OrionLib:MakeWindow({Name = "卡密", HidePremium = false, SaveConfig = false, IntroText = "卡密", ConfigFolder = "卡密"})
 
 local other = Window:MakeTab({
     Name = "加入群，才获取卡密",
@@ -47,7 +47,7 @@ local Key = Window:MakeTab({
 })
 
 local Section = Key:AddSection({
-  Name = "你终于用脚本EF，已经启动了验证卡密"
+  Name = "你终于用X，验证卡密"
 })
 
 Key:AddTextbox({
