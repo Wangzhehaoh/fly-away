@@ -382,12 +382,6 @@ other:AddButton({
   	end
 })
 
-local other = Window:MakeTab({
-    Name = "MOD菜单 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
 local Section = other:AddSection({
 	Name = "↓开始↓喵"
 })
@@ -691,5 +685,562 @@ other:AddParagraph("作者是","王者号 因为旧版的想办法换一个")
 other:AddParagraph("谢谢关系","请大家 我没无法用 感谢你们")
 
 other:AddParagraph("提示","可以分享哦！")
+
+other:AddParagraph("提示","lol 已经前面那个所有游戏e 等一下")
+
+other:AddParagraph("提示","USA 我不再许这个MAE封区")
+
+local other = Window:MakeTab({
+    Name = "evade EF",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "evade2",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
+  	end
+})
+
+other:AddButton({
+	Name = "evade",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/evade"))()
+  	end
+})
+
+other:AddParagraph("这是","F evade")
+
+local Section = other:AddSection({
+	Name = "↓开始↓测试"
+})
+
+other:AddButton({
+	Name = "evade F F图标",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Evade/main.lua"))()
+  	end
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+local Section = other:AddSection({
+	Name = "X-MAE"
+})
+
+other:AddParagraph("用evade","1全是 X 但是不用谢")
+
+other:AddButton({
+	Name = "召唤呼 Xevade",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E6%B3%A8%E6%84%8F%E7%94%A8evade5546488466454546798654---------------------%E5%BC%80%E6%8C%82%E6%A8%A1%E5%BC%8F%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%81"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "监狱人生模式",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "监狱人生",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/Gae7YC84"))();
+  	end
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓用旧版"
+})
+
+other:AddButton({
+	Name = "监狱人生2 1.3V",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "蜂群",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "蜂群",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/BSS%20FREE"))()
+  	end
+})
+
+other:AddButton({
+	Name = "蜂群2",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/bsstrainer.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "蜂群3",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Stebulous/scripts/main/open-source/beeswarm%20v1.2.lua", true))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "DOORS",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddParagraph("DOORS","四种有什么好用？")
+
+other:AddButton({
+	Name = "DOORSMS",
+	Callback = function()
+      	loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
+  	end
+})
+
+other:AddButton({
+	Name = "DOORS十架字 这是假的",
+	Callback = function()
+      	loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
+  	end
+})
+
+other:AddButton({
+	Name = "DOORS2",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+  	end
+})
+
+other:AddButton({
+	Name = "DOORS3",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "DOORS测试版",
+	Callback = function()
+      	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "起床战争",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "如果用这个"
+})
+
+other:AddButton({
+	Name = "用电脑",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  	end
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "sh 用起床脚本",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓+电脑"
+})
+
+other:AddButton({
+	Name = "起床战争不同(2)",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "自己是否不动",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddParagraph("提示","是否无敌")
+
+other:AddParagraph("无敌","时候你不动后，是不是会死了")
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "1",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E8%A7%82%E7%9C%8B%E7%8E%A9%E5%AE%B6"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "造船寻宝",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "这自动刷金币",
+	Callback = function()
+      	loadstring(game:HttpGet(('https://raw.githubusercontent.com/urmomjklol69/GoldFarmBabft/main/GoldFarm.lua'),true))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "MOD菜单",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "1",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/MOD%20%E8%8F%9C%E5%8D%95"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "自然灾害",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "自然灾害",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/xiao122231/xiao122231/main/Stands%20Awakening"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "光影",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓选择↓"
+})
+
+other:AddParagraph("提示","光影，有不同")
+
+other:AddButton({
+	Name = "光影高",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%85%89%E5%BD%B1"))()
+  	end
+})
+
+other:AddButton({
+	Name = "光影低",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%85%89%E5%BD%B12"))()
+  	end
+})
+
+other:AddButton({
+	Name = "光影4V",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+  	end
+})
+
+other:AddButton({
+	Name = "光影666",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%85%89%E5%BD%B156665"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "飞行可带东西",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddParagraph("提示","这不是飞行哦")
+
+local Section = other:AddSection({
+	Name = "↓选择↓"
+})
+
+other:AddButton({
+	Name = "飞行=50",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E9%A3%9E%E8%A1%8C%E6%A8%A1%E5%BC%8F"))()
+  	end
+})
+
+other:AddButton({
+	Name = "飞行=100",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E9%A3%9E%E8%A1%8C%E6%A8%A1%E5%BC%8F2"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "兵工厂",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "兵工厂3",
+	Callback = function()
+      	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
+  	end
+})
+
+other:AddButton({
+	Name = "兵工厂2",
+	Callback = function()
+      	loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+  	end
+})
+
+other:AddButton({
+	Name = "兵工厂",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "力量传奇",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓用电脑↓"
+})
+
+other:AddButton({
+	Name = "电脑",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  	end
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "力量传奇修改",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/jynzl/main/main/Musclas%20Legenos.lua'))()
+  	end
+})
+
+other:AddButton({
+	Name = "力量传奇",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/littlegui/main/MuscleLegends"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "变异微笑",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "变异微笑",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/InfectiousSmile.lua", true))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "极速传奇",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddParagraph("提示","脚本EF会丢失")
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+local Section = other:AddSection({
+	Name = "X-自动离开"
+})
+
+other:AddButton({
+	Name = "极速传奇",
+	Callback = function()
+      	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\111\121\115\99\112\47\98\101\116\97\47\109\97\105\110\47\37\69\57\37\56\48\37\57\70\37\69\53\37\66\65\37\65\54\37\69\55\37\56\50\37\66\56\37\69\56\37\66\53\37\66\55\46\108\117\97"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "无法回去，在这里 脚本中心EF",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "不会用"
+})
+
+other:AddButton({
+	Name = "无法",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/now%20that%20the"))()
+  	end
+})
+
+other:AddButton({
+	Name = "脚本EF2",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E8%84%9A%E6%9C%AC%E4%B8%AD%E5%BF%83d7d5daa88e6f3b6a510988549c64e5de" ))()
+  	end
+})
+
+other:AddParagraph("提示","这种可以回去")
+
+local Section = other:AddSection({
+	Name = "欢迎"
+})
+
+local other = Window:MakeTab({
+    Name = "俄亥俄州",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddParagraph("提示","出现放在公告")
+
+other:AddButton({
+	Name = "俄亥俄州",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "？？？",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddButton({
+	Name = "？？？",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/XiaoyunscriptV1.0.2.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "？？？2",
+	Callback = function()
+      	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
+  	end
+})
+
+other:AddParagraph("提示","添加什么")
+
+local other = Window:MakeTab({
+    Name = "逃生洪水2",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = other:AddSection({
+	Name = "↓开始↓"
+})
+
+other:AddParagraph("提示","开挂，千万别开挂 先第一个你不要给别人 不然别人会用举报 小心点")
+
+other:AddParagraph("提示","先进私房 在服务器时候 要私房 但是别人不会举报你")
+
+other:AddButton({
+	Name = "1",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/kosuke14/REBOYHub/main/games/FE2GodMode.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "2",
+	Callback = function()
+      	loadstring(game:HttpGet("https://reboyapp.cf/rbxscripts/fe2adminguissrc.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "3",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Insanxty/roblox/main/fe2"))()
+  	end
+})
 
 OrionLib:Init()
