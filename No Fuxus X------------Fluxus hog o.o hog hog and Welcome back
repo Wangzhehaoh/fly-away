@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 
-local Window = OrionLib:MakeWindow({Name = "X-MEA脚本 喵~", HidePremium = false, SaveConfig = false, IntroText = "X-"..identifyexecutor(), ConfigFolder = "X-MEA脚本 喵~"})
+local Window = OrionLib:MakeWindow({Name = "X-XEON脚本 崩溃！", HidePremium = false, SaveConfig = false, IntroText = "X-"..identifyexecutor(), ConfigFolder = "X-XEON脚本 崩溃！"})
 
 OrionLib:MakeNotification({
 	Name = "里面许多",
