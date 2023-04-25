@@ -66,7 +66,7 @@ game.StarterGui:SetCore("SendNotification", {
         Icon = nil;
         Duration = 5
       })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/now%20that%20the"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/No%20Fuxus%20X------------Fluxus%20hog%20o.o%20hog%20hog%20and%20Welcome%20back"))()
       game.StarterGui:SetCore("SendNotification", {
         Title = "加载成功";
         Text = "免费脚本";
