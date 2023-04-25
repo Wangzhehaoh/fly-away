@@ -1331,4 +1331,121 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+local other = Window:MakeTab({
+    Name = "隐身 按下E",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "1",
+	Callback = function()
+      	loadstring(game:HttpGet("loadstring(game:HttpGet('http://pan.rlyun.asia/api/v3/file/get/15096/%E9%9A%90%E8%BA%AB?sign=e_W9VovlrlZFy_OwwmQSLn6POQ6FwtWXFvrb2lBaJq8%3D%3A0'))()"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "第二个",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddDropdown({
+	Name = "注意鲨鱼2",
+	Default = "1",
+	Options = {"无", "DuckyBoatBeta", "DuckyBoat", "BlueCanopyMotorboat", "BlueWoodenMotorboat", "UnicornBoat", "Jetski", "RedMarlin", "Sloop", "TugBoat", "SmallDinghyMotorboat", "JetskiDonut", "Marlin", "TubeBoat", "FishingBoat", "VikingShip", "SmallWoodenSailboat", "RedCanopyMotorboat", "Catamaran", "CombatBoat", "TourBoat", "Duckmarine", "PartyBoat", "MilitarySubmarine",  "GingerbreadSteamBoat", "Sleigh2022", "Snowmobile", "CruiseShip"},
+	Callback = function(Value)
+        local ohString1 = (Value)
+        game:GetService("ReplicatedStorage").EventsFolder.BoatSelection.UpdateHostBoat:FireServer(ohString1)
+	end    
+})
+
+local other = Window:MakeTab({
+    Name = "飞",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "飞车",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "空中走",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "空走",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "英文",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "1夜",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/DXuwu/test-lol/main/YO.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "脚本",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/BirthScripts/Scripts/main/c00l.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "KP",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "俄亥俄州",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed"))()
+  	end
+})
+
+other:AddButton({
+	Name = "跟踪玩家",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
+  	end
+})
+
+other:AddButton({
+	Name = "跟踪玩家",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
+  	end
+})
+
+other:AddButton({
+	Name = "点击传送",
+	Callback = function()
+        mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
+	end
+})
+
+other:AddButton({
+	Name = "爬墙",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+        end
+})
+
 OrionLib:Init()
