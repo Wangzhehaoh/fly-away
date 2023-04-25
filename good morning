@@ -1,0 +1,15 @@
+elseif a=="ysxixixixi"then
+_G.whitelisted=true
+end
+elseif a=="ysxixixixi"then
+_G.whitelisted=true
+elseif a=="ysxixixixi"then
+_G.whitelisted=true
+elseif a=="ysxixixixi"then
+_G.whitelisted=true
+end
+game.Players.LocalPlayer:Kick()
+getgenv().X.MAE="X.MAE."loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%8D%A1%E5%AF%86%EF%BC%9F"))()
+else
+getgenv().X.MAE="X.MAE."loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%8D%A1%E5%AF%86%EF%BC%9F"))()
+end
