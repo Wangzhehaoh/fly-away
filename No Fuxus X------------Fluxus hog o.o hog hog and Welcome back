@@ -182,7 +182,7 @@ other:AddButton({
 })
 
 local other = Window:MakeTab({
-    Name = "evade 神 X.MAE",
+    Name = "所有游戏 X.MAE",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -235,12 +235,6 @@ other:AddButton({
   	end
 })
 
-local other = Window:MakeTab({
-    Name = "监狱人生模式 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
 local Section = other:AddSection({
 	Name = "↓开始↓ 喵~"
 })
@@ -261,12 +255,6 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
   	end
-})
-
-local other = Window:MakeTab({
-    Name = "蜂群 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
 })
 
 local Section = other:AddSection({
@@ -292,12 +280,6 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Stebulous/scripts/main/open-source/beeswarm%20v1.2.lua", true))()
   	end
-})
-
-local other = Window:MakeTab({
-    Name = "DOORS 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
 })
 
 local Section = other:AddSection({
@@ -341,12 +323,6 @@ other:AddButton({
   	end
 })
 
-local other = Window:MakeTab({
-    Name = "起床战争 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
 local Section = other:AddSection({
 	Name = "如果用这个 喵喵"
 })
@@ -380,12 +356,6 @@ other:AddButton({
   	end
 })
 
-local other = Window:MakeTab({
-    Name = "自己是否不动 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
 other:AddParagraph("提示","是否无敌 喵喵~")
 
 other:AddParagraph("无敌","时候你不动后，是不是会死了 喵喵~")
@@ -399,12 +369,6 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E8%A7%82%E7%9C%8B%E7%8E%A9%E5%AE%B6"))()
   	end
-})
-
-local other = Window:MakeTab({
-    Name = "造船寻宝 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
 })
 
 local Section = other:AddSection({
@@ -435,12 +399,6 @@ other:AddButton({
   	end
 })
 
-local other = Window:MakeTab({
-    Name = "自然灾害 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
 local Section = other:AddSection({
 	Name = "↓开始↓喵~"
 })
@@ -450,12 +408,6 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/xiao122231/xiao122231/main/Stands%20Awakening"))()
   	end
-})
-
-local other = Window:MakeTab({
-    Name = "光影 喵喵喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
 })
 
 local Section = other:AddSection({
@@ -492,12 +444,6 @@ other:AddButton({
   	end
 })
 
-local other = Window:MakeTab({
-    Name = "飞行可带东西 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
 other:AddParagraph("提示","这不是飞行哦")
 
 local Section = other:AddSection({
@@ -516,12 +462,6 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E9%A3%9E%E8%A1%8C%E6%A8%A1%E5%BC%8F2"))()
   	end
-})
-
-local other = Window:MakeTab({
-    Name = "兵工厂 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
 })
 
 local Section = other:AddSection({
@@ -547,12 +487,6 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
   	end
-})
-
-local other = Window:MakeTab({
-    Name = "力量传奇 喵喵喵",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
 })
 
 local Section = other:AddSection({
@@ -584,12 +518,6 @@ other:AddButton({
   	end
 })
 
-local other = Window:MakeTab({
-    Name = "变异微笑 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
 local Section = other:AddSection({
 	Name = "↓开始↓ 神"
 })
@@ -599,12 +527,6 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/InfectiousSmile.lua", true))()
   	end
-})
-
-local other = Window:MakeTab({
-    Name = "极速传奇 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
 })
 
 other:AddParagraph("提示","脚本EF会丢失 神")
@@ -622,12 +544,6 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\111\121\115\99\112\47\98\101\116\97\47\109\97\105\110\47\37\69\57\37\56\48\37\57\70\37\69\53\37\66\65\37\65\54\37\69\55\37\56\50\37\66\56\37\69\56\37\66\53\37\66\55\46\108\117\97"))()
   	end
-})
-
-local other = Window:MakeTab({
-    Name = "无法回去 喵喵喵喵",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
 })
 
 local Section = other:AddSection({
@@ -654,12 +570,6 @@ local Section = other:AddSection({
 	Name = "欢迎 喵喵~"
 })
 
-local other = Window:MakeTab({
-    Name = "俄亥俄州 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
 local Section = other:AddSection({
 	Name = "↓开始↓ 喵喵喵~"
 })
@@ -671,12 +581,6 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
   	end
-})
-
-local other = Window:MakeTab({
-    Name = "？？？ 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
 })
 
 local Section = other:AddSection({
@@ -698,12 +602,6 @@ other:AddButton({
 })
 
 other:AddParagraph("提示","添加什么 喵喵~")
-
-local other = Window:MakeTab({
-    Name = "逃生洪水2 喵~",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
 
 local Section = other:AddSection({
 	Name = "↓开始↓ 喵喵~"
@@ -732,12 +630,6 @@ other:AddButton({
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Insanxty/roblox/main/fe2"))()
   	end
-})
-
-local other = Window:MakeTab({
-    Name = "公告提示 神",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
 })
 
 other:AddParagraph("免费脚本","X-MEA脚本 神")
