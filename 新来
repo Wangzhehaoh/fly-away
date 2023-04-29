@@ -27,7 +27,7 @@ Stepped = game:GetService("RunService").Stepped:Connect(function()
 	end
 end)(t)
 end)
-tab:Toggle("脚本(1.1.1)",false, function(t)
+tab:Toggle("脚本(20)",false, function(t)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/No%20Fuxus%20X------------Fluxus%20hog%20o.o%20hog%20hog%20and%20Welcome%20back"))()
 end)
 tab:Slider("速度",0,100,30, function(t)
