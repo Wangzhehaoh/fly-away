@@ -1,0 +1,51 @@
+--密码195154ajd
+local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
+
+local win = lib:Window("BS(2.5)",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
+
+local tab = win:Tab("主要")
+
+tab:Button("信用", function()
+lib:Notification("欢迎来到BS脚本", "你好！", "好的")
+end)
+
+tab:Toggle("穿墙",false, function(t)
+local Workspace = game:GetService("Workspace")
+local Players = game:GetService("Players")
+local Clipon = true
+
+Stepped = game:GetService("RunService").Stepped:Connect(function()
+	if not Clipon == false then
+		for a, b in pairs(Workspace:GetChildren()) do
+        if b.Name == Players.LocalPlayer.Name then
+        for i, v in pairs(Workspace[Players.LocalPlayer.Name]:GetChildren()) do
+        if v:IsA("BasePart") then
+        v.CanCollide = false
+        end end end end
+	else
+		Stepped:Disconnect()
+	end
+end)(t)
+end)
+tab:Toggle("BS(2.0)",false, function(t)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/No%20Fuxus%20X------------Fluxus%20hog%20o.o%20hog%20hog%20and%20Welcome%20back"))()
+end)
+tab:Slider("速度",0,100,30, function(t)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+end)
+
+tab:Colorpicker("颜色选择器",Color3.fromRGB(255,0,0), function(t)
+print(t)
+end)
+
+tab:Textbox("文本框",true, function(t)
+print(t)
+end)
+
+tab:Label("标签")
+
+local changeclr = win:Tab("更改用户界面颜色")
+
+changeclr:Colorpicker("更改用户界面颜色",Color3.fromRGB(44, 120, 224), function(t)
+lib:ChangePresetColor(Color3.fromRGB(t.R * 255, t.G * 255, t.B * 255))
+end)
