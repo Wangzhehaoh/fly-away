@@ -1,6 +1,137 @@
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/L3k96v3z"))()
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 
-local Window = OrionLib:MakeWindow({Name = "X-XEON脚本 1.1.1", HidePremium = false, SaveConfig = false, IntroText = "X-"..identifyexecutor(), ConfigFolder = "X-XEON脚本 1.1.1"})
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "用白脚本"; Text ="用脚本？"; Duration = 10; })
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "指 "; Text ="白名单"; Duration = 10; })
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "现在？"; Text ="你还没加入白名单"; Duration = 10; })
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "用白脚本"; Text ="不用担心"; Duration = 10; })
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "作者是王者号"; Text ="白名单"; Duration = 10; })
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "现在？"; Text ="开玩笑"; Duration = 10; })
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Players = game:GetService('Players')
+local localplayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Light = game:GetService("Lighting")
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+OrionLib:MakeNotification({
+    Name = "用X-XEON",
+    Content = "等一下，白脚本",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Window = OrionLib:MakeWindow({Name = "X-XEON脚本 1.1.2", HidePremium = false, SaveConfig = false, IntroText = "X-"..identifyexecutor(), ConfigFolder = "X-XEON脚本 1.1.2"})
 
 OrionLib:MakeNotification({
 	Name = "里面许多",
@@ -1345,6 +1476,13 @@ other:AddButton({
 	Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
         end
+})
+
+other:AddButton({
+	Name = "控制玩家 (文件减少)",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/good%20morning%20baby%20girl%20and%20she%20said%20that%20I%20have%20a%20good%20time%20for%20a%20while%20ago%20but%20you%20can%20get%20the%20money"))()
+  	end
 })
 
 OrionLib:Init()
