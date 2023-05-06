@@ -420,6 +420,365 @@ viewbutton.MouseButton1Click:Connect(function()
 	end
 end)
 
+local cbringb = makeplrbutton("把玩家传送你前面")
+
+local function noanimations()
+	local c = lp.Character
+	if c and c.Parent then
+		local hum = c:FindFirstChildOfClass("Humanoid")
+		if hum then
+			local animate = gp(c, "Animate", "LocalScript")
+			if animate then
+				animate.Disabled = true
+			end
+			for i, v in pairs(hum:GetPlayingAnimationTracks()) do
+				v:Stop()
+			end
+		else
+			notify("humanoid not found")
+		end
+	else
+		notify("character not found")
+	end
+end
+
+local function isConnected(part0, part1, tested)
+    if not ((typeof(part0) == "Instance") and part0:IsA("BasePart")) then
+        return false
+    end
+    if not ((typeof(part1) == "Instance") and part1:IsA("BasePart")) then
+        return false
+    end
+    if not tested then
+        tested = {}
+    end
+    local ret = false
+    table.insert(tested, part0)
+    for i, v in pairs(part0:GetConnectedParts()) do
+        if part1 == v then
+            return true
+        elseif not table.find(tested, v) then
+            ret = ret or isConnected(v, part1, tested)
+        end
+    end
+    return ret
+end
+
+local function attach(c1)
+    local bck = lp:FindFirstChildOfClass("Backpack")
+	local c = lp.Character
+	--checks for: model, humanoid, arm, torso for main character:
+	if not (c and c.Parent) then
+	    notify("character not found")
+	    return false
+	end
+	local hum = c:FindFirstChildOfClass("Humanoid")
+	if not hum then
+	    notify("humanoid not found")
+	    return false
+	end 
+	local arm = gp(c, "Right Arm", "BasePart") or gp(c, "RightHand", "BasePart")
+	if not arm then
+	    notify("arm not found")
+	    return false
+	end
+	local torso = gp(c, "Torso", "BasePart") or gp(c, "UpperTorso", "BasePart")
+	if not torso then
+	    notify("torso not found")
+	    return
+	end
+	if torso:IsGrounded() then
+	    notify("torso is grounded")
+	    return
+	end
+	if not isConnected(arm, torso) then
+	    notify("arm and toso not connected")
+	    return
+	end
+	--checks for: tool:
+	local tool = c:FindFirstChildOfClass("Tool")
+	if (not tool) and bck then
+		tool = bck:FindFirstChildOfClass("Tool")
+	end
+	if not tool then
+	    notify("no tool found")
+	    return false
+	end
+	local handle = gp(tool, "Handle", "BasePart")
+	if not handle then
+	    notify("tool handle not found")
+	    return
+	end
+	--checks for: model, humanoid, arm, torso for target character:
+	if not (c1 and c1.Parent) then
+	    notify("target character not found")
+	    return false
+	end
+	local hum1 = c1:FindFirstChildOfClass("Humanoid")
+	if not hum1 then
+	    notify("target humanoid not found")
+	    return false
+	end
+	local arm1 = gp(c1, "Right Arm", "BasePart") or gp(c1, "RightHand", "BasePart")
+	if not arm1 then
+	    notify("target arm not found")
+	    return false
+	end
+	local torso1 = gp(c1, "Torso", "BasePart") or gp(c1, "UpperTorso", "BasePart")
+	if not torso1 then
+	    notify("target torso not found")
+	    return
+	end
+	if torso1:IsGrounded() then
+	    notify("target torso is grounded")
+	    return
+	end
+	if not isConnected(arm1, torso1) then
+	    notify("target arm and toso not connected")
+	    return
+	end
+	--all checks good
+	if bck then
+    	for i, v in pairs(c:GetChildren()) do
+    	    if v:IsA("Tool") then
+    	        v.Parent = bck
+    	    end
+    	end
+	end
+	local nhum = hum:Clone()
+	hum:Destroy()
+	hum = nhum
+	hum.Parent = c
+	hum:EquipTool(tool)
+	for i, v in pairs(c1:GetDescendants()) do
+		if v and v.Parent and v:IsA("BasePart") then
+			v.Massless = true
+		end
+	end
+	while stepped:Wait() do
+	    --checks for: model, humanoid, arm, torso for main character:
+	    if not (c and c.Parent) then
+	        notify("character removed")
+	        return false
+	    end
+	    if (not hum and hum.Parent) then
+	        notify("humanoid removed")
+	        return false
+	    end
+	    if not (arm and arm.Parent) then
+	        notify("arm removed")
+	        return false
+	    end
+	    if not (torso and torso.Parent) then
+	        notify("torso removed")
+	        return false
+	    end
+	    if torso:IsGrounded() then
+    	    notify("torso got grounded")
+    	    return
+    	end
+	    if not isConnected(arm, torso) then
+    	    notify("arm and toso connection removed")
+    	    return
+    	end
+	    --checks for: model, humanoid, arm, torso for target character:
+	    if not (c1 and c1.Parent) then
+	        notify("target character removed")
+	        return false
+	    end
+	    if not (hum1 and hum1.Parent) then
+	        notify("target humanoid removed")
+	        return false
+	    end
+	    if not (arm1 and arm1.Parent) then
+	        notify("target arm removed")
+	        return false
+	    end
+	    if not (torso1 and torso1.Parent) then
+	        notify("target torso removed")
+	        return false
+	    end
+	    if torso:IsGrounded() then
+            notify("target torso got grounded")
+            return
+        end
+	    if not isConnected(arm1, torso1) then
+    	    notify("target arm and toso connection removed")
+    	    return
+    	end
+    	--checks for: tool
+	    if not (tool and tool.Parent) then
+	        notify("tool removed")
+	        return false
+	    end
+	    if not (handle and handle.Parent) then
+	        notify("tool handle removed")
+	        return false
+	    end
+	    if (tool.Parent ~= c) and (tool.Parent ~= c1) and (tool.Parent ~= bck) then
+	        notify("unexpected tool parent")
+	        return false
+	    end
+	    --all checks good
+	    if (tool.Parent == c1) then
+	        break
+	    end
+	    tool.Parent = c
+	    weldtp(arm1, handle.CFrame)
+	    if (tool.Parent == c1) then
+	        break
+	    end
+	end
+	return handle
+end
+
+makeplrbutton("无").MouseButton1Click:Connect(function()
+    local plr = currentplayer
+    local c1 = plr.Character
+    if not (c1 and c1.Parent) then
+        notify("target character not found")
+        return
+    end
+    if not table.find(controllable, c1) then
+        reset(true)
+        wait(0.1)
+    end
+    if not (plr and plr.Parent) then
+        notify("target player left")
+        return
+    end
+    if not (c1 and c1.Parent) then
+        c1 = currentplayer.Character
+    end
+    if not (c1 and c1.Parent) then
+        notify("target character not found")
+        return
+    end
+	local c = lp.Character
+	if not (c and c.Parent) then
+	    notify("character not found")
+        return
+	end
+	local part = gp(c, "HumanoidRootPart", "BasePart") or gp(c, "Torso", "BasePart") or gp(c, "UpperTorso", "BasePart") or gp(c, "Head", "BasePart")
+	if not part then
+	    notify("part not found")
+	    return
+	end
+	local cfr = part.CFrame
+	local joint = attach(currentplayer.Character)
+	if not joint then
+	    return
+	end
+	weldtp(part, cfr)
+	wait(0.5)
+	if c and c.Parent and part and part.Parent and joint and joint.Parent then
+		weldtp(part, cfr)
+		if not (joint and joint.Parent) then
+		    notify("joint removed")
+		    reset(false)
+		    return
+		end
+		joint:BreakJoints()
+		reset(false)
+		notify("brought " .. currentplayer.Name)
+	end
+end)
+
+makeplrbutton("无").MouseButton1Click:Connect(function()
+	local plr = currentplayer
+    local c1 = plr.Character
+    if not (c1 and c1.Parent) then
+        notify("target character not found")
+        return
+    end
+    if not table.find(controllable, c1) then
+        reset(true)
+        wait(0.1)
+    end
+    if not (plr and plr.Parent) then
+        notify("target player left")
+        return
+    end
+    if not (c1 and c1.Parent) then
+        notify("target character removed")
+        return
+    end
+	local c = lp.Character
+	if not (c and c.Parent) then
+	    notify("character not found")
+        return
+	end
+	local part = gp(c, "HumanoidRootPart", "BasePart") or gp(c, "Torso", "BasePart") or gp(c, "UpperTorso", "BasePart") or gp(c, "Head", "BasePart")
+	if not part then
+	    notify("part not found")
+	    return
+	end
+	local cfr = part.CFrame
+	local joint = attach(currentplayer.Character)
+	if not joint then
+	    return
+	end
+	weldtp(part, cfr)
+	local con, con1 = nil, nil
+	con = heartbeat:Connect(function()
+	    if not (part and part.Parent) then
+	        con:Disconnect()
+	        con1:Disconnect()
+	        return
+	    end
+	    part.Velocity = v3(0, -200000, 0)
+	end)
+	con1 = stepped:Connect(function()
+	    if not (part and part.Parent) then
+	        con:Disconnect()
+	        con1:Disconnect()
+	        return
+	    end
+	    part.Velocity = v3_0
+	end)
+	wait(0.5)
+	con:Disconnect()
+	con1:Disconnect()
+	if c and c.Parent and part and part.Parent and joint and joint.Parent then
+		weldtp(part, cfr)
+		if not (joint and joint.Parent) then
+		    notify("joint removed")
+		    reset(false)
+		    return
+		end
+		joint:BreakJoints()
+		reset(false)
+		notify("attempted to kill " .. currentplayer.Name)
+	else
+	    notify("something went wrong")
+	end
+end)
+
+makeplrbutton("无").MouseButton1Click:Connect(function()
+	return attach(currentplayer.Character) and notify("attached to " .. currentplayer.Name)
+end)
+
+makeplrbutton("查别人的朋友").MouseButton1Click:Connect(function()
+	playerframef.Visible = not playerframef.Visible
+	if not playerframef.Visible then
+		return
+	end
+	playerframef.framelabel.Text = "friends of: " .. currentplayer.Name
+	local scroll = playerframef.ScrollingFrame
+	for i, v in pairs(scroll:GetChildren()) do
+		if v and v.Parent and v:IsA("TextButton") then
+			v:Destroy()
+		end
+	end
+	for i, v in pairs(plrs:GetPlayers()) do
+		spawn(function()
+			if v and v.Parent and currentplayer:IsFriendsWith(v.UserId) then
+				addbtn(playerframef.ScrollingFrame, v)
+			end
+		end)
+	end
+end)
+
 local positionsframe = makeFrame(scrollingFrame, "位置", Color3.fromRGB(162, 108, 42))
 local addpositionbutton = Instance.new("TextButton")
 addpositionbutton.Name = "addpositionbutton"
@@ -502,6 +861,124 @@ addpositionbutton.MouseButton1Click:Connect(function()
 			end)
 		end
 	end
+end)
+
+local charframe = makeFrame(scrollingFrame, "性格；角色；字母", Color3.fromRGB(99, 15, 15))
+local function makecharbutton(buttontext)
+	local button = Instance.new("TextButton")
+	button.Name = "charButton"
+	button.Parent = charframe.ScrollingFrame
+	button.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+	button.BorderSizePixel = 0
+	button.Size = UDim2.new(1, -10, 0, 20)
+	button.Font = Enum.Font.SourceSans
+	button.Text = buttontext
+	button.TextColor3 = Color3.fromRGB(226, 226, 226)
+	button.TextSize = 15.000
+	return button
+end
+local function respawnRequest()
+	local ccfr = ws.CurrentCamera.CFrame
+	local c = lp.Character
+	lp.Character = nil
+	lp.Character = c
+	ws.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+	ws.CurrentCamera.CFrame = ccfr
+end
+local loopr = false
+local fakevoidp = nil
+reset = function(respawn)
+    if fakevoidp then
+        fakevoidp = nil
+        wait(0.3)
+    end
+	local c = lp.Character
+	local partName, cfr, ccfr = nil, nil, nil
+	if not (c and c.Parent) then
+		respawnRequest()
+		if not loopr then
+			notify("character not found, trying to respawn")
+		end
+		return
+	end
+	local part = gp(c, "HumanoidRootPart", "BasePart") or gp(c, "Head", "BasePart") or c:FindFirstChildWhichIsA("BasePart")
+	if not part then
+	    respawnRequest()
+		if not loopr then
+			notify("no part found in the character, trying to respawn")
+		end
+		return
+	end
+	partName, cfr, ccfr = part.Name, part.CFrame, ws.CurrentCamera.CFrame
+	spawn(function()
+		local c, part = c, nil
+		while c and c.Parent do
+			stepped:Wait()
+		end
+		while not (c and c.Parent) do
+			stepped:Wait()
+			c = lp.Character
+		end
+		while stepped:Wait() and c and c.Parent and (not part) do
+			part = gp(c, partName, "BasePart")
+		end
+		if not part then
+			if not loopr then
+				notify("failed to tp back")
+			end
+			return
+		end
+		weldtp(part, cfr)
+		ws.CurrentCamera.CFrame = ccfr
+		cfr = false
+		if not loopr then
+			notify("respawned")
+		end
+	end)
+	if respawn and (not loopr) then
+		notify("respawning...")
+	end
+	if respawn and (plrs.RespawnTime > 0.5) then
+		spawn(function()
+			while c and c.Parent do
+				if part and part.Parent then
+					cfr = part.CFrame
+				end
+				ccfr = ws.CurrentCamera.CFrame
+				stepped:Wait()
+			end
+		end)
+		local spamrequest = true
+		spawn(function()
+			while wait() and spamrequest and c and c.Parent do
+				respawnRequest()
+			end
+		end)
+		wait(0.5)
+		spamrequest = false
+		wait(plrs.RespawnTime - 0.5)
+		part = nil
+	end
+	if c and c.Parent then
+		if respawn then
+			local hum = c:FindFirstChildOfClass("Humanoid")
+			if hum then
+				hum:Destroy()
+			end
+		end
+		c:BreakJoints()
+		while respawn and gui and cfr do
+	        stepped:Wait()
+	    end
+	end
+end
+makecharbutton("重生").MouseButton1Click:Connect(function()
+	if not loopr then
+		reset(true)
+	end
+end)
+makecharbutton("重置").MouseButton1Click:Connect(function()
+	reset(false)
 end)
 con0 = stepped:Connect(antiflingF)
 con1 = heartbeat:Connect(antiflingF)
