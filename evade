@@ -7,7 +7,7 @@ local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wang
 OrionLib:MakeNotification({
     Name = "用EVADE？",
     Content = "等一会儿，提示",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://640864955",
     Time = 4
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
@@ -15,7 +15,7 @@ wait(4)
 OrionLib:MakeNotification({
     Name = "提示1",
     Content = "这些英语不方便 用些中文",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://640864955",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
@@ -23,7 +23,7 @@ wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示2",
     Content = "要翻译，全是中文",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://640864955",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
@@ -31,7 +31,7 @@ wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示3",
     Content = "用evade？等一会儿",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://640864955",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
@@ -39,7 +39,7 @@ wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示4",
     Content = "正常，用中文",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://640864955",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
@@ -47,7 +47,7 @@ wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示5",
     Content = "中文有些，没有完整翻译",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://640864955",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
@@ -55,7 +55,7 @@ wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示6",
     Content = "不好用，这是真的是翻译",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://640864955",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
@@ -63,7 +63,7 @@ wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示7",
     Content = "不用英语 直接来",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://640864955",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
@@ -71,7 +71,7 @@ wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示8",
     Content = "开始，这个下载",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://640864955",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
@@ -79,7 +79,7 @@ wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示9",
     Content = "加载好了 开始了",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://640864955",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
@@ -87,7 +87,7 @@ wait(0.1)
 OrionLib:MakeNotification({
     Name = "提示10",
     Content = "好了 别忘了哦",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://640864955",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
@@ -95,7 +95,7 @@ wait(0.1)
 OrionLib:MakeNotification({
     Name = "准备开挂",
     Content = "你一个，就开始",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://640864955",
     Time = 2
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
@@ -103,7 +103,7 @@ wait(5)
 OrionLib:MakeNotification({
     Name = "欢迎evade",
     Content = " 可以用这个脚本 有点不厉害 是这个脚本 有些中文没完整",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://640864955",
     Time = 30
 })
 local Window = OrionLib:MakeWindow({Name = "用脚本:Evade", HidePremium = false,IntroText = "脚本evade2.6V", SaveConfig = false, ConfigFolder = "OrionTest"})
