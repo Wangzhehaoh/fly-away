@@ -2,7 +2,7 @@ local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wang
 OrionLib:MakeNotification({
     Name = "用X-XEON",
     Content = "等一下，白脚本",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://2192707592",
     Time = 5
 })
 
@@ -11,13 +11,13 @@ local Window = OrionLib:MakeWindow({Name = "X-XEON脚本 1.1.2", HidePremium = f
 OrionLib:MakeNotification({
 	Name = "里面许多",
 	Content = "这些是一个许多",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://2192707592",
 	Time = 6
 })
 
 local Tab = Window:MakeTab({
 	Name = "开始用脚本公告 神",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://640864955",
 	PremiumOnly = false
 })
 
@@ -41,7 +41,7 @@ Tab:AddParagraph("公告 神","有些事情")
 
 local player = Window:MakeTab({
 	Name = "玩家 喵~",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://640864955",
 	PremiumOnly = false
 })
 
@@ -112,7 +112,7 @@ player:AddButton({
 
 local other = Window:MakeTab({
     Name = "其他 喵~",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://640864955",
     PremiumOnly = false
 })
 
@@ -141,7 +141,7 @@ other:AddToggle({
 
 local other = Window:MakeTab({
     Name = "其他模式 喵~",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://640864955",
     PremiumOnly = false
 })
 
@@ -642,7 +642,7 @@ other:AddParagraph("用来了","这个是试一下 神")
 
 local other = Window:MakeTab({
     Name = "公告牌 神",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://640864955",
     PremiumOnly = false
 })
 
@@ -652,7 +652,7 @@ other:AddParagraph("X-MEA脚本","在下面是公告 神")
 
 local other = Window:MakeTab({
     Name = "公告最新版/旧版 神隐！",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://640864955",
     PremiumOnly = false
 })
 
@@ -678,7 +678,7 @@ other:AddParagraph("搞笑公告最新版","全是猫，喵？？？")
 
 local other = Window:MakeTab({
     Name = "旧版作者 神",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://640864955",
     PremiumOnly = false
 })
 
@@ -698,7 +698,7 @@ other:AddParagraph("提示","USA 我不再许这个MAE封区")
 
 local other = Window:MakeTab({
     Name = "evade EF",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -752,7 +752,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "监狱人生模式",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -780,7 +780,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "蜂群",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -811,7 +811,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "DOORS",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -858,7 +858,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "起床战争",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -897,7 +897,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "自己是否不动",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -918,7 +918,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "造船寻宝",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -935,7 +935,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "MOD菜单",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -952,7 +952,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "自然灾害",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -969,7 +969,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "光影",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1009,7 +1009,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "飞行可带东西",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1035,7 +1035,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "兵工厂",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1066,7 +1066,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "力量传奇",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1101,7 +1101,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "变异微笑",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1118,7 +1118,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "极速传奇",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1141,7 +1141,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "无法回去，在这里 脚本中心EF",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1171,7 +1171,7 @@ local Section = other:AddSection({
 
 local other = Window:MakeTab({
     Name = "俄亥俄州",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1190,7 +1190,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "去那一个脚本",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1216,7 +1216,7 @@ other:AddParagraph("提示","添加什么")
 
 local other = Window:MakeTab({
     Name = "逃生洪水2",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1251,7 +1251,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "第二个",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1267,7 +1267,7 @@ other:AddDropdown({
 
 local other = Window:MakeTab({
     Name = "飞",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1280,7 +1280,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "空中走",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1293,7 +1293,7 @@ other:AddButton({
 
 local other = Window:MakeTab({
     Name = "英文",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://2192707592",
     PremiumOnly = false
 })
 
@@ -1357,6 +1357,20 @@ other:AddButton({
 	Name = "控制玩家 (文件减少)",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/good%20morning%20baby%20girl%20and%20she%20said%20that%20I%20have%20a%20good%20time%20for%20a%20while%20ago%20but%20you%20can%20get%20the%20money"))()
+  	end
+})
+
+other:AddButton({
+	Name = "控制玩家 (文件减少)",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E7%8E%A9%E5%AE%B6%E6%8E%A7%E5%88%B63)%20(5).txt"))()
+  	end
+})
+
+other:AddButton({
+	Name = "控制玩家 (文件多)",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E7%8E%A9%E5%AE%B6%E6%8E%A7%E5%88%B63)%20(2).txt"))()
   	end
 })
 
