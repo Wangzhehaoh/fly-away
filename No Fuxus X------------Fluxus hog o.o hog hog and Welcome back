@@ -1216,7 +1216,7 @@ other:AddParagraph("提示","添加什么")
 
 local other = Window:MakeTab({
     Name = "逃生洪水2",
-    Icon = "rbxassetid://698120463",
+    Icon = "rbxassetid://257528237",
     PremiumOnly = false
 })
 
