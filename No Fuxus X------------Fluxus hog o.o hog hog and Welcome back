@@ -6,7 +6,7 @@ OrionLib:MakeNotification({
     Time = 5
 })
 
-local Window = OrionLib:MakeWindow({Name = "X-XEON脚本 1.1.2", HidePremium = false, SaveConfig = false, IntroText = "X-"..identifyexecutor(), ConfigFolder = "X-XEON脚本 1.1.2"})
+local Window = OrionLib:MakeWindow({Name = "X-XEON脚本 1.2.4", HidePremium = false, SaveConfig = false, IntroText = "X-"..identifyexecutor(), ConfigFolder = "X-XEON脚本 1.2.4"})
 
 OrionLib:MakeNotification({
 	Name = "里面许多",
@@ -750,6 +750,13 @@ other:AddButton({
   	end
 })
 
+other:AddButton({
+	Name = "15evade",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/PepesGH1/stuff/main/evadeloader.lua"))()
+  	end
+})
+
 local other = Window:MakeTab({
     Name = "监狱人生模式",
     Icon = "rbxassetid://2192707592",
@@ -853,6 +860,13 @@ other:AddButton({
 	Name = "DOORS测试版",
 	Callback = function()
       	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
+  	end
+})
+
+other:AddButton({
+	Name = "召唤呼 Xevade",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"))()
   	end
 })
 
