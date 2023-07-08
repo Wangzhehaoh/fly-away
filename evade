@@ -3,7 +3,7 @@ local Players = game:GetService('Players')
 local localplayer = Players.LocalPlayer
 local GuiService = game:GetService("GuiService")
 local Light = game:GetService("Lighting")
-local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%90%AF%E5%8A%A8%E5%BA%93.lua"))()
 OrionLib:MakeNotification({
     Name = "用EVADE？",
     Content = "等一会儿，提示",
