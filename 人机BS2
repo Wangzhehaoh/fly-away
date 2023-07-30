@@ -1,5 +1,5 @@
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "成功进入"; Text ="BS脚本"; Duration = 4; })
-local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%90%AF%E5%8A%A8%E5%BA%93.lua"))()
 local Window = OrionLib:MakeWindow({Name = "BS(2.0)", HidePremium = false, SaveConfig = true,IntroText = "BS(2.0)", ConfigFolder = "BS(2.0"})
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎进入"; Text ="BS脚本"; Duration = 4; })
 local Tab =Window:MakeTab({
@@ -19,6 +19,9 @@ Tab:AddButton({
      setclipboard("傻逼东西点你妈")
   	end
 })
+
+Tab:AddParagraph("看一起","王者号和不知道")
+
 local Tab = Window:MakeTab({
 	Name = "BS前作",
 	Icon = "rbxassetid://4483345998",
