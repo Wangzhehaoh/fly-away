@@ -6,7 +6,7 @@ OrionLib:MakeNotification({
     Time = 5
 })
 
-local Window = OrionLib:MakeWindow({Name = "X-XEON脚本 1.2.4", HidePremium = false, SaveConfig = false, IntroText = "X-"..identifyexecutor(), ConfigFolder = "X-XEON脚本 1.2.4"})
+local Window = OrionLib:MakeWindow({Name = "X-XEON脚本 1.65.49", HidePremium = false, SaveConfig = false, IntroText = "X-"..identifyexecutor(), ConfigFolder = "X-XEON脚本 1.65.49"})
 
 OrionLib:MakeNotification({
 	Name = "里面许多",
