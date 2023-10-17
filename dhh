@@ -1,0 +1,53 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nahida-cn/Roblox/main/UI-Library.lua"))()
+
+local Window = Library:Window("SH", "彩虹朋友")
+
+Player = Window:Tab("玩家")
+
+Player:Slider("移动速度", 0, 500, game.Players.LocalPlayer.Character.Humanoid.WalkSpeed, function(Value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+end)
+
+Player:Button("飞行", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/U27yQRxS"))()
+end)
+
+Player:Toggle("穿墙", false, function(Value)
+    Noclip = Value
+    if not Noclip then
+        game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+    end
+end)
+
+Player:Toggle("隐身", false, function(Value)
+    Invisible = Value
+    if not Invisible then
+        game.ReplicatedStorage.communication.boxes.cl.BoxUpdated:FireServer("Unequip")
+    end
+end)
+
+Auto = Window:Tab("自动")
+
+Auto:Toggle("收集", false, function(Value)
+    Take = Value
+end)
+
+Auto:Toggle("放置", false, function(Value)
+    Put = Value
+end)
+
+Loop = Window:Tab("循环")
+
+Loop:Textbox("用户名", true, function(Value)
+    User = Value
+end)
+
+Loop:Toggle("传送", false, function(Value)
+    LT = Value
+end)
+
+ESP = Window:Tab("透视")
+
+ESP:Toggle("玩家", false, function(Value)
+    PL = Value
+end)
