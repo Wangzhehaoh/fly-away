@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nahida-cn/Roblox/main/UI-Library.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/UI-Library.txt"))()
 
 local Window = Library:Window("SH", "彩虹朋友")
 
