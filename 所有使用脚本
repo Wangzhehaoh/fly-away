@@ -1,3 +1,10 @@
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "反挂机已自动开启",
+    Text = "被踢出服务器的概率已降低",
+    Duration = 5,
+})
+
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%90%AF%E5%8A%A8%E5%BA%93.lua"))()
 OrionLib:MakeNotification({
     Name = "X-XEON",
