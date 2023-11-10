@@ -1,17 +1,40 @@
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "反挂机已自动开启",
-    Text = "被踢出服务器的概率已降低",
+    Title = "反挂机已经开启",
+    Text = "已经完成 启动",
     Duration = 5,
 })
+
+game:GetService("StarterGui")
+wait(5)
 
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%90%AF%E5%8A%A8%E5%BA%93.lua"))()
 OrionLib:MakeNotification({
     Name = "X-XEON",
-    Content = "欢迎 免费用脚本",
+    Content = "XEON更新中",
     Image = "rbxassetid://2192707592",
-    Time = 5
+    Time = 30
 })
+
+OrionLib:MakeNotification({
+    Name = "加入群？",
+    Content = "814900648 请加入 可以免费进去 XEON要更新 马上来更新",
+    Image = "rbxassetid://2192707592",
+    Time = 30
+})
+
+game:GetService("StarterGui")
+wait(5)
+
+OrionLib:MakeNotification({
+    Name = "通知",
+    Content = "25秒 已经结束",
+    Image = "rbxassetid://2192707592",
+    Time = 25
+})
+
+game:GetService("StarterGui")
+wait(999)
 
 local Window = OrionLib:MakeWindow({Name = "X-XEON脚本 2.35.65", HidePremium = false, SaveConfig = false, IntroText = "你的注入器是"..identifyexecutor(), ConfigFolder = "X-XEON脚本 2.35.65"})
 
