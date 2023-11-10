@@ -56,7 +56,7 @@ OrionLib:MakeNotification({
 })
 
 game:GetService("StarterGui")
-wait(5)
+wait(10)
 
 local Tab = Window:MakeTab({
 	Name = "开始用脚本公告",
@@ -69,19 +69,37 @@ wait(5)
 
 Tab:AddParagraph("提示","脚本中心EF？")
 
+game:GetService("StarterGui")
+wait(2)
+
 Tab:AddParagraph("提示","现在你用免费脚本")
 
+game:GetService("StarterGui")
+wait(2)
+
 Tab:AddParagraph("提示","已经完成修复了")
+
+game:GetService("StarterGui")
+wait(2)
 
 local Section = Tab:AddSection({
 	Name = "交给我吧 一直更新"
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 Tab:AddParagraph("提示","许多，不是一个服务器")
+
+game:GetService("StarterGui")
+wait(2)
 
 local Section = Tab:AddSection({
 	Name = "欢迎用脚本EF"
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 Tab:AddParagraph("公告","有些事情")
 
@@ -94,9 +112,15 @@ local player = Window:MakeTab({
 	PremiumOnly = false
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 local Section = player:AddSection({
 	Name = "自己"
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 player:AddTextbox({
 	Name = "移动输入",
@@ -107,6 +131,9 @@ player:AddTextbox({
 	end
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 player:AddTextbox({
 	Name = "跳跃输入",
 	Default = "",
@@ -116,6 +143,9 @@ player:AddTextbox({
 	end
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 player:AddTextbox({
 	Name = "重力设置",
 	Default = "",
@@ -124,6 +154,9 @@ player:AddTextbox({
 		game.Workspace.Gravity = Value
 	end
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 player:AddToggle({
 	Name = "普通穿墙，可坐",
@@ -152,6 +185,9 @@ player:AddToggle({
 	end
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 player:AddButton({
 	Name = "飞行脚本可隐藏",
 	Callback = function()
@@ -159,15 +195,24 @@ player:AddButton({
   	end
 })
 
+game:GetService("StarterGui")
+wait(5)
+
 local other = Window:MakeTab({
     Name = "其他",
     Icon = "rbxassetid://640864955",
     PremiumOnly = false
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 local Section = other:AddSection({
 	Name = "其他还可以"
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 other:AddButton({
 	Name = "跟踪玩家",
@@ -175,6 +220,9 @@ other:AddButton({
       	loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
   	end
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 other:AddToggle({
 	Name = "普通夜视",
@@ -197,15 +245,27 @@ local other = Window:MakeTab({
     PremiumOnly = false
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 local Section = other:AddSection({
 	Name = "现在是些能用"
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 other:AddParagraph("提示","有一个阿尔宙斯")
+
+game:GetService("StarterGui")
+wait(2)
 
 local Section = other:AddSection({
 	Name = "↓开始↓"
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 other:AddButton({
 	Name = "阿尔宙斯",
@@ -214,9 +274,15 @@ other:AddButton({
   	end
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 local Section = other:AddSection({
 	Name = "↓开始↓"
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 other:AddButton({
 	Name = "飞行1V英文",
@@ -225,12 +291,18 @@ other:AddButton({
   	end
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 other:AddButton({
 	Name = "转起来",
 	Callback = function()
       	loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
   	end
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 other:AddButton({
 	Name = "关于电脑提示",
@@ -355,6 +427,9 @@ other:AddButton({
   	end
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 local other = Window:MakeTab({
     Name = "监狱人生模式",
     Icon = "rbxassetid://2192707592",
@@ -382,6 +457,9 @@ other:AddButton({
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
   	end
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 local other = Window:MakeTab({
     Name = "蜂群",
@@ -413,6 +491,9 @@ other:AddButton({
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Stebulous/scripts/main/open-source/beeswarm%20v1.2.lua", true))()
   	end
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 local other = Window:MakeTab({
     Name = "DOORS",
@@ -461,12 +542,8 @@ other:AddButton({
   	end
 })
 
-other:AddButton({
-	Name = "召唤呼 Xevade",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"))()
-  	end
-})
+game:GetService("StarterGui")
+wait(2)
 
 local other = Window:MakeTab({
     Name = "起床战争",
@@ -507,6 +584,9 @@ other:AddButton({
   	end
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 local other = Window:MakeTab({
     Name = "自己是否不动",
     Icon = "rbxassetid://2192707592",
@@ -528,6 +608,9 @@ other:AddButton({
   	end
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 local other = Window:MakeTab({
     Name = "造船寻宝",
     Icon = "rbxassetid://2192707592",
@@ -544,6 +627,9 @@ other:AddButton({
       	loadstring(game:HttpGet(('https://raw.githubusercontent.com/urmomjklol69/GoldFarmBabft/main/GoldFarm.lua'),true))()
   	end
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 local other = Window:MakeTab({
     Name = "MOD菜单",
@@ -562,6 +648,9 @@ other:AddButton({
   	end
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 local other = Window:MakeTab({
     Name = "自然灾害",
     Icon = "rbxassetid://2192707592",
@@ -578,6 +667,9 @@ other:AddButton({
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/xiao122231/xiao122231/main/Stands%20Awakening"))()
   	end
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 local other = Window:MakeTab({
     Name = "光影",
@@ -619,6 +711,9 @@ other:AddButton({
   	end
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 local other = Window:MakeTab({
     Name = "飞行可带东西",
     Icon = "rbxassetid://2192707592",
@@ -644,6 +739,9 @@ other:AddButton({
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E9%A3%9E%E8%A1%8C%E6%A8%A1%E5%BC%8F2"))()
   	end
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 local other = Window:MakeTab({
     Name = "兵工厂",
@@ -675,6 +773,9 @@ other:AddButton({
       	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
   	end
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 local other = Window:MakeTab({
     Name = "力量传奇",
@@ -711,6 +812,9 @@ other:AddButton({
   	end
 })
 
+game:GetService("StarterGui")
+wait(2)
+
 local other = Window:MakeTab({
     Name = "变异微笑",
     Icon = "rbxassetid://2192707592",
@@ -727,6 +831,9 @@ other:AddButton({
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/InfectiousSmile.lua", true))()
   	end
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 local other = Window:MakeTab({
     Name = "极速传奇",
@@ -750,6 +857,9 @@ other:AddButton({
       	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\111\121\115\99\112\47\98\101\116\97\47\109\97\105\110\47\37\69\57\37\56\48\37\57\70\37\69\53\37\66\65\37\65\54\37\69\55\37\56\50\37\66\56\37\69\56\37\66\53\37\66\55\46\108\117\97"))()
   	end
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 local other = Window:MakeTab({
     Name = "无法回去，在这里 脚本中心EF",
@@ -780,6 +890,9 @@ other:AddParagraph("提示","这种可以回去")
 local Section = other:AddSection({
 	Name = "欢迎"
 })
+
+game:GetService("StarterGui")
+wait(2)
 
 local other = Window:MakeTab({
     Name = "俄亥俄州",
@@ -825,6 +938,9 @@ other:AddButton({
 })
 
 other:AddParagraph("提示","添加什么")
+
+game:GetService("StarterGui")
+wait(2)
 
 local other = Window:MakeTab({
     Name = "逃生洪水2",
