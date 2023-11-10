@@ -5,6 +5,18 @@ CoreGui:SetCore("SendNotification", {
     Duration = 5,
 })
 
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "电脑 已经给",
+    Text = "电脑已经启动了",
+    Duration = 5,
+})
+
+game:GetService("StarterGui")
+wait(5)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+
 game:GetService("StarterGui")
 wait(5)
 
