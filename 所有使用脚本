@@ -5,34 +5,22 @@ CoreGui:SetCore("SendNotification", {
     Duration = 5,
 })
 
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "电脑 已经给",
-    Text = "电脑已经启动了",
-    Duration = 5,
-})
-
-game:GetService("StarterGui")
-wait(5)
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-
 game:GetService("StarterGui")
 wait(5)
 
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%90%AF%E5%8A%A8%E5%BA%93.lua"))()
 OrionLib:MakeNotification({
     Name = "X-XEON",
-    Content = "XEON更新中",
+    Content = "加载常",
     Image = "rbxassetid://2192707592",
-    Time = 30
+    Time = 5
 })
 
 OrionLib:MakeNotification({
     Name = "加入群？",
-    Content = "814900648 请加入 可以免费进去 XEON要更新 马上来更新",
+    Content = "814900648 请加入 可以免费进去 XEON脚本",
     Image = "rbxassetid://2192707592",
-    Time = 30
+    Time = 5
 })
 
 game:GetService("StarterGui")
@@ -40,15 +28,25 @@ wait(5)
 
 OrionLib:MakeNotification({
     Name = "通知",
-    Content = "25秒 已经结束",
+    Content = "5秒 已经结束",
     Image = "rbxassetid://2192707592",
-    Time = 25
+    Time = 5
 })
 
 game:GetService("StarterGui")
-wait(999)
+wait(5)
+
+OrionLib:MakeNotification({
+    Name = "加载常",
+    Content = "加载很慢了",
+    Image = "rbxassetid://2192707592",
+    Time = 5
+})
 
 local Window = OrionLib:MakeWindow({Name = "X-XEON脚本 2.35.65", HidePremium = false, SaveConfig = false, IntroText = "你的注入器是"..identifyexecutor(), ConfigFolder = "X-XEON脚本 2.35.65"})
+
+game:GetService("StarterGui")
+wait(6)
 
 OrionLib:MakeNotification({
 	Name = "里面许多",
@@ -57,11 +55,17 @@ OrionLib:MakeNotification({
 	Time = 6
 })
 
+game:GetService("StarterGui")
+wait(5)
+
 local Tab = Window:MakeTab({
 	Name = "开始用脚本公告",
 	Icon = "rbxassetid://640864955",
 	PremiumOnly = false
 })
+
+game:GetService("StarterGui")
+wait(5)
 
 Tab:AddParagraph("提示","脚本中心EF？")
 
@@ -80,6 +84,9 @@ local Section = Tab:AddSection({
 })
 
 Tab:AddParagraph("公告","有些事情")
+
+game:GetService("StarterGui")
+wait(5)
 
 local player = Window:MakeTab({
 	Name = "玩家",
@@ -181,6 +188,9 @@ other:AddToggle({
 	end
 })
 
+game:GetService("StarterGui")
+wait(5)
+
 local other = Window:MakeTab({
     Name = "其他模式",
     Icon = "rbxassetid://640864955",
@@ -229,6 +239,9 @@ other:AddButton({
   	end
 })
 
+game:GetService("StarterGui")
+wait(5)
+
 local other = Window:MakeTab({
     Name = "公告最新版/旧版",
     Icon = "rbxassetid://640864955",
@@ -255,6 +268,9 @@ other:AddParagraph("公告最新版","欢迎用X-MEA脚本")
 
 other:AddParagraph("公告最新版","变化")
 
+game:GetService("StarterGui")
+wait(5)
+
 local other = Window:MakeTab({
     Name = "旧版作者",
     Icon = "rbxassetid://640864955",
@@ -274,6 +290,9 @@ other:AddParagraph("提示","可以分享哦！")
 other:AddParagraph("提示","已经前面那个所有游戏e 等一下")
 
 other:AddParagraph("提示","我不再许这些使用")
+
+game:GetService("StarterGui")
+wait(5)
 
 local other = Window:MakeTab({
     Name = "evade EF",
