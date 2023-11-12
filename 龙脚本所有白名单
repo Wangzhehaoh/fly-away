@@ -1,0 +1,37 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "防问龙脚本",
+    Text = "关系=等等加载",
+    Duration = 5, --时间
+})
+
+local a=tostring(game.Players.LocalPlayer.Character);
+
+if a=="用户名"then
+_G.随便=true
+elseif a=="用户名"then
+_G.随便=true
+end
+if _G.这里必须要跟“随便”一样==true then
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "有白名单",
+    Text = a.."真人 就可以获取",
+    Duration = 5,
+})
+  wait(3) --等待三秒
+long = "龙脚本"
+qun = "群号:786515108"
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/long.txt'), true))()
+    else --验证失败执行↓
+setclipboard("点击链接加入QQ频道【获取白名单】：https://pd.qq.com/s/40l5ex454点击链接加入QQ频道【Flnovd交流】：https://pd.qq.com/s/40l5ex454")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "很抱歉",
+    Text = "你并没有加入频道获得白名单",
+    Duration = 10, --时间
+})
+end
