@@ -1,19 +1,19 @@
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "跳过中",
-    Text = "",
-    Duration = 10,
+    Title = "嘿！",
+    Text = "你想用这个？",
+    Duration = 5,
 })
 
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "2秒",
+    Title = "5秒",
     Text = "下一个",
     Duration = 2,
 })
 
 game:GetService("StarterGui")
-wait(2)
+wait(5)
 
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%90%AF%E5%8A%A8%E5%BA%93.lua"))()
 
@@ -21,11 +21,11 @@ OrionLib:MakeNotification({
     Name = "欢迎用指今",
     Content = "是Infinite Yield来的",
     Image = "rbxassetid://2192707592",
-    Time = 2
+    Time = 5
 })
 
 game:GetService("StarterGui")
-wait(2)
+wait(4)
 
 if IY_LOADED and not _G.IY_DEBUG == true then
 	-- error("Infinite Yield is already running!", 0)
@@ -12461,115 +12461,3 @@ task.spawn(function()
 	minimizeHolder()
 	if IsOnMobile then notify("不稳定设备", "欢迎用 语言:中文 翻译完整") end
 end)
-
-​local​ Script_Title ​=​ `Arceus X ​<​font color​=​"​rgb(255, 0, 0)​"​>​|​</​font​>​ Aimbot` 
-  
- ​--​ Instances: 
- ​local​ Arceus ​=​ Instance.​new​(​"​ScreenGui​"​) 
- ​local​ Main ​=​ Instance.​new​(​"​Frame​"​) 
- ​local​ UICorner ​=​ Instance.​new​(​"​UICorner​"​) 
- ​local​ Intro ​=​ Instance.​new​(​"​Frame​"​) 
- ​local​ UICorner_2 ​=​ Instance.​new​(​"​UICorner​"​) 
- ​local​ Logo ​=​ Instance.​new​(​"​ImageButton​"​) 
- ​local​ UIAspectRatioConstraint ​=​ Instance.​new​(​"​UIAspectRatioConstraint​"​) 
- ​local​ Title ​=​ Instance.​new​(​"​TextLabel​"​) 
- ​local​ Menu ​=​ Instance.​new​(​"​ScrollingFrame​"​) 
- ​local​ UIListLayout ​=​ Instance.​new​(​"​UIListLayout​"​) 
- ​local​ Toggle ​=​ Instance.​new​(​"​ImageButton​"​) 
- ​local​ UICorner_3 ​=​ Instance.​new​(​"​UICorner​"​) 
- ​local​ Enabled ​=​ Instance.​new​(​"​Frame​"​) 
- ​local​ UIAspectRatioConstraint_2 ​=​ Instance.​new​(​"​UIAspectRatioConstraint​"​) 
- ​local​ UICorner_4 ​=​ Instance.​new​(​"​UICorner​"​) 
- ​local​ Check ​=​ Instance.​new​(​"​Frame​"​) 
- ​local​ UIAspectRatioConstraint_3 ​=​ Instance.​new​(​"​UIAspectRatioConstraint​"​) 
- ​local​ UICorner_5 ​=​ Instance.​new​(​"​UICorner​"​) 
- ​local​ Name ​=​ Instance.​new​(​"​TextLabel​"​) 
- ​local​ UIGradient ​=​ Instance.​new​(​"​UIGradient​"​) 
- ​local​ Button ​=​ Instance.​new​(​"​ImageButton​"​) 
- ​local​ UICorner_6 ​=​ Instance.​new​(​"​UICorner​"​) 
- ​local​ Name_2 ​=​ Instance.​new​(​"​TextLabel​"​) 
- ​local​ UIGradient_2 ​=​ Instance.​new​(​"​UIGradient​"​) 
- ​local​ tab ​=​ Instance.​new​(​"​Frame​"​) 
- ​local​ Close ​=​ Instance.​new​(​"​TextButton​"​) 
- ​local​ ComboElem ​=​ Instance.​new​(​"​ImageButton​"​) 
- ​local​ UICorner_7 ​=​ Instance.​new​(​"​UICorner​"​) 
- ​local​ Name_3 ​=​ Instance.​new​(​"​TextLabel​"​) 
- ​local​ UIGradient_3 ​=​ Instance.​new​(​"​UIGradient​"​) 
- ​local​ Img ​=​ Instance.​new​(​"​TextLabel​"​) 
- ​local​ UIAspectRatioConstraint_4 ​=​ Instance.​new​(​"​UIAspectRatioConstraint​"​) 
- ​local​ ComboBox ​=​ Instance.​new​(​"​ImageButton​"​) 
- ​local​ UICorner_8 ​=​ Instance.​new​(​"​UICorner​"​) 
- ​local​ Name_4 ​=​ Instance.​new​(​"​TextLabel​"​) 
- ​local​ UIGradient_4 ​=​ Instance.​new​(​"​UIGradient​"​) 
- ​local​ Img_2 ​=​ Instance.​new​(​"​TextLabel​"​) 
- ​local​ UIAspectRatioConstraint_5 ​=​ Instance.​new​(​"​UIAspectRatioConstraint​"​) 
-  
- ​--​Properties: 
-  
- ​Arceus.​Name​ ​=​ ​"​Arceus​" 
- ​Arceus.​Enabled​ ​=​ ​true 
- ​Arceus.​ResetOnSpawn​ ​=​ ​true 
- ​Arceus.​ZIndexBehavior​ ​=​ Enum.​ZIndexBehavior​.​Sibling 
- ​Arceus.​DisplayOrder​ ​=​ ​999999999 
-  
- ​Main.​Name​ ​=​ ​"​Main​" 
- ​Main.​Parent​ ​=​ Arceus 
- ​Main.​Active​ ​=​ ​true 
- ​Main.​Draggable​ ​=​ ​true 
- ​Main.​AnchorPoint​ ​=​ Vector2.​new​(​0.5​, ​0.5​) 
- ​Main.​BackgroundColor3​ ​=​ Color3.​fromRGB​(​40​, ​40​, ​40​) 
- ​Main.​BorderSizePixel​ ​=​ ​0 
- ​Main.​Position​ ​=​ UDim2.​new​(​0.5​, ​0​, ​-​0.2​, ​0​) ​--​UDim2.new(0.5, 0, 0.5, 0) 
- ​Main.​Size​ ​=​ UDim2.​new​(​0.3​, ​0​, ​0.3​, ​0​) 
-  
- ​UICorner.​CornerRadius​ ​=​ UDim.​new​(​0.1​, ​0​) 
- ​UICorner.​Parent​ ​=​ Main 
-  
- ​Intro.​Name​ ​=​ ​"​Intro​" 
- ​Intro.​Parent​ ​=​ Main 
- ​Intro.​BackgroundColor3​ ​=​ Color3.​fromRGB​(​40​, ​40​, ​40​) 
- ​Intro.​ClipsDescendants​ ​=​ ​true 
- ​Intro.​Size​ ​=​ UDim2.​new​(​1​, ​0​, ​1​, ​0​) 
- ​Intro.​ZIndex​ ​=​ ​2 
-  
- ​UICorner_2.​CornerRadius​ ​=​ UDim.​new​(​0.1​, ​0​) 
- ​UICorner_2.​Parent​ ​=​ Intro 
-  
- ​Logo.​Parent​ ​=​ Intro 
- ​Logo.​AnchorPoint​ ​=​ Vector2.​new​(​0.5​, ​0.5​) 
- ​Logo.​BackgroundColor3​ ​=​ Color3.​fromRGB​(​255​, ​255​, ​255​) 
- ​Logo.​BackgroundTransparency​ ​=​ ​1 
- ​Logo.​BorderSizePixel​ ​=​ ​0 
- ​Logo.​Position​ ​=​ UDim2.​new​(​0.5​, ​0​, ​0.5​, ​0​) 
- ​Logo.​Size​ ​=​ UDim2.​new​(​0.75​, ​0​, ​0.75​, ​0​) 
- ​Logo.​ZIndex​ ​=​ ​2 
- ​Logo.​Image​ ​=​ ​"​http://www.roblox.com/asset/?id=9178187770​" 
- ​Logo.​ScaleType​ ​=​ Enum.​ScaleType​.​Fit 
- ​Logo.​Active​ ​=​ ​false 
-  
- ​UIAspectRatioConstraint.​Parent​ ​=​ Logo 
-  
- ​Title.​Name​ ​=​ ​"​Title​" 
- ​Title.​Parent​ ​=​ Main 
- ​Title.​AnchorPoint​ ​=​ Vector2.​new​(​1​, ​0​) 
- ​Title.​BackgroundColor3​ ​=​ Color3.​fromRGB​(​255​, ​255​, ​255​) 
- ​Title.​BackgroundTransparency​ ​=​ ​1 
- ​Title.​BorderSizePixel​ ​=​ ​0
- ​Title.​Position​ ​=​ UDim2.​new​(​0.975​, ​0​, ​0.075​, ​0​) 
- ​Title.​Size​ ​=​ UDim2.​new​(​0.85​, ​0​, ​0.155​, ​0​) 
- ​Title.​Font​ ​=​ Enum.​Font​.​TitilliumWeb 
- ​Title.​FontFace​ ​=​ Font.​new​(​"​rbxasset://fonts/families/TitilliumWeb.json​"​, Enum.​FontWeight​.​Bold​) 
- ​Title.​RichText​ ​=​ ​true 
- ​Title.​Text​ ​=​ Script_Title 
- ​Title.​TextColor3​ ​=​ Color3.​fromRGB​(​255​, ​255​, ​255​) 
- ​Title.​TextScaled​ ​=​ ​true 
- ​Title.​TextSize​ ​=​ ​14 
- ​Title.​TextWrapped​ ​=​ ​true 
- ​Title.​TextXAlignment​ ​=​ Enum.​TextXAlignment​.​Left 
- ​Title.​TextYAlignment​ ​=​ Enum.​TextYAlignment​.​Center 
-  
- ​Menu.​Name​ ​=​ ​"​Menu​" 
- ​Menu.​Parent​ ​=​ Main 
- ​Menu.​Active​ ​=​ ​true 
- ​Menu.​AnchorPoint​ ​=​ Vector2.​new​(​0.5​, ​1​) 
- ​Menu.​BackgroundColor3​ ​
