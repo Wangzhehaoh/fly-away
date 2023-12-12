@@ -1,19 +1,19 @@
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "嘿！",
-    Text = "你想用这个？",
-    Duration = 5,
+    Title = "成功执行",
+    Text = "欢迎使用",
+    Duration = 10,
 })
 
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "5秒",
+    Title = "2秒",
     Text = "下一个",
     Duration = 2,
 })
 
 game:GetService("StarterGui")
-wait(5)
+wait(2)
 
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wangzhehaoh/fly-away/main/%E5%90%AF%E5%8A%A8%E5%BA%93.lua"))()
 
@@ -21,11 +21,11 @@ OrionLib:MakeNotification({
     Name = "欢迎用指今",
     Content = "是Infinite Yield来的",
     Image = "rbxassetid://2192707592",
-    Time = 5
+    Time = 1
 })
 
 game:GetService("StarterGui")
-wait(4)
+wait(2)
 
 if IY_LOADED and not _G.IY_DEBUG == true then
 	-- error("Infinite Yield is already running!", 0)
@@ -4277,6 +4277,7 @@ function autoComplete(str,curText)
 end
 
 CMDs = {}
+wait(2)
 CMDs[#CMDs + 1] = {NAME = '中文翻译完整', DESC = '你想用中文 欢迎用'}
 CMDs[#CMDs + 1] = {NAME = '默认为了指今另一个', DESC = '很快 默认为了快速指今'}
 CMDs[#CMDs + 1] = {NAME = 'fly [飞][数字]', DESC = '让你飞行 '}
@@ -12461,3 +12462,5 @@ task.spawn(function()
 	minimizeHolder()
 	if IsOnMobile then notify("不稳定设备", "欢迎用 语言:中文 翻译完整") end
 end)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/eng"))()
