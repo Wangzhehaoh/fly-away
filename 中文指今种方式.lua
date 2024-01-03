@@ -4277,9 +4277,14 @@ function autoComplete(str,curText)
 end
 
 CMDs = {}
-wait(2)
 CMDs[#CMDs + 1] = {NAME = '中文翻译完整', DESC = '你想用中文 欢迎用'}
 CMDs[#CMDs + 1] = {NAME = '默认为了指今另一个', DESC = '很快 默认为了快速指今'}
+CMDs[#CMDs + 1] = {NAME = 'spectate / view [用户名](你的视角到玩家视角)', DESC = '查看玩家'}
+CMDs[#CMDs + 1] = {NAME = 'trip[自动倒下]', DESC = '让你的角色倒下'}
+CMDs[#CMDs + 1] = {NAME = 'logs [日志]', DESC = '打开日志GUI'}
+CMDs[#CMDs + 1] = {NAME = 'chatlogs / clogs [看聊天]', DESC = '记录人们说的话或窃窃私语'}
+CMDs[#CMDs + 1] = {NAME = 'joinlogs / jlogs [记录有些人们加入]', DESC = '当人们加入时记录'}
+CMDs[#CMDs + 1] = {NAME = 'chat / say [文本][自动发聊天]', DESC = '让你聊天一串(可能静音旁路)'}
 CMDs[#CMDs + 1] = {NAME = 'fly [飞][数字]', DESC = '让你飞行 '}
 CMDs[#CMDs + 1] = {NAME = 'vfly[飞车][数字]', DESC = '默认飞行 坐车有如果'}
 CMDs[#CMDs + 1] = {NAME = 'nofog [除掉雾][别人看不到]', DESC = '除掉雾后 让你能看见最远'}
@@ -12463,4 +12468,37 @@ task.spawn(function()
 	if IsOnMobile then notify("不稳定设备", "欢迎用 语言:中文 翻译完整") end
 end)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/eng"))()
+-- Gui to Lua 
+ -- Version: 3.2 
+  
+ -- Instances:
+ local ScreenGui = Instance.new("ScreenGui") 
+ local FpsLabel = Instance.new("TextLabel")
+ 
+ --Properties:
+ 
+ ScreenGui.Name = "FPSGui" 
+ ScreenGui.ResetOnSpawn = false 
+ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling 
+ 
+ FpsLabel.Name = "FPSLabel" 
+ FpsLabel.Size = UDim2.new(0, 100, 0, 50) 
+ FpsLabel.Position = UDim2.new(0, 10, 0, 10) 
+ FpsLabel.BackgroundTransparency = 1 
+ FpsLabel.Font = Enum.Font.SourceSansBold 
+ FpsLabel.Text = "帧率: 0" 
+ FpsLabel.TextSize = 20 
+ FpsLabel.TextColor3 = Color3.new(1, 1, 1) 
+ FpsLabel.Parent = ScreenGui 
+  
+ function updateFpsLabel() 
+     local fps = math.floor(1 / game:GetService("RunService").RenderStepped:Wait()) 
+     FpsLabel.Text = "帧率: " .. fps 
+ end 
+  
+  game:GetService("RunService").RenderStepped:Connect(updateFpsLabel) 
+  
+ ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+
+ animateCredits()
